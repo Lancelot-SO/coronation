@@ -13,7 +13,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar bgColor={hovered ? 'bg-primary' : 'bg-black bg-opacity-50'} />
             <div className='relative flex'
                 onMouseEnter={() => handleHover('left')}
                 onMouseLeave={() => handleHover(false)}
