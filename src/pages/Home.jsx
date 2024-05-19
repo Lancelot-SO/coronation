@@ -32,7 +32,7 @@ const Home = () => {
           />
 
           <div className="absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[200px] left-[50px] text-white">
-            <h1 className="text-4xl font-semibold mb-4">CORPORATE</h1>
+            <h1 className="text-4xl font-semibold mb-4">INDIVIDUAL</h1>
             <p className="mb-6 text-[24px] leading-[38px] text-left">
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
@@ -56,7 +56,7 @@ const Home = () => {
             alt="corporate"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] right-[50px] text-white">
+          <div className="absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[180px] right-[50px] text-white">
             <h1 className="text-4xl font-semibold mb-4">CORPORATE</h1>
             <p className="mb-6 text-[24px] leading-[38px] text-right">
               Invest and manage your money on your own terms. It's easier than
