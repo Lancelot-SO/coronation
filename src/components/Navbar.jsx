@@ -21,25 +21,24 @@ const Navbar = () => {
     <div>
       <nav className="w-full">
         <div
-          className={`flex justify-between w-full h-[100px] text-white items-center  ${
-            isHovered === "left" ? "bg-primary text-black" : "bg-secondary"
-          }`}
+          className={`flex justify-between w-full h-[100px] text-white items-center  ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
+            }`}
         >
           <h1
-            className={`${
-              isHovered === "left" ? "text-customPurple" : "text-white"
-            } text-2xl font-bold ml-[40px]`}
+            className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+              } text-2xl font-bold ml-[40px]`}
           >
             Coronation
           </h1>
           <div
-            className={`w-[1199px] h-[68px] flex gap-5 items-center justify-evenly ${
-              isHovered === "left" ? "text-customPurple" : "text-white"
-            }`}
+            className={`w-[1199px] h-[68px] flex gap-5 items-center justify-evenly ${isHovered === "left" ? "text-customPurple" : "text-secondary"
+              }`}
           >
             <div className="flex items-center gap-4">
-              <div className="rounded-full border border-1 border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center">
-                <CiClock2 className="text-customPurple" />
+              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
+                <CiClock2 className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                  }`} />
               </div>
               <div className="flex flex-col">
                 <small>Monday-Friday</small>
@@ -47,8 +46,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <div className="rounded-full border border-1 border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center">
-                <TfiEmail className="text-customPurple" />
+              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
+                <TfiEmail className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                  }`} />
               </div>
               <div className={`flex flex-col`}>
                 <small>Email</small>
@@ -56,8 +57,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <div className="rounded-full border border-1 border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center">
-                <FaPhoneAlt className="text-customPurple" />
+              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
+                <FaPhoneAlt className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                  }`} />
               </div>
               <div className="flex flex-col">
                 <small>Call us</small>
@@ -67,8 +70,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50  ${
-                isHovered === "left" ? "bg-primary text-black text-customPurple" : "bg-secondary"
+            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50  ${isHovered === "left" ? "bg-primary text-black text-customPurple" : "bg-secondary"
               }  opacity-90`}
           >
             <div className="w-full h-full flex items-center justify-between px-[200px]">
