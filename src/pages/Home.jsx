@@ -1,16 +1,16 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import landInd from "../assets/landingInd.png";
 import landCop from "../assets/landingCop.png";
 import landingImg from "../assets/landingImg.png";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import { HoverContext } from "../contexts/HoverContext";
 
 const Home = () => {
-  const [hovered, setHovered] = useState(false);
+  // const [hovered, setHovered] = useState(false);
 
-  const handleHover = (side) => {
-    setHovered(side);
-  };
+  // const handleHover = (side) => {
+  //   setHovered(side);
+  // };
 
   const { setIsHovered } = useContext(HoverContext);
 
@@ -31,11 +31,9 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
 
-          <div
-            cclassName={`absolute w-[335px] h-[316px] flex flex-col justify-center items-start top-[200px] left-[50px] text-white z-50`}
-          >
+          <div className="absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[200px] left-[50px] text-white z-40">
             <h1 className="text-4xl font-semibold mb-4">INDIVIDUAL</h1>
-            <p className="mb-6 text-[24px] leading-[38px]">
+            <p className="mb-6 text-[24px] leading-[38px] text-left">
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
@@ -44,7 +42,7 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-70 opacity-0 transition-opacity duration-300 z-60"></div>
+          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>
 
         {/* right side */}
@@ -70,7 +68,7 @@ const Home = () => {
           </div>
 
           
-          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-70 opacity-0 transition-opacity duration-300 z-1"></div>
+          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>
 
         <img
