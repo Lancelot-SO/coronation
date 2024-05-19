@@ -44,7 +44,7 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="absolute inset-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 z-60"></div>
+          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-70 opacity-0 transition-opacity duration-300 z-60"></div>
         </div>
 
         {/* right side */}
@@ -58,7 +58,7 @@ const Home = () => {
             alt="corporate"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] right-[50px] text-white">
+          <div className="absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] right-[50px] text-white z-40">
             <h1 className="text-4xl font-semibold mb-4">CORPORATE</h1>
             <p className="mb-6 text-[24px] leading-[38px] text-right">
               Invest and manage your money on your own terms. It's easier than
@@ -68,6 +68,9 @@ const Home = () => {
               Enter
             </button>
           </div>
+
+          
+          <div className="absolute inset-0 w-full h-full bg-black hover:opacity-70 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>
 
         <img
