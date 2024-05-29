@@ -1,8 +1,14 @@
 import React from 'react'
+import banner from "../assets/banner.png"
 
 const Banner = () => {
     return (
-        <div>Banner</div>
+        <div>
+            <div className='w-full'>
+                <img src={banner} alt='banner' className='object-fit w-full' />
+
+            </div>
+        </div>
     )
 }
 

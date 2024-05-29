@@ -2,15 +2,11 @@ import React, { useContext } from "react";
 import landInd from "../assets/landingInd.png";
 import landCop from "../assets/landingCop.png";
 import landingImg from "../assets/landingImg.png";
-// import Navbar from "../components/Navbar";
 import { HoverContext } from "../contexts/HoverContext";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-  // const [hovered, setHovered] = useState(false);
 
-  // const handleHover = (side) => {
-  //   setHovered(side);
-  // };
 
   const { setIsHovered } = useContext(HoverContext);
 
@@ -28,7 +24,7 @@ const Home = () => {
           <img
             src={landInd}
             alt="individual"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-(full) object-cover"
           />
 
           <div className="absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[200px] left-[50px] text-white z-40">
@@ -37,9 +33,11 @@ const Home = () => {
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded w-[212px]">
-              Enter
-            </button>
+            <Link to='/hero'>
+              <button className="bg-primary text-white font-bold py-2 px-4 rounded w-[212px]">
+                Enter
+              </button>
+            </Link>
           </div>
 
           <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
@@ -62,12 +60,14 @@ const Home = () => {
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
-            <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
-              Enter
-            </button>
+            <Link to='/hero'>
+              <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
+                Enter
+              </button>
+            </Link>
           </div>
 
-          
+
           <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>
 

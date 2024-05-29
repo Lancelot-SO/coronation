@@ -24,12 +24,14 @@ const Navbar = () => {
           className={`flex justify-between w-full h-[100px] text-white items-center  ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
             }`}
         >
-          <h1
-            className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-              } text-2xl font-bold ml-[40px]`}
-          >
-            Coronation
-          </h1>
+          <Link to='/'>
+            <h1
+              className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                } text-2xl font-bold ml-[40px]`}
+            >
+              Coronation
+            </h1>
+          </Link>
           <div
             className={`w-[1199px] h-[68px] flex gap-5 items-center justify-evenly ${isHovered === "left" ? "text-customPurple" : "text-secondary"
               }`}
@@ -76,16 +78,16 @@ const Navbar = () => {
             <div className="w-full h-full flex items-center justify-between px-[200px]">
               {/* left side */}
               <ul className="flex justify-evenly text-white w-[700px]">
-                <li className="border-r p-1 flex">
+                <li className=" p-1 flex">
                   <Link to="/about">ABOUT</Link>
                 </li>
-                <li className="border-r p-1 flex">
+                <li className=" p-1 flex">
                   <Link to="/products">PRODUCTS & SOLUTIONS</Link>
                 </li>
-                <li className="border-r p-1 flex">
+                <li className=" p-1 flex">
                   <Link to="/insights">INSIGHTS</Link>
                 </li>
-                <li className="border-r p-1 flex">
+                <li className=" p-1 flex">
                   <Link to="/careers">CAREERS</Link>
                 </li>
                 <li className="p-1 flex">
