@@ -7,6 +7,8 @@ import Navbar from './components/Navbar';
 import Hero from './pages/Hero';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
+import MotorInsurance from './pages/MotorInsurance';
+import TravelInsurance from './pages/TravelInsurance';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path='/hero' element={<Hero />} />
           <Route path='/about' element={<About />} />
           <Route path='/products' element={<ProductSolution />} />
+          <Route path='/motor' element={<MotorInsurance />} />
+          <Route path='/travel' element={<TravelInsurance />} />
         </Routes>
         <Banner />
         <Footer />

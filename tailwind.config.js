@@ -5,6 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '0 4px 30px rgba(0, 0, 0, 0.1)',
+      },
+      backdropFilter: {
+        'none': 'none',
+        'blur': 'blur(5px)',
+      },
       colors: {
         customPurple: '#B580D1',
         primary: "#F3CCFF",
@@ -24,6 +31,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }
 

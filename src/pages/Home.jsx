@@ -24,7 +24,7 @@ const Home = () => {
           <img
             src={landInd}
             alt="individual"
-            className="absolute inset-0 w-full h-(full) object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
 
           <div className="absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[200px] left-[50px] text-white z-40">
