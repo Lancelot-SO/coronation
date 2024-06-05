@@ -30,7 +30,7 @@ const Hero = () => {
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                        <Link to="/">
+                        <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer">
                             <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
                         </Link>
                     </div>
@@ -82,7 +82,7 @@ const Hero = () => {
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
                                     <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
                                     <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/" className='flex items-center w-[111px] justify-center h-[20px] gap-1'>
+                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
@@ -93,7 +93,7 @@ const Hero = () => {
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
                                     <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
                                     <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/" className='flex items-center w-[111px] justify-center h-[20px] gap-1'>
+                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
@@ -104,7 +104,7 @@ const Hero = () => {
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
                                     <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
                                     <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/" className='flex items-center w-[111px] justify-center h-[20px] gap-1'>
+                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
@@ -113,7 +113,7 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <Link className='w-[214px] h-[50px] flex items-center justify-center mt-8 bg-[#A87DCA] text-white text-[16px] leading-[25px] font-semibold'>VIEW ALL INSIGHTS</Link>
+                    <Link to='/insights' className='w-[214px] h-[50px] flex items-center justify-center mt-8 bg-[#A87DCA] text-white text-[16px] leading-[25px] font-semibold'>VIEW ALL INSIGHTS</Link>
                 </div>
             </section>
 

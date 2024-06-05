@@ -77,7 +77,7 @@ const ProductSolution = () => {
             </Link>
 
 
-            <Link to="/">
+            <Link to="/home_insurance">
               <div className='relative group'>
                 <img src={insurance3} alt='insure' className='object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale' />
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>

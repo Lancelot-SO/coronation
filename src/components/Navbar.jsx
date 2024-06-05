@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import { useLocation, Link } from "react-router-dom";
 import { HoverContext } from "../contexts/HoverContext";
 import { CiClock2 } from "react-icons/ci";
 import { TfiEmail } from "react-icons/tfi";
@@ -10,12 +10,13 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
+import logo from "../assets/corologo.png"
 
 const Navbar = () => {
   const { isHovered } = useContext(HoverContext);
-
-  //   ${isHovered ? 'bg-blue-500' : 'bg-red-500'}
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/"; // Assuming '/' is the landing page route
 
   return (
     <div>
@@ -24,47 +25,56 @@ const Navbar = () => {
           className={`flex justify-between w-full h-[100px] text-white items-center  ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
             }`}
         >
-          <Link to='/'>
-            <h1
-              className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                } text-2xl font-bold ml-[40px]`}
-            >
-              Coronation
-            </h1>
+          <Link to="/">
+            <img src={logo} alt="logo" className="ml-[80px]" />
           </Link>
           <div
             className={`w-[1199px] h-[68px] flex gap-5 items-center justify-evenly ${isHovered === "left" ? "text-customPurple" : "text-secondary"
               }`}
           >
             <div className="flex items-center gap-4">
-              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
-                <CiClock2 className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                  }`} />
+              <div
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+              >
+                <CiClock2
+                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                    }`}
+                />
               </div>
-              <div className="flex flex-col">
-                <small>Monday-Friday</small>
+              <div className="flex flex-col text-white">
+                <small>Mon - Fri 8:00 - 5:00</small>
                 <small>Saturday-Sunday Closed</small>
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
-                <TfiEmail className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                  }`} />
+              <div
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+              >
+                <TfiEmail
+                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                    }`}
+                />
               </div>
-              <div className={`flex flex-col`}>
+              <div className="flex flex-col text-white">
                 <small>Email</small>
-                <small>contact@coronation.com</small>
+                <small>
+                  infoghana@coronationinsurance.com.ng
+                </small>
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <div className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}>
-                <FaPhoneAlt className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                  }`} />
+              <div
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+              >
+                <FaPhoneAlt
+                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
+                    }`}
+                />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-white">
                 <small>Call us</small>
                 <small>(00) 112 365 489</small>
               </div>
@@ -78,42 +88,42 @@ const Navbar = () => {
             <div className="w-full h-full flex items-center justify-between px-[200px]">
               {/* left side */}
               <ul className="flex justify-evenly text-white w-[700px]">
-                <li className=" p-1 flex">
-                  <Link to="/about">ABOUT</Link>
-                </li>
-                <li className=" p-1 flex">
-                  <Link to="/products">PRODUCTS & SOLUTIONS</Link>
-                </li>
-                <li className=" p-1 flex">
-                  <Link to="/insights">INSIGHTS</Link>
-                </li>
-                <li className=" p-1 flex">
-                  <Link to="/careers">CAREERS</Link>
+                <li className="p-1 flex">
+                  <Link to="/about" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>ABOUT</Link>
                 </li>
                 <li className="p-1 flex">
-                  <Link to="/contact">CONTACT US</Link>
+                  <Link to="/products" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>PRODUCTS & SOLUTIONS</Link>
+                </li>
+                <li className="p-1 flex">
+                  <Link to="/insights" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>INSIGHTS</Link>
+                </li>
+                <li className="p-1 flex">
+                  <Link to="/careers" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>CAREERS</Link>
+                </li>
+                <li className="p-1 flex">
+                  <Link to="/contact" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>CONTACT US</Link>
                 </li>
               </ul>
 
               {/* right side */}
-              <ul className={`flex gap-4 text-white items-center  `}>
+              <ul className="flex gap-4 text-white items-center">
                 <li>
-                  <Link to="#">
+                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
                     <FaInstagram />
                   </Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
                     <FaFacebookF />
                   </Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
                     <FaTwitter />
                   </Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
                     <FaLinkedinIn />
                   </Link>
                 </li>
