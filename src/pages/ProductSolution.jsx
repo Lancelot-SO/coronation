@@ -28,7 +28,7 @@ const ProductSolution = () => {
           <div className='absolute top-[180px] items-center justify-center'>
             <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
             <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-            <Link to="/">
+            <Link to="/contact">
               <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Individual Account <FaFingerprint /></button>
             </Link>
           </div>

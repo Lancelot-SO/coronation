@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { useLocation, Link } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { useLocation, Link, NavLink } from "react-router-dom";
 import { HoverContext } from "../contexts/HoverContext";
 import { CiClock2 } from "react-icons/ci";
 import { TfiEmail } from "react-icons/tfi";
@@ -11,18 +11,26 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import logo from "../assets/corologo.png"
+import logo from "../assets/corologo.png";
 
 const Navbar = () => {
-  const { isHovered } = useContext(HoverContext);
+  const { isHovered, fromRight, setFromRight } = useContext(HoverContext);
   const location = useLocation();
-  const isLandingPage = location.pathname === "/"; // Assuming '/' is the landing page route
+  const isLandingPage = location.pathname === "/";
+
+  useEffect(() => {
+    if (isLandingPage) {
+      setFromRight(false);
+    }
+  }, [isLandingPage, setFromRight]);
 
   return (
     <div>
       <nav className="w-full">
         <div
-          className={`flex justify-between w-full h-[100px] text-white items-center  ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
+          className={`flex justify-between w-full h-[100px] text-white items-center ${isHovered === "left"
+            ? "text-primary bg-black"
+            : "text-secondary bg-black"
             }`}
         >
           <Link to="/">
@@ -34,7 +42,9 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-4">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left"
+                  ? "border-customPurple"
+                  : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
                 <CiClock2
@@ -49,7 +59,9 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-6">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left"
+                  ? "border-customPurple"
+                  : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
                 <TfiEmail
@@ -59,14 +71,14 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col text-white">
                 <small>Email</small>
-                <small>
-                  infoghana@coronationinsurance.com.ng
-                </small>
+                <small>infoghana@coronationinsurance.com.ng</small>
               </div>
             </div>
             <div className="flex items-center gap-6">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left"
+                  ? "border-customPurple"
+                  : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
                 <FaPhoneAlt
@@ -82,53 +94,53 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50  ${isHovered === "left" ? "bg-primary text-black text-customPurple" : "bg-secondary"
-              }  opacity-90`}
+            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50 ${isHovered === "left" ? "bg-primary text-customPurple" : "bg-secondary"
+              } opacity-70`}
           >
             <div className="w-full h-full flex items-center justify-between px-[200px]">
               {/* left side */}
               <ul className="flex justify-evenly text-white w-[700px]">
                 <li className="p-1 flex">
-                  <Link to="/about" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>ABOUT</Link>
+                  <NavLink to={fromRight ? "/aboutred" : "/about"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>ABOUT</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <Link to="/products" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>PRODUCTS & SOLUTIONS</Link>
+                  <NavLink to={fromRight ? "/productred" : "/products"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>PRODUCTS & SOLUTIONS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <Link to="/insights" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>INSIGHTS</Link>
+                  <NavLink to={fromRight ? "/insightsred" : "/insights"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>INSIGHTS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <Link to="/careers" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>CAREERS</Link>
+                  <NavLink to={fromRight ? "/careerred" : "/career"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>CAREERS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <Link to="/contact" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>CONTACT US</Link>
+                  <NavLink to={fromRight ? "/contactred" : "/contact"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>CONTACT US</NavLink>
                 </li>
               </ul>
 
               {/* right side */}
               <ul className="flex gap-4 text-white items-center">
                 <li>
-                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
+                  <a href="https://www.instagram.com/coronationng/" target="_blank" rel="noopener noreferrer" className="opacity-100">
                     <FaInstagram />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
+                  <a href="https://www.facebook.com/coronationng/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
+                  <a href="https://x.com/coronation_ng" target="_blank" rel="noopener noreferrer">
                     <FaTwitter />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className={isLandingPage ? "pointer-events-none opacity-50" : ""}>
+                  <a href="https://www.linkedin.com/company/coronationgrp/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn />
-                  </Link>
+                  </a>
                 </li>
                 <li className="bg-white text-black px-4 py-2 rounded">
-                  <Link to="/">Self Services</Link>
+                  <NavLink to={fromRight ? "/selfservicered" : "/selfservice"} activeClassName="underline">Self Services</NavLink>
                 </li>
               </ul>
             </div>

@@ -22,10 +22,26 @@ const Footer = () => {
                             We are a leading financial service partner that helps build enduring legacies that lead to sustainable wealth creation in Africa.
                         </p>
                         <ul className='flex gap-4'>
-                            <Link><li><FaInstagram /></li></Link>
-                            <Link><li><FaFacebook /></li></Link>
-                            <Link><li><FaTwitter /></li></Link>
-                            <Link><li><FaLinkedin /></li></Link>
+                            <li>
+                                <Link to="https://www.instagram.com/coronationng/" target="_blank" rel="noopener noreferrer" className="opacity-100">
+                                    <FaInstagram />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="https://www.facebook.com/coronationng/" target="_blank" rel="noopener noreferrer">
+                                    <FaFacebook />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="https://x.com/coronation_ng" target="_blank" rel="noopener noreferrer">
+                                    <FaTwitter />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="https://www.linkedin.com/company/coronationgrp/" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin />
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className='flex w-[885px] items-center text-[16px] pl-20 font-semibold gap-[50px]'>

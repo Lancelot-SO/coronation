@@ -14,6 +14,8 @@ import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
 import MotorModal from '../components/MotorModal'
 import PartyModal from '../components/PartyModal'
 import ThirdModal from '../components/ThirdModal'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const MotorInsurance = () => {
 
@@ -172,7 +174,7 @@ const MotorInsurance = () => {
                                 The product has been designed with a combination of Enhanced term life which gives you an additional benefit.
                             </p>
 
-                            <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+                            <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
                                 REQUEST & BUY
                             </Link>
                         </div>
@@ -214,7 +216,8 @@ const MotorInsurance = () => {
                 </div>
             </section>
 
-
+            <Banner />
+            <Footer />
 
         </div>
     )

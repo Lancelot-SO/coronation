@@ -8,6 +8,9 @@ import insight2 from "../assets/insight2.png"
 import insight3 from "../assets/insight3.png"
 import bg from "../assets/bg.png"
 
+import Footer from "../components/Footer"
+import Banner from '../components/Banner'
+
 
 
 
@@ -46,7 +49,7 @@ const Hero = () => {
                             for the individual</h1>
                         <p className='w-[328px] h-[120px] text-[16px] leading-[25px] font-normal mb-6 p-[10px]'>Our products and services provide self-sufficiency, financial independence,
                             creation and preservation of wealth for the future.</p>
-                        <button className='w-[300px] h-[42px] bg-white text-customPurple'>VIEW MORE</button>
+                        <Link to="/products"><button className='w-[300px] h-[42px] bg-white text-customPurple'>VIEW MORE</button></Link>
                     </div>
                 </div>
             </section>
@@ -59,10 +62,10 @@ const Hero = () => {
                         <strong className='text-customPurple text-[16px] mb-2 font-normal leading-[24px]'>LIVE YOUR BEST LIFE WITH CORONATION INSURANCE</strong>
                         <span className='text-[13px] text-[#666C89] mb-2 font-medium leading-[20px]'>Make a decision to protect those that matter to you.</span>
                         <div className='flex gap-4 mt-3'>
-                            <Link to='/'>
+                            <Link to='/about'>
                                 <button className='w-[167px] h-[50px] items-center flex justify-center text-white bg-customPurple'>LEARN MORE</button>
                             </Link>
-                            <Link to="/">
+                            <Link to="https://www.coronation.ng/self-service/" target='_blank' rel='noopener noreferrer'>
                                 <button className='w-[164px] h-[50px] items-center flex justify-center border-2 border-customPurple text-customPurple'>MAKE A CLAIM</button>
                             </Link>
                         </div>
@@ -130,6 +133,10 @@ const Hero = () => {
                 </div>
 
             </section>
+
+            <Banner />
+            <Footer />
+
 
         </div>
     )

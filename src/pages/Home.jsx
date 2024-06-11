@@ -6,15 +6,16 @@ import { HoverContext } from "../contexts/HoverContext";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const { setIsHovered, setFromRight } = useContext(HoverContext); // Add setFromRight here
 
-
-  const { setIsHovered } = useContext(HoverContext);
+  const handleClick = () => {
+    setIsHovered("right");
+    setFromRight(true); // Set fromRight to true when clicking on the right side
+  };
 
   return (
     <div>
-      <div
-        className="relative flex"
-      >
+      <div className="relative flex">
         {/* left side */}
         <div
           className="relative w-full h-screen"
@@ -60,13 +61,12 @@ const Home = () => {
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
-            <Link to='/hero'>
-              <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
+            <Link to='/herored'>
+              <button onClick={handleClick} className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]"> {/* Update button onClick */}
                 Enter
               </button>
             </Link>
           </div>
-
 
           <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>

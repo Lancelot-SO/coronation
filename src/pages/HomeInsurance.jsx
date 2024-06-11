@@ -155,8 +155,6 @@ const HomeInsurance = () => {
                                         <li class="w-full font-normal text-[10px] leading-[14px] text-white ">Emergency return home following the death of a close family member</li>
                                     </ul>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
