@@ -11,7 +11,7 @@ export const projectsNav = [
         name: 'Brochures',
     },
     {
-        name: 'Through leadership articles',
+        name: 'Taught leadership articles',
     },
 ];
 
@@ -31,7 +31,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Through leadership articles',
+        category: 'Taught leadership articles',
 
     },
     {
@@ -47,7 +47,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Through leadership articles',
+        category: 'Taught leadership articles',
 
     },
     {
@@ -55,7 +55,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Through leadership articles',
+        category: 'Taught leadership articles',
 
     },
     {
@@ -71,7 +71,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Through leadership articles',
+        category: 'Taught leadership articles',
 
     },
     {
@@ -79,7 +79,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Through leadership articles',
+        category: 'Taught leadership articles',
 
     },
     {

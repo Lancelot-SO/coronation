@@ -12,6 +12,8 @@ import motorComp3 from "../assets/motor/motorComp3.png"
 import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
 import HouseOwnerModal from '../components/HouseOwnerModal'
 import HouseHolderModal from '../components/HouseHolderModal'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const HomeInsurance = () => {
 
@@ -161,7 +163,8 @@ const HomeInsurance = () => {
                 </div>
             </section>
 
-
+            <Banner />
+            <Footer />
 
         </div>
     )

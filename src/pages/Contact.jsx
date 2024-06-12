@@ -7,6 +7,8 @@ import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
 import PhoneInput, { formatPhoneNumber, formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const Contact = () => {
     const [value, setValue] = useState()
@@ -113,6 +115,9 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+
+            <Banner />
+            <Footer />
         </div>
     )
 }

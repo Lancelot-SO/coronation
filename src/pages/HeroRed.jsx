@@ -1,8 +1,8 @@
 import React from 'react'
-import herobg from "../assets/heroBg.png"
-import heroPrint from "../assets/heroPrint.png"
-import hero2 from "../assets/hero2.png"
-import hero3 from "../assets/hero3.png"
+import coporateRedBg from "../assets/home/corporateRedBg.png"
+import corporatePay from "../assets/home/corporatePay.png"
+import hero2 from "../assets/heroRed2.png"
+import hero3 from "../assets/heroRed3.png"
 import insight1 from "../assets/insight1.png"
 import insight2 from "../assets/insight2.png"
 import insight3 from "../assets/insight3.png"
@@ -21,14 +21,14 @@ const HeroRed = () => {
     return (
         <div>
             <div>
-                <img src={herobg} alt='hero' className='w-full h-[629px] relative object-cover' />
+                <img src={coporateRedBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-medium'>Coronation</h2>
                     <p className='w-[685px] h-[45px] text-[19px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
                         independence and enduring legacies that lead to sustainable wealth creation in Africa.</p>
                 </div>
                 <div className='absolute top-[281px] left-[1000px]'>
-                    <img src={heroPrint} alt='print' className='relative' />
+                    <img src={corporatePay} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>

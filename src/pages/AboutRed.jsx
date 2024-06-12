@@ -62,7 +62,7 @@ const AboutRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'>
                 </div>
             </div>
 

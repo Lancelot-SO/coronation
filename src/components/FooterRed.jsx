@@ -9,7 +9,7 @@ const FooterRed = () => {
             <div>
                 <div className='flex items-center justify-between'>
                     <h1 className='ml-[250px] text-2xl font-bold'>CORONATION</h1>
-                    <ul className='bg-secondary flex w-[885px] h-[89px] items-center text-[16px] pl-20 font-semibold gap-[50px]'>
+                    <ul className='bg-gradient-to-r from-red-600 to-orange-500 flex w-[885px] h-[89px] items-center text-[16px] pl-20 font-semibold gap-[50px]'>
                         <li>MAIN SERVICE</li>
                         <li className='ml-10 mr-4'>SELF SERVICE</li>
                         <li>INVESTOR

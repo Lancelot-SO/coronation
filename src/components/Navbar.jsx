@@ -11,12 +11,16 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+import { RiAccountCircleFill } from "react-icons/ri";
+
+
 import logo from "../assets/corologo.png";
 
 const Navbar = () => {
   const { isHovered, fromRight, setFromRight } = useContext(HoverContext);
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
+
 
   useEffect(() => {
     if (isLandingPage) {
@@ -91,29 +95,40 @@ const Navbar = () => {
                 <small>(00) 112 365 489</small>
               </div>
             </div>
+
+            {/* this is the icon */}
+            {/* this is the icon */}
+            {/* this is the icon */}
+
+            <nav>
+              <NavLink>
+                <RiAccountCircleFill size={30} />
+              </NavLink>
+            </nav>
+
           </div>
 
           <div
-            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50 ${isHovered === "left" ? "bg-primary text-customPurple" : "bg-secondary"
+            className={`navbar w-full h-[78px] flex items-center justify-center absolute top-[100px] z-50 ${isHovered === "left" ? "bg-customPurple text-customPurple" : "bg-secondary"
               } opacity-70`}
           >
             <div className="w-full h-full flex items-center justify-between px-[200px]">
               {/* left side */}
-              <ul className="flex justify-evenly text-white w-[700px]">
+              <ul className={`flex justify-evenly text-white w-[700px]`}>
                 <li className="p-1 flex">
-                  <NavLink to={fromRight ? "/aboutred" : "/about"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>ABOUT</NavLink>
+                  <NavLink to={fromRight ? "/aboutred" : "/about"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>ABOUT</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <NavLink to={fromRight ? "/productred" : "/products"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>PRODUCTS & SOLUTIONS</NavLink>
+                  <NavLink to={fromRight ? "/productred" : "/products"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>PRODUCTS & SOLUTIONS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <NavLink to={fromRight ? "/insightsred" : "/insights"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>INSIGHTS</NavLink>
+                  <NavLink to={fromRight ? "/insightsred" : "/insights"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>INSIGHTS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <NavLink to={fromRight ? "/careerred" : "/career"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>CAREERS</NavLink>
+                  <NavLink to={fromRight ? "/careerred" : "/career"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>CAREERS</NavLink>
                 </li>
                 <li className="p-1 flex">
-                  <NavLink to={fromRight ? "/contactred" : "/contact"} className={isLandingPage ? "pointer-events-none opacity-100" : ""}>CONTACT US</NavLink>
+                  <NavLink to={fromRight ? "/contactred" : "/contact"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>CONTACT US</NavLink>
                 </li>
               </ul>
 

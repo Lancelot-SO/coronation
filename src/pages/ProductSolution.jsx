@@ -10,6 +10,8 @@ import psInsurance from "../assets/psAssets/p&sInsurance.png"
 
 import { Link } from 'react-router-dom'
 import { FaFingerprint } from 'react-icons/fa'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const ProductSolution = () => {
   return (
@@ -115,6 +117,9 @@ const ProductSolution = () => {
           </div>
         </div>
       </section>
+
+      <Banner />
+      <Footer />
     </div>
   )
 }

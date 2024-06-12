@@ -35,7 +35,7 @@ const ProductSolutionRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@ const ProductSolutionRed = () => {
                             </div>
                         </Link>
 
-                        <Link to="/travel">
+                        <Link to="/engineer">
                             <div className='relative group'>
                                 <img src={insurance2} alt='insure' className='object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale' />
                                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
@@ -78,7 +78,7 @@ const ProductSolutionRed = () => {
                         </Link>
 
 
-                        <Link to="/home_insurance">
+                        <Link to="/marine_insurance">
                             <div className='relative group'>
                                 <img src={insurance3} alt='insure' className='object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale' />
                                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>

@@ -40,14 +40,14 @@ const InsightsRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'></div>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'></div>
             </div>
 
             <section>
                 <div className='w-full flex items-center justify-center mb-10'>
                     <div className='w-[1120px] h-[100px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4 tracking-[-1px]'>
-                            ALL OUR Articles
+                            ALL OUR ARTICLES
                         </h2>
                     </div>
                 </div>

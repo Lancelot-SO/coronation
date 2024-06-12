@@ -17,7 +17,7 @@ import IndividualModal from '../components/IndividualModal'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
-const TravelInsurance = () => {
+const MarineInsurance = () => {
 
     const [showPilgrimageModal, setShowPilgrimageModal] = useState(false);
     const [showStudentModal, setshowStudentModal] = useState(false);
@@ -45,23 +45,23 @@ const TravelInsurance = () => {
                             Want to know more about our services? Let's talk
                         </p>
                         <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
+                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'>
                 </div>
             </div>
 
             <section>
-                <div className='w-full flex items-center justify-center mb-10'>
+                <div className='w-full flex items-center justify-center mb-20'>
                     <div className='w-[1120px] h-[168px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4 tracking-[-1px]'>
-                            WHY CHOOSE CORONATION?
+                            MARINE INSURANCE THAT IS  FOR YOU
                         </h2>
                         <div className='w-[1111px] h-[63px]'>
                             <p className='font-light text-[24px] leading-[32px]'>
-                                No matter where you are in the world, you’ll enjoy the support and cover you need. There’s a reason we’re one of Africa’s most respected insurance companies.                            </p>
+                                It can cover damage to the vessel, liability for injuries or property damage, and even loss of personal belongings. Having marine insurance gives boat owners peace of mind knowing they are covered in case of unexpected events on the water..                            </p>
                         </div>
                     </div>
                 </div>
@@ -72,14 +72,16 @@ const TravelInsurance = () => {
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
                             <div className='mt-[100px] flex flex-col mr-[30px]'>
-                                <h2 className='h-[52px] w-[318px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
-                                    PILGRIMAGE
+                                <h2 className='h-[52px] w-[138px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
+                                    Marine
+                                    Cargo
                                 </h2>
-                                <p className='w-[450px] h-[154px] leading-[32px] text-[20px] font-light'>
-                                    Protection for individuals that travel outside their country of residence to a holy place. Typically, to a place of special significance to the adherence of a particular religious belief system                                </p>
+                                <p className='w-[450px] h-[84px] leading-[32px] text-[20px] font-light mt-14'>
+                                    Loss or damage to imported goods being conveyed by sea or air..
+                                </p>
 
                                 <div className=''>
-                                    <button type='button' onClick={() => setShowPilgrimageModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
+                                    <button type='button' onClick={() => setShowPilgrimageModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-secondary'>
                                         <span>Insurance Features</span>
                                         <FaLongArrowAltRight className='mt-[5px]' />
                                     </button>
@@ -94,7 +96,7 @@ const TravelInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -108,14 +110,14 @@ const TravelInsurance = () => {
                             <img src={travelComp1} alt='history' className='absolute w-[600px] h-[460px] object-cover top-[40px] left-[16%]' />
                         </div>
                         <div className='mt-[170px] flex flex-col ml-4'>
-                            <h2 className='w-[332px] h-[52px] text-[40px] leading-[52px] font-light tracking-[-1px] flex mb-4'>
-                                STUDENT
+                            <h2 className='w-[132px] h-[52px] text-[40px] leading-[52px] font-light tracking-[-1px] flex mb-4'>
+                                Marine
+                                hull
                             </h2>
-                            <p className='w-[430px] h-[184px] leading-[32px] text-[24px] ml-1 font-light'>
-                                This policy is designed to meet the needs of the insured who do not own their home (and therefore do not require building insurance) but still desire protection for their belongings.
-                            </p>
+                            <p className='w-[430px] h-[84px] leading-[32px] text-[24px] ml-1 font-light mt-10'>
+                                Loss or damage to vessels, yachts and their machinery.                            </p>
                             <div className=''>
-                                <button type='button' onClick={() => setshowStudentModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
+                                <button type='button' onClick={() => setshowStudentModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-secondary'>
                                     <span>Insurance Features</span>
                                     <FaLongArrowAltRight className='mt-[5px]' />
                                 </button>
@@ -124,7 +126,7 @@ const TravelInsurance = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -139,10 +141,11 @@ const TravelInsurance = () => {
                                     INDIVIDUALS
                                 </h2>
                                 <p className='w-[430px] h-[120px] leading-[32px] text-[20px] font-light'>
-                                    Protection for individuals traveling outside their country of residence; either alone or as a group for business, holiday etc.                                </p>
+                                    Protection for individuals traveling outside their country of residence; either alone or as a group for business, holiday etc.
+                                </p>
 
                                 <div className=''>
-                                    <button type='button' onClick={() => setshowIndividualModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
+                                    <button type='button' onClick={() => setshowIndividualModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-secondary'>
                                         <span>Insurance Features</span>
                                         <FaLongArrowAltRight className='mt-[5px]' />
                                     </button>
@@ -157,7 +160,7 @@ const TravelInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -171,10 +174,9 @@ const TravelInsurance = () => {
                                 BENEFITS
                             </h2>
                             <p className='w-[358px] h-[108px] leading-[36px] text-[20px] font-normal mb-6'>
-                                The product has been designed with a combination of Enhanced term life which gives you an additional benefit.
-                            </p>
+                                The product has been designed with a combination of Enhanced term life which gives you an additional  benefit.                            </p>
 
-                            <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+                            <Link to="/" className='w-[179px] h-[50px] bg-secondary text-white mt-4 flex items-center justify-center'>
                                 REQUEST & BUY
                             </Link>
                         </div>
@@ -207,4 +209,4 @@ const TravelInsurance = () => {
     )
 }
 
-export default TravelInsurance
+export default MarineInsurance

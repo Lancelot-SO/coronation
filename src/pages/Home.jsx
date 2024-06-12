@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import landInd from "../assets/landingInd.png";
 import landCop from "../assets/landingCop.png";
 import landingImg from "../assets/landingImg.png";
@@ -6,11 +6,40 @@ import { HoverContext } from "../contexts/HoverContext";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const { setIsHovered, setFromRight } = useContext(HoverContext); // Add setFromRight here
+  const { setIsHovered, setFromRight, setIsRightClicked, setIconColor } = useContext(HoverContext);
+  const [isLeftHovered, setIsLeftHovered] = useState(false);
+  const [isRightHovered, setIsRightHovered] = useState(false);
 
-  const handleClick = () => {
+  const handleLeftMouseEnter = () => {
+    setIsHovered("left");
+    setIsLeftHovered(true);
+  };
+
+  const handleLeftMouseLeave = () => {
+    setIsHovered("left");
+    setIsLeftHovered(false);
+  };
+
+  const handleRightMouseEnter = () => {
     setIsHovered("right");
-    setFromRight(true); // Set fromRight to true when clicking on the right side
+    setIsRightHovered(true);
+  };
+
+  const handleRightMouseLeave = () => {
+    setIsHovered("right");
+    setIsRightHovered(false);
+  };
+
+  const handleLeftClick = () => {
+    setFromRight(false);
+    setIsRightClicked(false); // Ensure the state is not in right clicked state
+    setIconColor('red');
+  };
+
+  const handleRightClick = () => {
+    setFromRight(true);
+    setIsRightClicked(true);
+    setIconColor('purple');
   };
 
   return (
@@ -19,8 +48,8 @@ const Home = () => {
         {/* left side */}
         <div
           className="relative w-full h-screen"
-          onMouseEnter={() => setIsHovered("left")}
-          onMouseLeave={() => setIsHovered("left")}
+          onMouseEnter={handleLeftMouseEnter}
+          onMouseLeave={handleLeftMouseLeave}
         >
           <img
             src={landInd}
@@ -28,13 +57,16 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
 
-          <div className="absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[200px] left-[50px] text-white z-40">
-            <h1 className="text-4xl font-semibold mb-4">INDIVIDUAL</h1>
-            <p className="mb-6 text-[24px] leading-[38px] text-left">
+          <div
+            className={`absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[240px] left-[50px] text-white z-40 transition-opacity duration-300 ${isLeftHovered ? "opacity-100" : "opacity-0"
+              }`}
+          >
+            <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INDIVIDUAL</h1>
+            <p className="mb-6 text-[24px] leading-[35px] text-left">
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
-            <Link to='/hero'>
+            <Link to='/hero' onClick={handleLeftClick}>
               <button className="bg-primary text-white font-bold py-2 px-4 rounded w-[212px]">
                 Enter
               </button>
@@ -47,22 +79,25 @@ const Home = () => {
         {/* right side */}
         <div
           className="relative w-full h-screen"
-          onMouseEnter={() => setIsHovered("right")}
-          onMouseLeave={() => setIsHovered("right")}
+          onMouseEnter={handleRightMouseEnter}
+          onMouseLeave={handleRightMouseLeave}
         >
           <img
             src={landCop}
             alt="corporate"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] right-[50px] text-white z-40">
-            <h1 className="text-4xl font-semibold mb-4">CORPORATE</h1>
-            <p className="mb-6 text-[24px] leading-[38px] text-right">
+          <div
+            className={`absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-0"
+              }`}
+          >
+            <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">CORPORATE</h1>
+            <p className="mb-6 text-[24px] leading-[35px] text-right">
               Invest and manage your money on your own terms. It's easier than
               ever before with Coronation Insurance.
             </p>
-            <Link to='/herored'>
-              <button onClick={handleClick} className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]"> {/* Update button onClick */}
+            <Link to='/herored' onClick={handleRightClick}>
+              <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
                 Enter
               </button>
             </Link>

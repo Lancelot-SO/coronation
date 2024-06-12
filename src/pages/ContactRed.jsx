@@ -7,6 +7,8 @@ import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
 import PhoneInput, { formatPhoneNumber, formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import FooterRed from '../components/FooterRed'
+import Banner from '../components/Banner'
 
 const ContactRed = () => {
     const [value, setValue] = useState()
@@ -32,7 +34,7 @@ const ContactRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'>
                 </div>
             </div>
 
@@ -105,7 +107,7 @@ const ContactRed = () => {
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-secondary border-gray-300 rounded" />
                                 <label for="privacy" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">You agree to our friendly <Link to="https://www.coronation.ng/privacy-and-cookie-policy/" target='_blank' rel='noopener noreferrer' className="text-secondary hover:underline">privacy policy</Link>.</label>
                             </div>
-                            <button type="submit" className="w-full py-2 px-4 bg-secondary text-white font-semibold rounded-md shadow-card hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:secondary">SEND MESSAGE</button>
+                            <button type="submit" className="w-full py-2 px-4 bg-gradient-to-r from-red-600 to-orange-500 text-white font-semibold rounded-md shadow-card hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:secondary">SEND MESSAGE</button>
                         </form>
                     </div>
                     <div class="w-full rounded-lg md:w-1/2 p-6">
@@ -113,6 +115,9 @@ const ContactRed = () => {
                     </div>
                 </div>
             </section>
+
+            <Banner />
+            <FooterRed />
         </div>
     )
 }

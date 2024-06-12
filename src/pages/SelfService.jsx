@@ -12,8 +12,8 @@ import serviceImage1 from "../assets/service/serviceImage1.png"
 import serviceImage2 from "../assets/service/serviceImage2.png"
 import bg from "../assets/bg.png"
 
-
-
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 
 import { Link } from 'react-router-dom'
@@ -189,6 +189,9 @@ const SelfService = () => {
                 </div>
 
             </section>
+
+            <Banner />
+            <Footer />
 
         </div>
     )

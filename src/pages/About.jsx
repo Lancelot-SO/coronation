@@ -22,6 +22,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 import client1 from "../assets/client1.png"
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const About = () => {
     const responsive = {
@@ -292,7 +294,8 @@ const About = () => {
                 </div>
             </section>
 
-
+            <Banner />
+            <Footer />
 
         </div>
 

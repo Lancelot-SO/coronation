@@ -21,6 +21,8 @@ import CareerRed from './pages/CareerRed';
 import ContactRed from './pages/ContactRed';
 import SelfServiceRed from './pages/SelfServiceRed';
 import MotorInsuranceRed from './pages/MotorInsuranceRed';
+import MarineInsurance from './pages/MarineInsurance';
+import EngineerInsurance from './pages/EngineerInsurance';
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
           <Route path='/motor' element={<MotorInsurance />} />
           <Route path='/motorred' element={<MotorInsuranceRed />} />
           <Route path='/travel' element={<TravelInsurance />} />
+          <Route path='/engineer' element={<EngineerInsurance />} />
+          <Route path='/marine_insurance' element={<MarineInsurance />} />
           <Route path='/career' element={<Career />} />
           <Route path='/careerred' element={<CareerRed />} />
           <Route path='/contact' element={<Contact />} />
