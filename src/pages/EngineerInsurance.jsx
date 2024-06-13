@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom'
 
 import engineerBg from "../assets/engineer/engineerBg.png"
 import engineerPay from "../assets/engineer/engineerPay.png"
-import motorCompRed from "../assets/motor/motorcompRed.png"
-import motorCompRed1 from "../assets/motor/motorCompRed1.png"
-import motorCompRed2 from "../assets/motor/motorCompRed2.png"
-import motorComp3 from "../assets/motor/motorComp3.png"
+import motorCompRed from "../assets/engineer/engineer1.png"
+import motorCompRed1 from "../assets/engineer/engineer2.png"
+import motorComp3 from "../assets/engineer/engineer3.png"
+import motorCompRed4 from "../assets/engineer/engineer4.png"
+import motorCompRed5 from "../assets/engineer/engineer5.png"
+
+import motorComp5 from "../assets/motor/motorComp3.png"
+
 
 
 
@@ -178,7 +182,7 @@ const EngineerInsurance = () => {
                             </div>
                             <div className='relative flex items-center'>
                                 <div className='bg-black w-[871px] h-[286px]'></div>
-                                <img src={motorCompRed2} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] right-[20%]' />
+                                <img src={motorComp3} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] right-[20%]' />
                             </div>
 
                         </div>
@@ -194,7 +198,7 @@ const EngineerInsurance = () => {
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
-                            <img src={motorCompRed1} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] left-[16%]' />
+                            <img src={motorCompRed4} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] left-[16%]' />
                         </div>
                         <div className='mt-[70px] flex flex-col ml-4'>
                             <h2 className='w-[132px] h-[104px] text-[40px] leading-[52px] font-light tracking-[-1px] flex mb-4'>Erection
@@ -260,7 +264,7 @@ const EngineerInsurance = () => {
                             </div>
                             <div className='relative flex items-center'>
                                 <div className='bg-black w-[871px] h-[286px]'></div>
-                                <img src={motorCompRed2} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] right-[20%]' />
+                                <img src={motorCompRed5} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] right-[20%]' />
                             </div>
 
                         </div>
@@ -287,7 +291,7 @@ const EngineerInsurance = () => {
                             </Link>
                         </div>
                         <div className='relative ml-[150px]'>
-                            <img src={motorComp3} alt='ban' className='w-full h-auto' />
+                            <img src={motorComp5} alt='ban' className='w-full h-auto' />
                             <div className='absolute top-[160px] left-[-40px] w-full h-full flex gap-4 justify-center items-center p-4'>
                                 <div className='w-[350px] h-[350px] bg-black text-white p-4 rounded'>
                                     <h4 className='w-[233px] h-[17px] font-bold text-[12px] leading-[17px] mb-6'>COMPREHENSIVE INSURANCE</h4>

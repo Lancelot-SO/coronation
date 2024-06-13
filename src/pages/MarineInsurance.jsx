@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import travelBg from "../assets/travel/travelBg.png"
-import travelPay from "../assets/travel/travelPay.png"
-import travelComp from "../assets/travel/travelComp.png"
-import travelComp1 from "../assets/travel/travelComp1.png"
-import travelComp2 from "../assets/travel/travelComp2.png"
+import marineBg from "../assets/travel/marineBg.png"
+import marinePay from "../assets/travel/marinePay.png"
+import travelComp from "../assets/travel/marine1.png"
+import travelComp1 from "../assets/travel/marine2.png"
 import motorComp3 from "../assets/motor/motorComp3.png"
 
 
@@ -13,7 +12,6 @@ import motorComp3 from "../assets/motor/motorComp3.png"
 import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
 import PilgrimageModal from '../components/PilgrimageModal'
 import StudentModal from '../components/StudentModal'
-import IndividualModal from '../components/IndividualModal'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
@@ -21,7 +19,6 @@ const MarineInsurance = () => {
 
     const [showPilgrimageModal, setShowPilgrimageModal] = useState(false);
     const [showStudentModal, setshowStudentModal] = useState(false);
-    const [showIndividualModal, setshowIndividualModal] = useState(false);
 
 
 
@@ -29,7 +26,7 @@ const MarineInsurance = () => {
     return (
         <div>
             <div className='relative'>
-                <img src={travelBg} alt='hero' className='w-full h-[629px] relative object-cover' />
+                <img src={marineBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[163px] bg-[rgba(0,0,0,0.7)] p-6'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance.</h2>
@@ -38,7 +35,7 @@ const MarineInsurance = () => {
                     </p>
                 </div>
                 <div className='absolute top-[181px] left-[1000px]'>
-                    <img src={travelPay} alt='print' className='relative' />
+                    <img src={marinePay} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
@@ -132,39 +129,6 @@ const MarineInsurance = () => {
                 </div>
             </section>
 
-            <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
-                    <div className=' flex items-end justify-end'>
-                        <div className='w-[1350px] h-[552px] flex relative'>
-                            <div className='mt-[130px] flex flex-col mr-[30px]'>
-                                <h2 className='h-[52px] w-[237px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
-                                    INDIVIDUALS
-                                </h2>
-                                <p className='w-[430px] h-[120px] leading-[32px] text-[20px] font-light'>
-                                    Protection for individuals traveling outside their country of residence; either alone or as a group for business, holiday etc.
-                                </p>
-
-                                <div className=''>
-                                    <button type='button' onClick={() => setshowIndividualModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-secondary'>
-                                        <span>Insurance Features</span>
-                                        <FaLongArrowAltRight className='mt-[5px]' />
-                                    </button>
-                                    {showIndividualModal && <IndividualModal onClose={() => setshowIndividualModal(false)} />}
-
-                                </div>
-                            </div>
-                            <div className='relative flex items-center'>
-                                <div className='bg-black w-[871px] h-[286px]'></div>
-                                <img src={travelComp2} alt='history' className='absolute w-[600px] h-[460px] object-cover top-[40px] right-[20%]' />
-                            </div>
-
-                        </div>
-                    </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
-                        Request & Pay
-                    </Link>
-                </div>
-            </section>
 
             <section>
                 <div className='bg-[#F1F5F9] flex items-center justify-center h-screen'>

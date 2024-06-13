@@ -2,10 +2,10 @@ import React from 'react'
 import psBg from "../assets/psAssets/p&sBg.png"
 import psInAcc from "../assets/psAssets/p&sInAcc.png"
 import insurance1 from "../assets/psAssets/insurance1.png"
-import insurance2 from "../assets/psAssets/insurance2.png"
-import insurance3 from "../assets/psAssets/insurance3.png"
+import insurance2 from "../assets/engineer/engineeringMain.png"
+import insurance3 from "../assets/psAssets/marineMain.png"
 
-import psInsurance from "../assets/psAssets/p&sInsurance.png"
+import psInsurance from "../assets/psAssets/psRed.png"
 
 
 import { Link } from 'react-router-dom'
