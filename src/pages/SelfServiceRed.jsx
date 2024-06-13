@@ -43,7 +43,7 @@ const SelfServiceRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0 3xl:top-[722px]'>
                 </div>
             </div>
 

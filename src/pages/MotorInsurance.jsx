@@ -105,7 +105,7 @@ const MotorInsurance = () => {
                             <div className='bg-black w-[840px] h-[286px]'></div>
                             <img src={motorComp1} alt='history' className='absolute w-[600px] h-[391px] object-cover top-[80px] left-[16%]' />
                         </div>
-                        <div className='mt-[70px] flex flex-col ml-4'>
+                        <div className='mt-[70px] flex flex-col ml-4 3xl:ml-11'>
                             <h2 className='w-[332px] h-[104px] text-[40px] leading-[52px] font-light tracking-[-1px] flex mb-4'>THIRD PARTY FIRE
                                 & THEFT
                             </h2>
@@ -164,7 +164,7 @@ const MotorInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] flex items-center justify-center h-screen'>
+                <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] justify-center h-screen'>
                     <div className='relative flex w-[1200px] h-[626px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>

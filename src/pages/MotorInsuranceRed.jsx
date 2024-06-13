@@ -164,7 +164,7 @@ const MotorInsuranceRed = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] flex items-center justify-center h-screen'>
+                <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] justify-center h-screen'>
                     <div className='relative flex w-[1200px] h-[626px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>

@@ -18,12 +18,13 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 import client1 from "../assets/client1.png"
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
+import { slider } from '../data'
 
 const About = () => {
     const responsive = {
@@ -63,7 +64,7 @@ const About = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px]'>
                 </div>
             </div>
 
@@ -149,11 +150,11 @@ const About = () => {
                                 <img src={board} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Frank Beecham</p>
@@ -175,12 +176,12 @@ const About = () => {
                                 <img src={board1} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaLinkedin size={24} />
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Plusegun Ogbonnewo</p>
@@ -200,11 +201,11 @@ const About = () => {
                                 <img src={board2} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal pr-4'>Miss. Peggy Onwu</p>
@@ -223,11 +224,11 @@ const About = () => {
                                 <img src={board3} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal'>Mr. Richard Osei - Anim</p>
@@ -248,11 +249,11 @@ const About = () => {
                                 <img src={board4} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal'>Dr. Yaw Adom - Boateng</p>
@@ -260,13 +261,13 @@ const About = () => {
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
-                                            Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
+                                            Dr. Adom-Boateng is a Fellow of the Chartered Insurance Institute of Ghana (FCIIG) and the Chartered Insurance Institute of UK (FCII-UK). He is a seasoned insurance professional with over 22 years of experience in the insurance industry.
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
 
@@ -285,11 +286,11 @@ const About = () => {
                             containerClass='carousel-container'
                             itemClass='carousel-item-padding-40-px'
                         >
-                            <div className='flex items-center justify-center h-full'><Slider /></div>
-                            <div className='flex items-center justify-center h-full'><Slider /></div>
-                            <div className='flex items-center justify-center h-full'><Slider /></div>
-                            <div className='flex items-center justify-center h-full'><Slider /></div>
-
+                            {slider.map((item) => (
+                                <div key={item.id} className='flex items-center justify-center h-full'>
+                                    <Slider item={item} />
+                                </div>
+                            ))}
                         </Carousel>
                     </div>
                 </div>

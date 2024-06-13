@@ -17,13 +17,14 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 import client1 from "../assets/client1.png"
 import Banner from '../components/Banner'
 import FooterRed from '../components/FooterRed'
-import SliderRed from '../components/SliderRed'
+import { slider } from '../data'
+import Slider from '../components/Slider'
 
 const AboutRed = () => {
     const responsive = {
@@ -62,7 +63,7 @@ const AboutRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px]'>
                 </div>
             </div>
 
@@ -74,7 +75,6 @@ const AboutRed = () => {
                         <img src={client1} alt='clients' />
                         <img src={client1} alt='clients' />
                         <img src={client1} alt='clients' />
-
                     </div>
                 </div>
             </section>
@@ -119,7 +119,7 @@ const AboutRed = () => {
                 </div>
             </section>
 
-            <section className='my-[120px]'>
+            <section className='my-[120px] 3xl:ml-[50px]'>
                 <div className='relative'>
                     <img src={bg} alt='bg' className='absolute w-[1120px] h-[177px]  top-0 left-[190px] object-cover' />
                     <div className='relative z-10 flex flex-row ml-[300px]'>
@@ -148,11 +148,11 @@ const AboutRed = () => {
                                 <img src={board} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Frank Beecham</p>
@@ -174,12 +174,12 @@ const AboutRed = () => {
                                 <img src={board1} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaLinkedin size={24} />
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Plusegun Ogbonnewo</p>
@@ -199,11 +199,11 @@ const AboutRed = () => {
                                 <img src={board2} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                { /*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal pr-4'>Miss. Peggy Onwu</p>
@@ -222,11 +222,11 @@ const AboutRed = () => {
                                 <img src={board3} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal'>Mr. Richard Osei - Anim</p>
@@ -247,11 +247,11 @@ const AboutRed = () => {
                                 <img src={board4} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
-                                <div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
                                     <FaTwitter size={24} />
                                     <FaFacebook size={24} />
                                     <FaInstagram size={24} />
-                                </div>
+                                </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
                                         <p className='text-[17px] leading-[22px] font-normal'>Dr. Yaw Adom - Boateng</p>
@@ -284,11 +284,11 @@ const AboutRed = () => {
                             containerClass='carousel-container'
                             itemClass='carousel-item-padding-40-px'
                         >
-                            <div className='flex items-center justify-center h-full'><SliderRed /></div>
-                            <div className='flex items-center justify-center h-full'><SliderRed /></div>
-                            <div className='flex items-center justify-center h-full'><SliderRed /></div>
-                            <div className='flex items-center justify-center h-full'><SliderRed /></div>
-
+                            {slider.map((item) => (
+                                <div key={item.id} className='flex items-center justify-center h-full'>
+                                    <Slider item={item} />
+                                </div>
+                            ))}
                         </Carousel>
                     </div>
                 </div>

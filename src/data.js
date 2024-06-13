@@ -1,6 +1,8 @@
 import Insight4 from "./assets/insight/insight4.png"
 import Insight2 from "./assets/insight2.png"
 
+import SliderImg from "./assets/slider.png"
+
 import CoreLifeImage from "./assets/career/coreCareerlife.png"
 
 export const projectsNav = [
@@ -121,4 +123,46 @@ export const careerData = [
         category: 'LIFE AT CORONATION',
         link: "/career"
     }
+]
+
+
+export const slider = [
+    {
+        id: "1",
+        name: "Douglas Koomson",
+        image: SliderImg,
+        text: "Great customer service experience",
+        title: "",
+    },
+    {
+        id: "2",
+        name: "Jaideep Puthran",
+        image: SliderImg,
+        text: "Excellent Service Delivery",
+    },
+    {
+        id: "3",
+        name: "Georgetta kumi",
+        image: SliderImg,
+        text: "Prompt response appreciated.",
+        title: "VAV Commodities GH LTD",
+    },
+    {
+        id: "4",
+        name: "Gpuma Ghana LTD",
+        image: SliderImg,
+        text: "Your service is exceptional and we will always recommend Coronation insurance to our clients.",
+    },
+    {
+        id: "5",
+        name: "Joseph Obeng",
+        image: SliderImg,
+        text: "I initially had doubts before joining your company. But This experience i had with you, I must admit that i am more than satisfied with the speed at which you worked on my claims. The delivery has really convinced me i never made a mistake.",
+    },
+    {
+        id: "6",
+        name: "Giant Traders",
+        image: SliderImg,
+        text: "We have had a fantastic experience with your company over the past years. Your customer service is exceptional. Always responsive and helpful, particularly claims process which was smooth and transparent.",
+    },
 ]

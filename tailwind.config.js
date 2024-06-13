@@ -32,6 +32,7 @@ module.exports = {
         'xl': '1280px',
         'large': '1343px',
         '2xl': '1536px',
+        '3xl': '1728px',
       },
     },
   },
