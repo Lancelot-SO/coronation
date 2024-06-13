@@ -11,16 +11,12 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import { RiAccountCircleFill } from "react-icons/ri";
-
-
 import logo from "../assets/corologo.png";
 
 const Navbar = () => {
   const { isHovered, fromRight, setFromRight } = useContext(HoverContext);
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
-
 
   useEffect(() => {
     if (isLandingPage) {
@@ -32,9 +28,7 @@ const Navbar = () => {
     <div>
       <nav className="w-full">
         <div
-          className={`flex justify-between w-full h-[100px] text-white items-center ${isHovered === "left"
-            ? "text-primary bg-black"
-            : "text-secondary bg-black"
+          className={`flex justify-between w-full h-[100px] text-white items-center ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
             }`}
         >
           <Link to="/">
@@ -46,15 +40,10 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-4">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left"
-                  ? "border-customPurple"
-                  : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
-                <CiClock2
-                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                    }`}
-                />
+                <CiClock2 className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
               <div className="flex flex-col text-white">
                 <small>Mon - Fri 8:00 - 5:00</small>
@@ -63,15 +52,10 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-6">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left"
-                  ? "border-customPurple"
-                  : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
-                <TfiEmail
-                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                    }`}
-                />
+                <TfiEmail className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
               <div className="flex flex-col text-white">
                 <small>Email</small>
@@ -80,32 +64,16 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-6">
               <div
-                className={`rounded-full border border-1 ${isHovered === "left"
-                  ? "border-customPurple"
-                  : "border-secondary"
+                className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
                   } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
               >
-                <FaPhoneAlt
-                  className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"
-                    }`}
-                />
+                <FaPhoneAlt className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
               <div className="flex flex-col text-white">
                 <small>Call us</small>
                 <small>(00) 112 365 489</small>
               </div>
             </div>
-
-            {/* this is the icon */}
-            {/* this is the icon */}
-            {/* this is the icon */}
-
-            <nav>
-              <NavLink>
-                <RiAccountCircleFill size={30} />
-              </NavLink>
-            </nav>
-
           </div>
 
           <div
@@ -113,7 +81,6 @@ const Navbar = () => {
               } opacity-70`}
           >
             <div className="w-full h-full flex items-center justify-between px-[200px]">
-              {/* left side */}
               <ul className={`flex justify-evenly text-white w-[700px]`}>
                 <li className="p-1 flex">
                   <NavLink to={fromRight ? "/aboutred" : "/about"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>ABOUT</NavLink>
@@ -132,7 +99,6 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              {/* right side */}
               <ul className="flex gap-4 text-white items-center">
                 <li>
                   <a href="https://www.instagram.com/coronationng/" target="_blank" rel="noopener noreferrer" className="opacity-100">

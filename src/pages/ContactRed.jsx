@@ -19,7 +19,7 @@ const ContactRed = () => {
                 <img src={contactBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>CONTACT US</h2>
-                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         We would love to hear from you. Let’s know more about you by filling in your details below to help match you with the right member of our team
 
                     </p>

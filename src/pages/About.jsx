@@ -49,7 +49,8 @@ const About = () => {
                 <img src={aboutbg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[236px] bg-[rgba(0,0,0,0.8)] p-10'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>About Us</h2>
-                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light opacity-50'>We are a leading Ghanaian insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance, etc.
+                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
+                        We are a leading Ghanaian insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance, etc.
                     </p>
                 </div>
                 <div className='absolute top-[281px] left-[1000px]'>
@@ -127,7 +128,7 @@ const About = () => {
                             <h2 className='text-white w-[480px] h-[43px] text-[36px] leading-[43px] font-light mb-4'>We are affiliated to the Group</h2>
                             <p className='text-white opacity-50 w-[332px] h-[28px] text-[16px] leading-[19px] font-light'>We are affiliated to our mother company in Nigeria</p>
                         </div>
-                        <Link className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white' to="/contact">Contact us</Link>
+                        <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
                     </div>
                 </div>
 

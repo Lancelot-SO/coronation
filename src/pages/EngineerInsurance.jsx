@@ -35,7 +35,7 @@ const EngineerInsurance = () => {
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[202px] bg-[rgba(0,0,0,0.7)] p-4'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Engineering Insurance.</h2>
-                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         This is a product that covers the risk of accidental, physical loss or damage in respect to contract works, during the execution of a civil project. It also covers legal liability falling on the insured's contractor as a result of bodily injury or property damage belonging to a third party. It also covers“All risks” of theft, loss or accidental damage to property insured subject to terms, exceptions and conditions of the policy..
                     </p>
                 </div>
@@ -46,7 +46,7 @@ const EngineerInsurance = () => {
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
                             Want to know more about our services? Let's talk
                         </p>
-                        <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer">
                             <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
                         </Link>
                     </div>

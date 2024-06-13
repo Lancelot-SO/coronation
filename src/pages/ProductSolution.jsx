@@ -21,7 +21,7 @@ const ProductSolution = () => {
         <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
         <div className='absolute top-[303px] left-[160px] w-[745px] h-[165px] bg-[rgba(0,0,0,0.8)] p-10'>
           <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Individual Insurance</h2>
-          <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light opacity-50'>Coronation Insurance offers comprehensive insurance for your car, home,
+          <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>Coronation Insurance offers comprehensive insurance for your car, home,
             business and life - with only one telephone call. Find out more & get a quote..
           </p>
         </div>
@@ -30,7 +30,7 @@ const ProductSolution = () => {
           <div className='absolute top-[180px] items-center justify-center'>
             <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
             <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-            <Link to="/contact">
+            <Link to="https://ecoronation.com/index" target='_blank' rel='noopener noreferrer'>
               <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Individual Account <FaFingerprint /></button>
             </Link>
           </div>
@@ -105,7 +105,7 @@ const ProductSolution = () => {
                 No one should have to wait more than 48 hours for their claims to be paid. That’s why we do it in less.
               </p>
 
-              <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+              <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
                 MAKE A CLAIM
               </Link>
             </div>

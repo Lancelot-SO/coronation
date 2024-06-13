@@ -31,7 +31,7 @@ const MotorInsurance = () => {
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[202px] bg-[rgba(0,0,0,0.7)] p-6'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Motor Insurance.</h2>
-                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         This is an insurance product that pays for damages to your vehicle (private or commercial) as a result of theft, accident or fire. It also covers third-party injury and death, property damage and legal cost. It comes in 3 variants namely Third Party, Third Party, Fire and theft & Comprehensive.
                     </p>
                 </div>

@@ -128,7 +128,7 @@ const Hero = () => {
                             <h2 className='text-white w-[480px] h-[43px] text-[36px] leading-[43px] font-light mb-4'>We are affiliated to the Group</h2>
                             <p className='text-white opacity-50 w-[332px] h-[28px] text-[16px] leading-[19px] font-light'>We are affiliated to our mother company in Nigeria</p>
                         </div>
-                        <Link className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white' to="/contact">Contact us</Link>
+                        <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
                     </div>
                 </div>
 

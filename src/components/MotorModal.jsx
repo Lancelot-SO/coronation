@@ -7,7 +7,7 @@ const MotorModal = ({ onClose }) => {
             <div className="call__modal-content">
                 <div className="relative flex flex-col items-center justify-center main__shadow w-screen h-auto p-4">
                     <img src={modalbg} alt="modal" className="absolute top-0 object-cover" />
-                    <ul className="relative z-10 top-[100px] shadow p-2 bg-gray-800 bg-opacity-75 rounded-2xl space-y-1 text-black">
+                    <ul className="relative z-10 top-[100px] bg-white p-2 rounded-2xl space-y-1 text-black">
                         <button onClick={onClose} className="absolute top-4 right-4 text-black" aria-label="Close">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

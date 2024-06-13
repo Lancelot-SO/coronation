@@ -33,7 +33,7 @@ const TravelInsurance = () => {
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[163px] bg-[rgba(0,0,0,0.7)] p-6'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance.</h2>
-                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         Travel insurance covers risks associated with travelling out of your country of residence on a temporary basis.
                     </p>
                 </div>

@@ -31,7 +31,7 @@ const MotorInsuranceRed = () => {
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[202px] bg-[rgba(0,0,0,0.7)] p-6'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Motor Insurance.</h2>
-                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         This is an insurance product that pays for damages to your vehicle (private or commercial) as a result of theft, accident or fire. It also covers third-party injury and death, property damage and legal cost. It comes in 3 variants namely Third Party, Third Party, Fire and theft & Comprehensive		.                    </p>
                 </div>
                 <div className='absolute top-[181px] left-[1000px]'>
@@ -92,7 +92,7 @@ const MotorInsuranceRed = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -123,7 +123,7 @@ const MotorInsuranceRed = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -157,7 +157,7 @@ const MotorInsuranceRed = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>

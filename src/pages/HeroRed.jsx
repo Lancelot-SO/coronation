@@ -45,7 +45,7 @@ const HeroRed = () => {
                     <img src={hero2} alt='hero2' className='w-[666px] h-[531px] mt-[100px] ml-[280px]' />
                     <div className='w-[420px] h-[420px] bg-black absolute top-[55px] px-[40px] right-[300px] text-white flex flex-col items-center justify-center'>
                         <h1 className="w-[329px] h-[90px] text-[37px] leading-[45px] font-light mb-[20px]">Products & Services
-                            for the individual</h1>
+                            for corporate</h1>
                         <p className='w-[328px] h-[120px] text-[16px] leading-[25px] font-normal mb-6 p-[10px]'>Our products and services provide self-sufficiency, financial independence,
                             creation and preservation of wealth for the future.</p>
                         <Link to="/productred"><button className='w-[300px] h-[42px] bg-white text-secondary'>VIEW MORE</button></Link>
@@ -127,7 +127,7 @@ const HeroRed = () => {
                             <h2 className='text-white w-[480px] h-[43px] text-[36px] leading-[43px] font-light mb-4'>We are affiliated to the Group</h2>
                             <p className='text-white opacity-50 w-[332px] h-[28px] text-[16px] leading-[19px] font-light'>We are affiliated to our mother company in Nigeria</p>
                         </div>
-                        <Link className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white' to="/contactred">Contact us</Link>
+                        <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
                     </div>
                 </div>
 

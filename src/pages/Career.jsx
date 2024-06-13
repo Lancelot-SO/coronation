@@ -15,7 +15,7 @@ const Career = () => {
                 <img src={careerBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[197px] bg-[rgba(0,0,0,0.8)] p-4'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Careers at Coronation</h2>
-                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light opacity-50'>
+                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         Taking you where you want to go. We are always on the lookout for best-in-class talent who enjoy a challenge. In exchange, we provide an environment that fosters the actualization of goals, and career fulfillment for our people while providing transformational solutions for Africa’s challenges.                    </p>
                 </div>
                 <div className='absolute top-[281px] left-[1000px]'>

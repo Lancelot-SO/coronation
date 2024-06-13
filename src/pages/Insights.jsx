@@ -12,7 +12,7 @@ const Insights = () => {
             <div className='relative w-full h-[629px] bg-black'>
                 <div className='absolute top-[243px] left-[160px] w-[560px] h-[263px]'>
                     <h2 className='mb-4 text-[35px] leading-[42px] text-white font-normal w-[452px] h-[84px]'>We guarantee the future of the things you care about!</h2>
-                    <p className='w-[390px] h-[57px] text-[16px] leading-[19px] text-white font-normal opacity-50'>
+                    <p className='w-[390px] h-[57px] text-[16px] leading-[19px] text-white font-normal'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 

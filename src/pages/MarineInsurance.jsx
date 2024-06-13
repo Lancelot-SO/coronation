@@ -29,9 +29,9 @@ const MarineInsurance = () => {
                 <img src={marineBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[163px] bg-[rgba(0,0,0,0.7)] p-6'>
-                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance.</h2>
-                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light opacity-50'>
-                        Travel insurance covers risks associated with travelling out of your country of residence on a temporary basis.
+                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Marine Insurance.</h2>
+                    <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
+                        Marine insurance covers risks associated with travelling out of your country of residence on a temporary basis.
                     </p>
                 </div>
                 <div className='absolute top-[181px] left-[1000px]'>
@@ -41,7 +41,7 @@ const MarineInsurance = () => {
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
                             Want to know more about our services? Let's talk
                         </p>
-                        <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://ecoronation.com/marine" target="_blank" rel="noopener noreferrer">
                             <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
                         </Link>
                     </div>
@@ -93,7 +93,7 @@ const MarineInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/marine" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -123,7 +123,7 @@ const MarineInsurance = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/marine" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-secondary text-white w-[222px] h-[44px]'>
                         Request & Pay
                     </Link>
                 </div>
@@ -140,7 +140,7 @@ const MarineInsurance = () => {
                             <p className='w-[358px] h-[108px] leading-[36px] text-[20px] font-normal mb-6'>
                                 The product has been designed with a combination of Enhanced term life which gives you an additional  benefit.                            </p>
 
-                            <Link to="/" className='w-[179px] h-[50px] bg-secondary text-white mt-4 flex items-center justify-center'>
+                            <Link to="https://ecoronation.com/marine" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-secondary text-white mt-4 flex items-center justify-center'>
                                 REQUEST & BUY
                             </Link>
                         </div>

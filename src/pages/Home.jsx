@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import landInd from "../assets/landingInd.png";
-import landCop from "../assets/landingCop.png";
+import landCop from "../assets/rightside.png";
 import landingImg from "../assets/landingImg.png";
 import { HoverContext } from "../contexts/HoverContext";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const { setIsHovered, setFromRight, setIsRightClicked, setIconColor } = useContext(HoverContext);
+  const { setIsHovered, setFromRight, setIsRightClicked } = useContext(HoverContext);
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
 
@@ -32,20 +32,17 @@ const Home = () => {
 
   const handleLeftClick = () => {
     setFromRight(false);
-    setIsRightClicked(false); // Ensure the state is not in right clicked state
-    setIconColor('red');
+    setIsRightClicked(false);
   };
 
   const handleRightClick = () => {
     setFromRight(true);
     setIsRightClicked(true);
-    setIconColor('purple');
   };
 
   return (
     <div>
       <div className="relative flex">
-        {/* left side */}
         <div
           className="relative w-full h-screen"
           onMouseEnter={handleLeftMouseEnter}
@@ -76,7 +73,6 @@ const Home = () => {
           <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-1"></div>
         </div>
 
-        {/* right side */}
         <div
           className="relative w-full h-screen"
           onMouseEnter={handleRightMouseEnter}
