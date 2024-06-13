@@ -28,7 +28,7 @@ const Career = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px]'>
+                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
                 </div>
             </div>
 

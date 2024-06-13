@@ -98,7 +98,7 @@ const ProductSolution = () => {
       <section>
         <div className='bg-[#F1F5F9] w-full h-[794px] flex items-center justify-end'>
           <div className='w-[1350px] h-[552px] flex relative'>
-            <div className='mt-[120px] flex flex-col 3xl:ml-[-30px]'>
+            <div className='mt-[120px] flex flex-col 3xl:ml-[-30px] large:ml-[40px]'>
               <h2 className='h-[116px] w-[362] text-[35px] leading-[52px] font-light tracking-[-1px] mt-4'>Get INSURANCE FORM
                 CORONATION TODAY.</h2>
               <p className='w-[415px] h-[96px] leading-[32px] text-[20px] font-light'>

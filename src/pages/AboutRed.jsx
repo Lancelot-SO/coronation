@@ -63,7 +63,7 @@ const AboutRed = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px]'>
+                <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@ const AboutRed = () => {
                 </div>
             </section>
 
-            <section className='my-[120px] 3xl:ml-[50px]'>
+            <section className='my-[120px] 3xl:ml-[50px] large:ml-[-70px]'>
                 <div className='relative'>
                     <img src={bg} alt='bg' className='absolute w-[1120px] h-[177px]  top-0 left-[190px] object-cover' />
                     <div className='relative z-10 flex flex-row ml-[300px]'>

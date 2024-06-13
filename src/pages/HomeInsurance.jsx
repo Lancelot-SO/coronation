@@ -69,7 +69,7 @@ const HomeInsurance = () => {
                 <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
-                            <div className='mt-[100px] flex flex-col mr-[30px]'>
+                            <div className='mt-[100px] flex flex-col mr-[30px] large:ml-[20px]'>
                                 <h2 className='h-[52px] w-[318px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4 mb-4'>
                                     HOMEOWNERS
                                 </h2>
@@ -129,7 +129,7 @@ const HomeInsurance = () => {
 
 
             <section>
-                <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] justify-center h-screen'>
+                <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] large:h-[600px] justify-center h-screen'>
                     <div className='relative flex w-[1200px] h-[626px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>

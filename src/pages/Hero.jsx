@@ -38,13 +38,13 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px]'>
+                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
             <section>
                 <div className='relative'>
-                    <img src={hero2} alt='hero2' className='w-[666px] h-[531px] mt-[100px] ml-[280px] 3xl:ml-[370px]' />
-                    <div className='w-[420px] h-[420px] bg-black absolute top-[55px] px-[40px] right-[300px] 3xl:right-[350px] text-white flex flex-col items-center justify-center'>
+                    <img src={hero2} alt='hero2' className='w-[666px] h-[531px] mt-[100px] ml-[280px] 3xl:ml-[370px] large:ml-[222px]' />
+                    <div className='w-[420px] h-[420px] bg-black absolute top-[55px] px-[40px] right-[300px] 3xl:right-[350px] large:right-[150px] text-white flex flex-col items-center justify-center'>
                         <h1 className="w-[329px] h-[90px] text-[37px] leading-[45px] font-light mb-[20px]">Products & Services
                             for the individual</h1>
                         <p className='w-[328px] h-[120px] text-[16px] leading-[25px] font-normal mb-6 p-[10px]'>Our products and services provide self-sufficiency, financial independence,
