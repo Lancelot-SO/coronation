@@ -23,6 +23,8 @@ import SelfServiceRed from './pages/SelfServiceRed';
 import MotorInsuranceRed from './pages/MotorInsuranceRed';
 import MarineInsurance from './pages/MarineInsurance';
 import EngineerInsurance from './pages/EngineerInsurance';
+import SecondInsightDetail from './insightDetails/SecondInsightDetail';
+import ThirdInsightDetail from './insightDetails/ThirdInsightDetail';
 
 
 function App() {
@@ -54,6 +56,9 @@ function App() {
           <Route path='/selfservicered' element={<SelfServiceRed />} />
           <Route path='/home_insurance' element={<HomeInsurance />} />
           <Route path='/first_insight' element={<FirstInsightDetail />} />
+          <Route path='/second_insight' element={<SecondInsightDetail />} />
+          <Route path='/third_insight' element={<ThirdInsightDetail />} />
+
         </Routes>
       </BrowserRouter>
     </div>

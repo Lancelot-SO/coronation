@@ -2,6 +2,11 @@ import Insight4 from "./assets/insight/insight4.png"
 import Insight2 from "./assets/insight2.png"
 
 import SliderImg from "./assets/slider.png"
+import Slider6 from "./assets/slider6.png"
+import Slider5 from "./assets/Slider5.png"
+import Slider4 from "./assets/Slider4.png"
+
+
 
 import CoreLifeImage from "./assets/career/coreCareerlife.png"
 
@@ -22,8 +27,9 @@ export const projectsData = [
     {
         id: '1',
         image: Insight4,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
+        heading: "STAYING AHEAD OF THE STORM",
+        details: `In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking
+                  preventive measures cannot be overstated.`,
         category: 'Brochures',
         link: "/first_insight"
 
@@ -31,17 +37,22 @@ export const projectsData = [
     {
         id: '2',
         image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
+        heading: "REVOLUTIONISING CUSTOMER EXPERIENCE",
+        details: `Regardless of industry or sector, almost all businesses
+               today are seeking to digitalise their operations to improve
+               customer experience.`,
         category: 'Taught leadership articles',
+        link: "/second_insight"
 
     },
     {
         id: '3',
         image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
+        heading: "A STRATEGY FOR RESILIENCE",
+        details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
         category: 'Brochures',
+        link: "/third_insight"
+
 
     },
     {
@@ -130,14 +141,14 @@ export const slider = [
     {
         id: "1",
         name: "Douglas Koomson",
-        image: SliderImg,
+        image: Slider5,
         text: "Great customer service experience",
         title: "",
     },
     {
         id: "2",
         name: "Jaideep Puthran",
-        image: SliderImg,
+        image: Slider4,
         text: "Excellent Service Delivery",
     },
     {
@@ -150,19 +161,19 @@ export const slider = [
     {
         id: "4",
         name: "Gpuma Ghana LTD",
-        image: SliderImg,
+        image: Slider4,
         text: "Your service is exceptional and we will always recommend Coronation insurance to our clients.",
     },
     {
         id: "5",
         name: "Joseph Obeng",
-        image: SliderImg,
+        image: Slider5,
         text: "I initially had doubts before joining your company. But This experience i had with you, I must admit that i am more than satisfied with the speed at which you worked on my claims. The delivery has really convinced me i never made a mistake.",
     },
     {
         id: "6",
         name: "Giant Traders",
-        image: SliderImg,
+        image: Slider6,
         text: "We have had a fantastic experience with your company over the past years. Your customer service is exceptional. Always responsive and helpful, particularly claims process which was smooth and transparent.",
     },
 ]

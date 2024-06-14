@@ -55,7 +55,7 @@ const Home = () => {
           />
 
           <div
-            className={`absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[240px] 3xl:top-[450px] large:top-[400px] left-[50px] text-white z-40 transition-opacity duration-300 ${isLeftHovered ? "opacity-100" : "opacity-0"
+            className={`absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[240px] 3xl:top-[450px]  left-[50px] text-white z-40 transition-opacity duration-300 ${isLeftHovered ? "opacity-100" : "opacity-0"
               }`}
           >
             <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INDIVIDUAL</h1>
@@ -84,7 +84,7 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div
-            className={`absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] 3xl:top-[400px] large:top-[340px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-0"
+            className={`absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] 3xl:top-[400px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-0"
               }`}
           >
             <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">CORPORATE</h1>
@@ -105,7 +105,7 @@ const Home = () => {
         <img
           src={landingImg}
           alt="landing"
-          className="absolute h-[600px] top-[80px] left-[752px] 3xl:left-[863px] large:left-[670px] large:h-[733px] 3xl:h-[960px] transform -translate-x-1/2 z-30"
+          className="absolute h-[600px] top-[80px] left-[752px] 3xl:left-[863px] xl:h-[622px] 3xl:h-[960px] transform -translate-x-1/2 z-30"
         />
       </div>
     </div>

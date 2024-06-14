@@ -121,7 +121,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className='my-[120px] large:ml-[-70px]'>
+            <section className='my-[120px]'>
                 <div className='relative'>
                     <img src={bg} alt='bg' className='absolute w-[1120px] h-[177px]  top-0 left-[190px] object-cover' />
                     <div className='relative z-10 flex flex-row ml-[300px]'>
