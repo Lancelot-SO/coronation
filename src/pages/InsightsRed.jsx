@@ -30,7 +30,7 @@ const InsightsRed = () => {
 
                     </div>
                 </div>
-                <div className='absolute top-[181px] left-[1000px]'>
+                <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={insightPay} alt='print' className='relative w-[300px] h-[400px]' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>

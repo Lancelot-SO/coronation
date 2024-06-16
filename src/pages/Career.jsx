@@ -18,7 +18,7 @@ const Career = () => {
                     <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         Taking you where you want to go. We are always on the lookout for best-in-class talent who enjoy a challenge. In exchange, we provide an environment that fosters the actualization of goals, and career fulfillment for our people while providing transformational solutions for Africa’s challenges.                    </p>
                 </div>
-                <div className='absolute top-[281px] left-[1000px]'>
+                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={careerPay} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>

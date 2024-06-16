@@ -34,7 +34,7 @@ const HomeInsurance = () => {
                         Ask yourself: do you want your home to be protected in the event of flood, fire, theft or other accidental damage? Or would you rather deal with the expense and the stress on your own? Add to that the fact that some mortgage providers might require you to have building cover. It’s more than a minor detail.  We’ll cover your house and belongings against life’s unexpected events. We offer building and contents insurance – plus a range of added extras to make sure you get the protection you need.
                     </p>
                 </div>
-                <div className='absolute top-[181px] left-[1000px]'>
+                <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={homePay} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>

@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               <div
                 className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+                  } border-customPurple bg-transparent flex p-4 w-[43px] h-[43px] items-center justify-center`}
               >
                 <CiClock2 className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <div className="flex items-center gap-6">
               <div
                 className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+                  } border-customPurple bg-transparent flex p-4 w-[43px] h-[43px] items-center justify-center`}
               >
                 <TfiEmail className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <div className="flex items-center gap-6">
               <div
                 className={`rounded-full border border-1 ${isHovered === "left" ? "border-customPurple" : "border-secondary"
-                  } border-customPurple bg-transparent flex p-4 w-[63px] h-[63px] items-center justify-center`}
+                  } border-customPurple bg-transparent flex p-4 w-[43px] h-[43px] items-center justify-center`}
               >
                 <FaPhoneAlt className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>

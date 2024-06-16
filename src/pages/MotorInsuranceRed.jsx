@@ -34,7 +34,7 @@ const MotorInsuranceRed = () => {
                     <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         This is an insurance product that pays for damages to your vehicle (private or commercial) as a result of theft, accident or fire. It also covers third-party injury and death, property damage and legal cost. It comes in 3 variants namely Third Party, Third Party, Fire and theft & Comprehensive		.                    </p>
                 </div>
-                <div className='absolute top-[181px] left-[1000px]'>
+                <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={motorRedPay} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>

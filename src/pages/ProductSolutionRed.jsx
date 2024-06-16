@@ -25,7 +25,7 @@ const ProductSolutionRed = () => {
                         business and life - with only one telephone call. Find out more & get a quote..
                     </p>
                 </div>
-                <div className='absolute top-[181px] left-[1000px]'>
+                <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={psInAcc} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
