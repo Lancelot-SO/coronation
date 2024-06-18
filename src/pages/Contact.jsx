@@ -6,7 +6,7 @@ import contactBg from "../assets/contact/contactBg.png"
 import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
-import PhoneInput, { formatPhoneNumber, formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import PhoneInput, { formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
@@ -64,39 +64,99 @@ const Contact = () => {
                                     value={value}
                                     onChange={setValue}
                                     placeholder="233 54868650"
-                                    className='block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black'
+                                    className={`block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none sm:text-sm text-black 
+                    ${value && isPossiblePhoneNumber(value) ? 'border-customPurple' : 'border-gray-300 dark:border-gray-700'}
+                    ${value && isValidPhoneNumber(value) ? 'text-customPurple' : ''}`}
                                 />
-                                {value && isPossiblePhoneNumber(value) && (
-                                    <div className="text-red-500">Yes, it is a possible phone number</div>
-                                )}
-
-                                {value && isValidPhoneNumber(value) && (
-                                    <div className="text-red-500">Yes, it is a valid phone number</div>
-                                )}
 
                                 {value && (
-                                    <div className="text-red-500">International number: {formatPhoneNumberIntl(value)}</div>
+                                    <div className="text-customPurple">International number: {formatPhoneNumberIntl(value)}</div>
                                 )}
 
-                                {value && (
-                                    <div className="text-red-500">Local number: {formatPhoneNumber(value)}</div>
-                                )}
+
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-black">Request</label>
+                                <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
+                                    <option>Select at least one option</option>
+                                    <option>Abandoned call</option>
+                                    <option>Call dropped</option>
+                                    <option>Product and Services</option>
+                                    <option>Request for Cancellation of Policy</option>
+                                    <option>Request for Car Tracker</option>
+                                    <option>Request for Claim form</option>
+                                    <option>Request for Claims payment </option>
+                                    <option>Request to Increase Sum Assured</option>
+                                    <option>Request for Last payment date</option>
+                                    <option>Request for link to digital channels (mobile app, retail portal, website etc.)</option>
+                                    <option>Request for Outstanding premium</option>
+                                    <option>Request for Part payment</option>
+                                    <option>Request for Payment schedule</option>
+                                    <option>Request for Policy validation</option>
+                                    <option>Request for Proposal form</option>
+                                    <option>Request for Quote </option>
+                                    <option>Request for Receipt of payment</option>
+                                    <option>Request for Relationship Manager</option>
+                                    <option>Request for Renewal certificate</option>
+                                    <option>Request for Renewal schedule</option>
+                                    <option>Request for Termination procedure</option>
+                                    <option>Request for USSD code</option>
+                                    <option>Request for Coronation Insurance Account Details</option>
+                                    <option>Request for Coronation Insurance slogan</option>
+                                    <option>Request for Payment Refund</option>
+                                    <option>Request for Travel Insurance Certificate</option>
+                                    <option>Request for Correction of Name on Insurance Certificate</option>
+                                    <option>First Notice of Loss (FNOL) </option>
+                                    <option>Other Request</option>
+
+                                </select>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Enquiry related</label>
                                 <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
                                     <option>Select at least one option</option>
-                                    <option>Asset Management</option>
-                                    <option>Insurance</option>
-                                    <option>Corperate and Investment Banking</option>
-                                    <option>Securities Trading and Brokerage</option>
-                                    <option>Registrar Service</option>
-                                    <option>Research</option>
-                                    <option>Private Equity</option>
-                                    <option>Venture Building </option>
-                                    <option>Techology</option>
-                                    <option>Careers</option>
+                                    <option>Enquiry on Bancassurance partnership</option>
+                                    <option>Enquiry on Claims procedure</option>
+                                    <option>Enquiry on Contact details (Email, Telephone number)</option>
+                                    <option>Enquiry on Other branches</option>
+                                    <option>Enquiry on Policy termination procedure</option>
+                                    <option>Enquiry on Products and Services</option>
+                                    <option>FNOL enquiry</option>
+                                    <option>Other Enquiry</option>
+                                    <option>Policy Renewal on Coronation Insurance Mobile App</option>
+                                    <option>Policy Renewal on Online  Portal</option>
+                                    <option>Online Portal Enquiries</option>
+                                    <option>Travel Insurance Procedure</option>
+                                    <option>Coronation payment platform</option>
+                                    <option>Company Enquiry</option>
 
+                                </select>
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-black">Complaint</label>
+                                <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
+                                    <option>Select at least one option</option>
+                                    <option>Claims substantiating document issue</option>
+                                    <option>Non reciept of Discharge Voucher </option>
+                                    <option>Delay in Claims Settlement </option>
+                                    <option>Delay in conducting inspection/survey</option>
+                                    <option>Delay in receiving Feedback </option>
+                                    <option>Disputed Claim offer</option>
+                                    <option>Excess buy back issue</option>
+                                    <option>Error in Policy document </option>
+                                    <option>First Notice of Loss (FNOL) complaint</option>
+                                    <option>Hard Copy Policy document not received </option>
+                                    <option>Non Receipt of SMS/E-mail notifications</option>
+                                    <option>Policy not uploaded on MID portal Online Portal Enquiries</option>
+                                    <option>Unable to access online portal</option>
+                                    <option>Unable to access mobile app</option>
+                                    <option>Unable to access website</option>
+                                    <option>Unable to access USSD code</option>
+                                    <option>Wrong Debit</option>
+                                    <option>Wrong Statement of Account/Account reconciliation</option>
+                                    <option>Non Receipt of Travel Insurance Certificate</option>
+                                    <option>Other Complaint</option>
                                 </select>
                             </div>
                             <div>
