@@ -2,9 +2,9 @@ import React from 'react'
 
 import servicebg from "../assets/service/serviceBg.png"
 import servicePay from "../assets/service/servicePay.png"
-import icon1 from "../assets/service/serviceIcon1.png"
-import icon2 from "../assets/service/serviceIcon2.png"
-import icon3 from "../assets/service/serviceIcon3.png"
+// import icon1 from "../assets/service/serviceIcon1.png"
+// import icon2 from "../assets/service/serviceIcon2.png"
+// import icon3 from "../assets/service/serviceIcon3.png"
 import icon4 from "../assets/service/serviceIcon4.png"
 import icon5 from "../assets/service/serviceIcon5.png"
 import icon6 from "../assets/service/serviceIcon6.png"
@@ -45,7 +45,7 @@ const SelfService = () => {
                 </div>
             </div>
 
-            <section>
+            {/*<section>
                 <div className='flex w-full h-[759px] items-center justify-center'>
                     <div className='h-[699px] w-[1000px] flex flex-col items-center'>
                         <h2 className='w-[1110px] h-[44px] text-[40px] leading-[44px] font-light text-center mt-[130px]'>Coronation Registrars</h2>
@@ -104,7 +104,7 @@ const SelfService = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
             <section>
                 <div className='flex w-full h-[759px] items-center justify-center'>

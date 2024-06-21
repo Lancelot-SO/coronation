@@ -2,9 +2,9 @@ import React from 'react'
 
 import servicebg from "../assets/service/serviceBg.png"
 import servicePay from "../assets/service/servicePay.png"
-import icon1 from "../assets/service/serviceIcon1.png"
-import icon2 from "../assets/service/serviceIcon2.png"
-import icon3 from "../assets/service/serviceIcon3.png"
+// import icon1 from "../assets/service/serviceIcon1.png"
+// import icon2 from "../assets/service/serviceIcon2.png"
+// import icon3 from "../assets/service/serviceIcon3.png"
 import icon4 from "../assets/service/serviceIcon4.png"
 import icon5 from "../assets/service/serviceIcon5.png"
 import icon6 from "../assets/service/serviceIcon6.png"
@@ -47,7 +47,7 @@ const SelfServiceRed = () => {
                 </div>
             </div>
 
-            <section>
+            {/*<section>
                 <div className='flex w-full h-[759px] items-center justify-center'>
                     <div className='h-[699px] w-[1000px] flex flex-col items-center'>
                         <h2 className='w-[1110px] h-[44px] text-[40px] leading-[44px] font-light text-center mt-[130px]'>Coronation Registrars</h2>
@@ -57,7 +57,7 @@ const SelfServiceRed = () => {
                                 <img src={icon1} alt='icon' className='w-[100px] h-[100px] mx-[30%] mt-4' />
 
                                 <div className='mt-[40px]'>
-                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-secondary'>
+                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-customPurple'>
                                         Coronation<br />
                                         ShareholderLive
                                     </h4>
@@ -67,14 +67,14 @@ const SelfServiceRed = () => {
                                 </div>
 
                                 <Link to="https://shareholderlive.coronationregistrars.com/" target='_blank' rel="noopener noreferrer">
-                                    <button className='w-[44px] h-[20px] mt-10 text-secondary'>Login</button>
+                                    <button className='w-[44px] h-[20px] mt-10 text-customPurple'>Login</button>
                                 </Link>
                             </div>
                             <div className='flex flex-col w-[305px] h-[415px] bg-white rounded p-2 cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
                                 <img src={icon2} alt='icon' className='w-[100px] h-[100px] mx-[30%] mt-4' />
 
                                 <div className='mt-[40px]'>
-                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-secondary'>
+                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-customPurple'>
                                         Coronation Registrars<br /> Self-Service Forms
                                     </h4>
                                     <p className='w-[234px] h-[96px] font-normal text-[16px] leading-[24px] mt-2'>
@@ -84,14 +84,14 @@ const SelfServiceRed = () => {
                                 </div>
 
                                 <Link to="https://coronationregistrars.cloud.processmaker.net/webentry/7/node_9?general_enquiries" target='_blank' rel="noopener noreferrer">
-                                    <button className='w-[106px] h-[30px] mt-10 text-start text-secondary'>Click here</button>
+                                    <button className='w-[106px] h-[30px] mt-10 text-start text-customPurple'>Click here</button>
                                 </Link>
                             </div>
                             <div className='flex flex-col w-[305px] h-[415px] bg-white rounded p-2 cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
                                 <img src={icon3} alt='icon' className='w-[100px] h-[100px] mx-[30%] mt-4' />
 
                                 <div className='mt-[40px]'>
-                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-secondary'>
+                                    <h4 className='w-[306px] h-[48px] font-normal text-[18px] leading-[24px] text-customPurple'>
                                         Coronation<br />
                                         StockbrokerLive
                                     </h4>
@@ -100,13 +100,14 @@ const SelfServiceRed = () => {
                                 </div>
 
                                 <Link to="https://stockbrokerlive.coronation.ng/" target='_blank' rel="noopener noreferrer">
-                                    <button className='w-[106px] h-[30px] mt-10 text-start text-secondary'>Click here</button>
+                                    <button className='w-[106px] h-[30px] mt-10 text-start text-customPurple'>Click here</button>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>*/}
+
 
             <section>
                 <div className='flex w-full h-[759px] items-center justify-center'>

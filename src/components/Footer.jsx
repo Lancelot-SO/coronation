@@ -56,7 +56,7 @@ const Footer = () => {
                         </ul>
                         <ul className='mb-[100px] flex flex-col gap-4 mr-12'>
                             <Link><li className=''>Login</li></Link>
-                            <Link><li>Claims</li></Link>
+                            <Link to="https://ecoronation.com/" target='_blank' rel='noopener noreferrer'><li>Claims</li></Link>
 
                         </ul>
                         <Link className='mb-[100px] mr-4'>Investor Information</Link>

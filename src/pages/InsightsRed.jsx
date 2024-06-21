@@ -47,7 +47,7 @@ const InsightsRed = () => {
                 <div className='w-full flex items-center justify-center mb-10'>
                     <div className='w-[1120px] h-[100px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4 tracking-[-1px]'>
-                            ALL OUR ARTICLES
+                            READ ALL OUR ARTICLES
                         </h2>
                     </div>
                 </div>

@@ -161,7 +161,7 @@ const About = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>CEO & Founder</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Born in March 1952, Mr.
                                             Beecham is a lawyer by profession and a past National President of the Ghana Bar Association. He has spent the greater part of his working life in banking, having joined Merchant Bank Ghana Ltd as a Banking Officer in 1977.
                                         </p>
@@ -188,7 +188,7 @@ const About = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Olusegun Ogbonnewo is a Director in TenGen Holdings Limited with over 27 years’ professional experience in the financial service industry cutting across banking, human capital development, operations, payment systems and financial technology.
                                         </p>
                                     </div>
@@ -212,7 +212,7 @@ const About = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
                                     </div>
                                 </div>
@@ -235,7 +235,7 @@ const About = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Richard Osei-Anim is an Associate and Chartered Insurance Practitioner of the Associate Chartered Insurance Institute of London, UK. He has over 15 years’ experience in insurance and risk management and has worked in the past with Burrows Keith Group, CGU Insurance and broking giants like Aon and Miller Insurance Group.
                                         </p>
                                     </div>
@@ -260,7 +260,7 @@ const About = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Managing Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Dr. Adom-Boateng is a Fellow of the Chartered Insurance Institute of Ghana (FCIIG) and the Chartered Insurance Institute of UK (FCII-UK). He is a seasoned insurance professional with over 22 years of experience in the insurance industry.
                                         </p>
 

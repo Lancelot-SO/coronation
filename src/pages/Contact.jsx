@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import 'react-phone-number-input/style.css'
+import emailjs from '@emailjs/browser';
 
+import flag1 from "../assets/contact/flag1.png"
 
 import contactBg from "../assets/contact/contactBg.png"
 import contactPay from "../assets/contact/contactPay.png"
@@ -10,8 +12,34 @@ import PhoneInput, { formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneN
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
+
+import { BiPhoneCall } from "react-icons/bi";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
+
+
 const Contact = () => {
-    const [value, setValue] = useState()
+    const form = useRef();
+    const [phoneNumber, setPhoneNumber] = useState('');
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_lw4pyej', 'template_0vf2k2b', form.current, {
+                publicKey: 'BwhLD7vMqhEFp57Ji',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+        e.target.reset();
+        setPhoneNumber(''); // Reset phone number
+    };
 
     return (
         <div>
@@ -41,43 +69,42 @@ const Contact = () => {
             <section>
                 <div className="flex flex-col md:flex-row items-center justify-center p-6 min-h-screen ml-[70px]">
                     <div className="w-full md:w-1/2 p-6 bg-white text-black  rounded-lg shadow-card">
-                        <form className="space-y-4">
+                        <form ref={form} onSubmit={sendEmail} className="space-y-4">
                             <div className="flex space-x-4">
                                 <div className="w-1/2">
                                     <label className="block text-sm font-medium text-black">First name</label>
-                                    <input type="text" placeholder="First name" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                    <input type="text" name='first_name' placeholder="First name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
                                 </div>
                                 <div className="w-1/2">
                                     <label className="block text-sm font-medium text-black">Last name</label>
-                                    <input type="text" placeholder="Last name" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                    <input type="text" name='last_name' placeholder="Last name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Email</label>
-                                <input type="email" placeholder="you@company.com" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                <input type="email" name='user_email' placeholder="you@company.com" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Phone number</label>
-
                                 <PhoneInput
                                     defaultCountry='GH'
-                                    value={value}
-                                    onChange={setValue}
+                                    required
+                                    value={phoneNumber}
+                                    onChange={setPhoneNumber}
                                     placeholder="233 54868650"
                                     className={`block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none sm:text-sm text-black 
-                    ${value && isPossiblePhoneNumber(value) ? 'border-customPurple' : 'border-gray-300 dark:border-gray-700'}
-                    ${value && isValidPhoneNumber(value) ? 'text-customPurple' : ''}`}
+                        ${phoneNumber && isPossiblePhoneNumber(phoneNumber) ? 'border-customPurple' : 'border-gray-300 dark:border-gray-700'}
+                        ${phoneNumber && isValidPhoneNumber(phoneNumber) ? 'text-customPurple' : ''}`}
                                 />
-
-                                {value && (
-                                    <div className="text-customPurple">International number: {formatPhoneNumberIntl(value)}</div>
+                                {phoneNumber && (
+                                    <div className="text-customPurple">International number: {formatPhoneNumberIntl(phoneNumber)}</div>
                                 )}
-
-
+                                {/* Hidden input field for phone number */}
+                                <input type="hidden" name="user_phone" value={phoneNumber} />
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-black">Request</label>
-                                <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
+                                <label className="block text-sm font-medium text-black">Request Related</label>
+                                <select name='user_request' className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
                                     <option>Select at least one option</option>
                                     <option>Abandoned call</option>
                                     <option>Call dropped</option>
@@ -113,7 +140,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Enquiry related</label>
-                                <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
+                                <select name='user_enquiry' className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
                                     <option>Select at least one option</option>
                                     <option>Enquiry on Bancassurance partnership</option>
                                     <option>Enquiry on Claims procedure</option>
@@ -134,8 +161,8 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-black">Complaint</label>
-                                <select className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
+                                <label className="block text-sm font-medium text-black">Complaint Related</label>
+                                <select name='user_complaint' className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black">
                                     <option>Select at least one option</option>
                                     <option>Claims substantiating document issue</option>
                                     <option>Non reciept of Discharge Voucher </option>
@@ -161,7 +188,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Message</label>
-                                <textarea rows="4" placeholder="Enter your Message" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"></textarea>
+                                <textarea name='message' rows="4" placeholder="Enter your Message" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black " required></textarea>
                             </div>
                             <div className="flex items-start">
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-indigo-600 border-gray-300 rounded" />
@@ -176,9 +203,70 @@ const Contact = () => {
                 </div>
             </section>
 
+            <section className='flex items-center justify-center bg-[#F4F4F4] mb-8'>
+                <div className='w-[1300px] h-[434px] flex items-center justify-center gap-[50px] mt-8'>
+                    <div className='flex flex-col w-[335px] h-[415px] bg-white p-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
+                        <img src={flag1} alt='icon' className='w-[309px] h-[221px] mb-8' />
+                        <div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <BiPhoneCall />
+                                <p className='text-[12px]'>+265 885 57 37 00</p>
+                            </div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <MdOutlineMarkEmailUnread />
+                                <p className='text-[12px]'>info@vubatech.africa</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <MdOutlineLocationOn />
+                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col w-[335px] h-[415px] bg-white p-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
+                        <img src={flag1} alt='icon' className='w-[309px] h-[221px] mb-8' />
+                        <div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <BiPhoneCall />
+                                <p className='text-[12px]'>+265 885 57 37 00</p>
+                            </div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <MdOutlineMarkEmailUnread />
+                                <p className='text-[12px]'>info@vubatech.africa</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <MdOutlineLocationOn />
+                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col w-[335px] h-[415px] bg-white p-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
+                        <img src={flag1} alt='icon' className='w-[309px] h-[221px] mb-8' />
+                        <div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <BiPhoneCall />
+                                <p className='text-[12px]'>+265 885 57 37 00</p>
+                            </div>
+                            <div className='flex items-center gap-2 mb-4'>
+                                <MdOutlineMarkEmailUnread />
+                                <p className='text-[12px]'>info@vubatech.africa</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <MdOutlineLocationOn />
+                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section >
+
             <Banner />
             <Footer />
-        </div>
+        </div >
     )
 }
 

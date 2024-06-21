@@ -28,7 +28,7 @@ const Hero = () => {
                     <p className='w-[685px] h-[45px] text-[19px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
                         independence and enduring legacies that lead to sustainable wealth creation in Africa.</p>
                 </div>
-                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
+                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px] hidden lg:flex'>
                     <img src={heroPrint} alt='print' className='relative' />
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>

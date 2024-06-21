@@ -74,7 +74,7 @@ const Home = () => {
             ever before with Coronation Insurance.
           </p>
           <Link to='/hero' onClick={handleLeftClick}>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded w-[212px]">
+            <button className="bg-customPurple text-white font-bold py-2 px-4 rounded w-[212px]">
               Enter
             </button>
           </Link>

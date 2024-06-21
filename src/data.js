@@ -18,7 +18,7 @@ export const projectsNav = [
         name: 'Brochures',
     },
     {
-        name: 'Taught leadership articles',
+        name: 'Thought leadership articles',
     },
 ];
 
@@ -30,7 +30,7 @@ export const projectsData = [
         heading: "STAYING AHEAD OF THE STORM",
         details: `In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking
                   preventive measures cannot be overstated.`,
-        category: 'Brochures',
+        category: 'Thought leadership articles',
         link: "/first_insight"
 
     },
@@ -41,7 +41,7 @@ export const projectsData = [
         details: `Regardless of industry or sector, almost all businesses
                today are seeking to digitalise their operations to improve
                customer experience.`,
-        category: 'Taught leadership articles',
+        category: 'Thought leadership articles',
         link: "/second_insight"
 
     },
@@ -50,7 +50,7 @@ export const projectsData = [
         image: Insight2,
         heading: "A STRATEGY FOR RESILIENCE",
         details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
-        category: 'Brochures',
+        category: 'Thought leadership articles',
         link: "/third_insight"
 
 
@@ -76,7 +76,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Brochures',
+        category: 'Thought leadership articles',
 
     },
     {
@@ -92,7 +92,7 @@ export const projectsData = [
         image: Insight2,
         heading: "Maecenas accumsan lacus vel facilisis volutpat est",
         details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Taught leadership articles',
+        category: 'Thought leadership articles',
 
     },
     {

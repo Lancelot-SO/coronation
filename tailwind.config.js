@@ -31,6 +31,7 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
         'large': '1343px',
+        'xlarge': '1512px',
         '2xl': '1536px',
         '3xl': '1728px',
       },
