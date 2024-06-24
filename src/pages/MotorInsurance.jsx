@@ -59,14 +59,15 @@ const MotorInsurance = () => {
                         </h2>
                         <div className='w-[1111px] h-[63px]'>
                             <p className='font-light text-[24px] leading-[32px]'>
-                                Your car, your rules. We offer flexible plans that fit your unique needs and budget. No matter your ride, get the perfect coverage.                            </p>
+                                Your car, your rules. We offer flexible plans that fit your unique needs and budget. No matter your ride, get the perfect coverage.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
                             <div className='mt-[50px] flex flex-col mr-[30px] large:ml-[20px]'>
@@ -99,7 +100,7 @@ const MotorInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
@@ -130,7 +131,7 @@ const MotorInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[600px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] flex relative'>
                             <div className='mt-[50px] flex flex-col mr-[30px] large:ml-[20px]'>

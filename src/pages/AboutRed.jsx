@@ -5,11 +5,15 @@ import aboutbg from "../assets/aboutheadbg.png"
 import aboutPrint from "../assets/aboutus.png"
 import history from "../assets/history.png"
 import bg from "../assets/bg.png"
-import board from "../assets/board.png"
-import board1 from "../assets/board1.png"
-import board2 from "../assets/board2.png"
-import board3 from "../assets/board3.png"
-import board4 from "../assets/board4.png"
+import board from "../assets/director1.png"
+import board1 from "../assets/director2.png"
+import board2 from "../assets/director3.png"
+import board3 from "../assets/director4.png"
+import board4 from "../assets/director5.png"
+import board5 from "../assets/director6.png"
+import board6 from "../assets/director7.png"
+
+
 
 
 import Carousel from 'react-multi-carousel';
@@ -159,7 +163,7 @@ const AboutRed = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>CEO & Founder</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Born in March 1952, Mr.
                                             Beecham is a lawyer by profession and a past National President of the Ghana Bar Association. He has spent the greater part of his working life in banking, having joined Merchant Bank Ghana Ltd as a Banking Officer in 1977.
                                         </p>
@@ -186,7 +190,7 @@ const AboutRed = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Olusegun Ogbonnewo is a Director in TenGen Holdings Limited with over 27 years’ professional experience in the financial service industry cutting across banking, human capital development, operations, payment systems and financial technology.
                                         </p>
                                     </div>
@@ -210,7 +214,7 @@ const AboutRed = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
                                     </div>
                                 </div>
@@ -233,7 +237,7 @@ const AboutRed = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mr. Richard Osei-Anim is an Associate and Chartered Insurance Practitioner of the Associate Chartered Insurance Institute of London, UK. He has over 15 years’ experience in insurance and risk management and has worked in the past with Burrows Keith Group, CGU Insurance and broking giants like Aon and Miller Insurance Group.
                                         </p>
                                     </div>
@@ -258,8 +262,56 @@ const AboutRed = () => {
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Managing Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
-                                        <p className='w-[268px] h-[233px] text-[16px] leading-[24px] font-normal'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
                                             Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='group'>
+                            <div className='w-[338px] h-[500px] relative overflow-hidden'>
+                                <img src={board5} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
+                                <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
+                                </div>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                    <FaTwitter size={24} />
+                                    <FaFacebook size={24} />
+                                    <FaInstagram size={24} />
+                                </div>*/}
+                                <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
+                                    <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
+                                        <p className='text-[18px] leading-[22px] font-normal'>Mrs. Vesta Nunoo</p>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non -  Executive Director</small>
+                                    </div>
+                                    <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
+                                            Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='group'>
+                            <div className='w-[338px] h-[500px] relative overflow-hidden'>
+                                <img src={board6} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
+                                <div className='absolute bg-secondary w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
+                                </div>
+                                {/*<div className='socials bg-secondary text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
+                                    <FaTwitter size={24} />
+                                    <FaFacebook size={24} />
+                                    <FaInstagram size={24} />
+                                </div>*/}
+                                <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
+                                    <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
+                                        <p className='text-[18px] leading-[22px] font-normal'>Mr. Olamide Olajolo</p>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non -  Executive Director</small>
+                                    </div>
+                                    <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
+                                        <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
+                                            Mr. Olamide Olajolo has about twenty-two (22) years’ experience in the Insurance industry cutting across insurance underwriting and sales. Mr. Olamide Olajolo was formerly the Managing Director/Chief Executive Officer of the Nigeria Liability Insurance Pool and the Vice President Business Development at Heirs Insurance Limited/Heirs Assurance Limited.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

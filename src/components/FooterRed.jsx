@@ -23,7 +23,7 @@ const FooterRed = () => {
                         </p>
                         <ul className='flex gap-4'>
                             <li>
-                                <Link to="https://www.instagram.com/coronationng/" target="_blank" rel="noopener noreferrer" className="opacity-100">
+                                <Link to="https://www.instagram.com/coronationgh/" target="_blank" rel="noopener noreferrer" className="opacity-100">
                                     <FaInstagram />
                                 </Link>
                             </li>
@@ -33,7 +33,7 @@ const FooterRed = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="https://x.com/coronation_ng" target="_blank" rel="noopener noreferrer">
+                                <Link to="https://x.com/coronationghana" target="_blank" rel="noopener noreferrer">
                                     <FaTwitter />
                                 </Link>
                             </li>

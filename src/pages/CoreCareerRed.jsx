@@ -11,7 +11,7 @@ const CoreCareerRed = ({ item }) => {
                     <p className='w-[537px] h-[87px] mt-6 text-[#475569]'>
                         Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation…
                     </p>
-                    <Link to={item.link} className='flex items-center w-[151px] h-[20px] mt-4 gap-4 text-secondary'>
+                    <Link to={item.link} target='_blank' rel='noopener noreferrer' className='flex items-center w-[151px] h-[20px] mt-4 gap-4 text-secondary'>
                         <p className='text-[16px] leading-[19px] font-normal'>LEARN MORE</p>
                         <FaLongArrowAltRight />
                     </Link>

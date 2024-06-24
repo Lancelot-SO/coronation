@@ -127,12 +127,12 @@ export const careerNav = [
 
 export const careerData = [
     {
-        id: '9',
+        id: '1',
         image: CoreLifeImage,
         heading: "LIFE AT CORONATION",
         details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
         category: 'LIFE AT CORONATION',
-        link: "/career"
+        link: "https://www.instagram.com/coronationgh/"
     }
 ]
 

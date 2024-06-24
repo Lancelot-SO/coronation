@@ -23,9 +23,9 @@ const Hero = () => {
         <div>
             <div>
                 <img src={herobg} alt='hero' className='w-full h-[629px] relative object-cover' />
-                <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
-                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-medium'>Coronation</h2>
-                    <p className='w-[685px] h-[45px] text-[19px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
+                <div className='absolute top-[403px] lg:left-[160px] left-0 lg:w-[745px] w-[270px] lg:h-[164px] h-[160px] bg-[rgba(0,0,0,0.8)] lg:p-10 p-2'>
+                    <h2 className='lg:mb-4 mb-2 lg:text-[31px] text-[16px] leading-[37px] text-white font-medium'>Coronation</h2>
+                    <p className='lg:w-[685px] w-[260px] h-[45px] lg:text-[19px] text-[14px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
                         independence and enduring legacies that lead to sustainable wealth creation in Africa.</p>
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px] hidden lg:flex'>
@@ -38,12 +38,12 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
+                <div className='lg:w-[660px] h-[7px] bg-[#B580D1] absolute top-[622px] w-[300px] 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
             <section>
                 <div className='relative'>
-                    <img src={hero2} alt='hero2' className='w-[666px] h-[531px] mt-[100px] ml-[280px] 3xl:ml-[370px]' />
+                    <img src={hero2} alt='hero2' className='lg:w-[666px] lg:h-[531px] mt-[100px] lg:ml-[280px] 3xl:ml-[370px] object-cover' />
                     <div className='w-[420px] h-[420px] bg-black absolute top-[55px] px-[40px] right-[300px] 3xl:right-[350px] text-white flex flex-col items-center justify-center'>
                         <h1 className="w-[329px] h-[90px] text-[37px] leading-[45px] font-light mb-[20px]">Products & Services
                             for the individual</h1>
