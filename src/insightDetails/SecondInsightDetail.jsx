@@ -2,7 +2,7 @@ import React from 'react'
 
 import brochureUrl from "../assets/insight/Digitalisation.pdf"
 
-import insightdetailBg from "../assets/rightside.png"
+import insightdetailBg from "../assets/insight/insightmain22.png"
 import brochureImg from "../assets/insight/brochureImg.png"
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { Link } from 'react-router-dom'

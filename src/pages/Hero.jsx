@@ -3,9 +3,13 @@ import herobg from "../assets/heroBg.png"
 import heroPrint from "../assets/heroPrint.png"
 import hero2 from "../assets/hero2.png"
 import hero3 from "../assets/hero3.png"
-import insight1 from "../assets/insight1.png"
-import insight2 from "../assets/insight2.png"
-import insight3 from "../assets/insight3.png"
+
+
+import insight1 from "../assets/insight/insightmain2.png"
+import insight2 from "../assets/insight/insightmain44.png"
+import insight3 from "../assets/insight/insightmain3.png"
+
+
 import bg from "../assets/bg.png"
 
 import Footer from "../components/Footer"
@@ -79,35 +83,45 @@ const Hero = () => {
                             <h1 className='leading-[48px] text-[40px] font-light'>Our  Insights </h1>
                             <span className='leading-[36px] text-[30px] font-light'>Hear the latest trends from our industry experts</span>
                         </div>
-                        <div className='w-full h-[422px] mt-[30px] flex gap-[70px]'>
-                            <div className='flex flex-col w-[299px] h-[410px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
+                        <div className='w-full h-[522px] mt-[30px] flex gap-[70px]'>
+                            <div className='flex flex-col w-[299px] h-[430px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
                                 <img src={insight1} alt='insight' />
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
-                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
-                                    <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>
+                                        STAYING AHEAD OF THE STORM
+                                    </p>
+                                    <p className='w-[222px] h-[127px] text-[16px] leading-[19px] font-normal'>
+                                        In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking preventive measures cannot be overstated.
+                                    </p>
+                                    <Link to="/first_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
                                 </div>
                             </div>
-                            <div className='flex flex-col w-[299px] h-[410px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
+                            <div className='flex flex-col w-[299px] h-[430px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
                                 <img src={insight2} alt='insight' />
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
-                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
-                                    <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>
+                                        REVOLUTIONISING CUSTOMER EXPERIENCE
+                                    </p>
+                                    <p className='w-[222px] h-[90px] text-[16px] leading-[19px] font-normal'>
+                                        Regardless of industry or sector, almost all businesses today are seeking to digitalise their operations to improve customer experience.
+                                    </p>
+                                    <Link to="/second_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
                                 </div>
                             </div>
-                            <div className='flex flex-col w-[299px] h-[410px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
+                            <div className='flex flex-col w-[299px] h-[430px] rounded-t-[15px] bg-[#F6F6F6] mt-[10px]'>
                                 <img src={insight3} alt='insight' />
                                 <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
-                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>Maecenas accumsan lacus vel facilisis volutpat est</p>
-                                    <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.</p>
-                                    <Link to="/insights" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-customPurple'>A STRATEGY FOR RESILIENCE</p>
+                                    <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>
+                                        The Role of Insurance in Your Retail Business's Long-Term Plan
+                                    </p>
+                                    <Link to="/third_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>

@@ -66,7 +66,7 @@ const HomeInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
                             <div className='mt-[100px] flex flex-col mr-[30px] large:ml-[20px]'>
@@ -99,7 +99,7 @@ const HomeInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
@@ -130,7 +130,7 @@ const HomeInsurance = () => {
 
             <section>
                 <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] large:h-[600px] justify-center h-screen'>
-                    <div className='relative flex w-[1200px] h-[626px]'>
+                    <div className='relative flex w-[1200px] h-[526px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>
                                 BENEFITS

@@ -1,5 +1,6 @@
-import Insight4 from "./assets/insight/insight4.png"
-import Insight2 from "./assets/insight2.png"
+import Insight1 from "./assets/insight/insightmain2.png"
+import Insight2 from "./assets/insight/insightmain44.png"
+import Insight3 from "./assets/insight/insightmain3.png"
 
 import SliderImg from "./assets/slider.png"
 import Slider6 from "./assets/slider6.png"
@@ -26,7 +27,7 @@ export const projectsNav = [
 export const projectsData = [
     {
         id: '1',
-        image: Insight4,
+        image: Insight1,
         heading: "STAYING AHEAD OF THE STORM",
         details: `In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking
                   preventive measures cannot be overstated.`,
@@ -47,62 +48,14 @@ export const projectsData = [
     },
     {
         id: '3',
-        image: Insight2,
+        image: Insight3,
         heading: "A STRATEGY FOR RESILIENCE",
         details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
         category: 'Thought leadership articles',
         link: "/third_insight"
 
 
-    },
-    {
-        id: '4',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Taught leadership articles',
-
-    },
-    {
-        id: '5',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Taught leadership articles',
-
-    },
-    {
-        id: '6',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Thought leadership articles',
-
-    },
-    {
-        id: '7',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Taught leadership articles',
-
-    },
-    {
-        id: '8',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Thought leadership articles',
-
-    },
-    {
-        id: '9',
-        image: Insight2,
-        heading: "Maecenas accumsan lacus vel facilisis volutpat est",
-        details: 'Non consectetur a erat nam at. Sit amet risus nullam eget felis eget nunc lobortis.',
-        category: 'Brochures',
-
-    },
+    }
 
 ];
 

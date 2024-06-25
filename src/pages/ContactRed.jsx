@@ -2,9 +2,11 @@ import React, { useRef, useState } from 'react'
 import 'react-phone-number-input/style.css'
 import emailjs from '@emailjs/browser';
 
-import flag1 from "../assets/contact/flag1.png"
+import flag1 from "../assets/contact/flag1.jpg"
+import flag2 from "../assets/contact/flag2.jpg"
 
-import contactBg from "../assets/contact/contactBg.png"
+
+import contactBg from "../assets/contact/contactBG.png"
 import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
@@ -205,19 +207,18 @@ const ContactRed = () => {
             <section className='flex items-center justify-center bg-[#F4F4F4] mb-8'>
                 <div className='w-[1300px] h-[434px] flex items-center justify-center gap-[50px] mt-8'>
                     <div className='flex flex-col w-[335px] h-[415px] bg-white p-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
-                        <img src={flag1} alt='icon' className='w-[309px] h-[221px] mb-8' />
+                        <img src={flag2} alt='icon' className='w-[309px] h-[221px] mb-8' />
                         <div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <BiPhoneCall />
-                                <p className='text-[12px]'>+265 885 57 37 00</p>
+                                <p className='text-[12px]'>0302772606 / 0308249068</p>
                             </div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <MdOutlineMarkEmailUnread />
-                                <p className='text-[12px]'>info@vubatech.africa</p>
-                            </div>
+                                <p className='text-[12px]'>infoghana@coronationinsurance.com.ng</p>                            </div>
                             <div className='flex items-center gap-2'>
                                 <MdOutlineLocationOn />
-                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
+                                <p className='text-[12px]'>35, Aviation Road, Airport Residential Area</p>
                             </div>
 
                         </div>
@@ -228,34 +229,15 @@ const ContactRed = () => {
                         <div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <BiPhoneCall />
-                                <p className='text-[12px]'>+265 885 57 37 00</p>
+                                <p className='text-[12px]'>0302772606 / 0308249068</p>
                             </div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <MdOutlineMarkEmailUnread />
-                                <p className='text-[12px]'>info@vubatech.africa</p>
+                                <p className='text-[12px]'>infoghana@coronationinsurance.com.ng</p>
                             </div>
                             <div className='flex items-center gap-2'>
                                 <MdOutlineLocationOn />
-                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className='flex flex-col w-[335px] h-[415px] bg-white p-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
-                        <img src={flag1} alt='icon' className='w-[309px] h-[221px] mb-8' />
-                        <div>
-                            <div className='flex items-center gap-2 mb-4'>
-                                <BiPhoneCall />
-                                <p className='text-[12px]'>+265 885 57 37 00</p>
-                            </div>
-                            <div className='flex items-center gap-2 mb-4'>
-                                <MdOutlineMarkEmailUnread />
-                                <p className='text-[12px]'>info@vubatech.africa</p>
-                            </div>
-                            <div className='flex items-center gap-2'>
-                                <MdOutlineLocationOn />
-                                <p className='text-[12px]'>P.O BoX 53,City CentreLilongwe, Malawi.</p>
+                                <p className='text-[12px]'>No. 119, Awolowo Road, LAGOS, Lagos</p>
                             </div>
 
                         </div>

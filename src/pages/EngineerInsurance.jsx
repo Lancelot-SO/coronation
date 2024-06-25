@@ -157,7 +157,7 @@ const EngineerInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[654px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] flex relative'>
                             <div className='mt-[50px] flex flex-col mr-[30px]'>
@@ -194,7 +194,7 @@ const EngineerInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[654px] flex flex-col'>
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
@@ -277,7 +277,7 @@ const EngineerInsurance = () => {
 
             <section>
                 <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] justify-center h-screen'>
-                    <div className='relative flex w-[1200px] h-[626px]'>
+                    <div className='relative flex w-[1200px] h-[756px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>
                                 BENEFITS

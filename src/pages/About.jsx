@@ -72,7 +72,7 @@ const About = () => {
                 </div>
             </div>
 
-            <section>
+            {/* <section>
                 <div className='w-full h-[128px] bg-[#F1F5F9] flex items-center justify-center'>
                     <div className=' w-[1100px] h-[30px] flex items-center justify-evenly'>
                         <img src={client1} alt='clients' />
@@ -83,7 +83,7 @@ const About = () => {
 
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
             <section>
                 <div className='w-full flex items-center justify-center'>
@@ -188,7 +188,7 @@ const About = () => {
                                 </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
-                                        <p className='text-[18px] leading-[22px] font-normal'>Mr. Plusegun Ogbonnewo</p>
+                                        <p className='text-[18px] leading-[22px] font-normal'>Mr. Olusegun Ogbonnewo</p>
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>

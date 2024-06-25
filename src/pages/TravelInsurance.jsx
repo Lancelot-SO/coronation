@@ -68,16 +68,16 @@ const TravelInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
                             <div className='mt-[100px] flex flex-col mr-[30px] large:ml-[20px]'>
-                                <h2 className='h-[52px] w-[318px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
+                                <h2 className='h-[52px] w-[318px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4 mb-4'>
                                     PILGRIMAGE
                                 </h2>
-                                <p className='w-[450px] h-[154px] leading-[32px] text-[20px] font-light'>
-                                    Protection for individuals that travel outside their country of residence to a holy place. Typically, to a place of special significance to the adherence of a particular religious belief system                                </p>
-
+                                <p className='w-[440p3] h-[96px] leading-[32px] text-[20px] font-light'>
+                                    Pilgrimage is a holy journey; let’s take care of your travel, and help you focus on what truly matters.
+                                </p>
                                 <div className=''>
                                     <button type='button' onClick={() => setShowPilgrimageModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
                                         <span>Insurance Features</span>
@@ -101,7 +101,7 @@ const TravelInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
@@ -111,8 +111,8 @@ const TravelInsurance = () => {
                             <h2 className='w-[332px] h-[52px] text-[40px] leading-[52px] font-light tracking-[-1px] flex mb-4'>
                                 STUDENT
                             </h2>
-                            <p className='w-[430px] h-[184px] leading-[32px] text-[24px] ml-1 font-light'>
-                                This policy is designed to meet the needs of the insured who do not own their home (and therefore do not require building insurance) but still desire protection for their belongings.
+                            <p className='w-[430px] h-[100px] leading-[32px] text-[24px] ml-1 font-light'>
+                                Travelling to study abroad or for school excursion? Our student policy is all you need. Sign up today.
                             </p>
                             <div className=''>
                                 <button type='button' onClick={() => setshowStudentModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
@@ -131,15 +131,16 @@ const TravelInsurance = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[600px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] flex relative'>
                             <div className='mt-[130px] flex flex-col mr-[30px] large:ml-[20px]'>
-                                <h2 className='h-[52px] w-[237px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
+                                <h2 className='h-[52px] w-[237px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4 mb-4'>
                                     INDIVIDUALS
                                 </h2>
                                 <p className='w-[430px] h-[120px] leading-[32px] text-[20px] font-light'>
-                                    Protection for individuals traveling outside their country of residence; either alone or as a group for business, holiday etc.                                </p>
+                                    Traveling abroad? Solo or with people? Business or leisure, we’ve got something to make the journey better.
+                                </p>
 
                                 <div className=''>
                                     <button type='button' onClick={() => setshowIndividualModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
@@ -165,7 +166,7 @@ const TravelInsurance = () => {
 
             <section>
                 <div className='bg-[#F1F5F9] flex items-center 3xl:h-[720px] large:h-[600px]  justify-center h-screen'>
-                    <div className='relative flex w-[1200px] h-[626px]'>
+                    <div className='relative flex w-[1200px] h-[526px]'>
                         <div className='flex flex-col mt-[100px] z-10'>
                             <h2 className='h-[62px] w-[307px] text-[56px] leading-[62px] font-light mb-6'>
                                 BENEFITS
