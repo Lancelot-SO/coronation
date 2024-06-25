@@ -75,7 +75,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col text-white">
                 <small>Call us</small>
-                <small>(00) 112 365 489</small>
+                <small>0302772606 / 0308249068</small>
               </div>
             </div>
           </div>
