@@ -33,13 +33,14 @@ const HeroRed = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={corporatePay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                        <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
-                        </Link>
                     </div>
+                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-secondary absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
                 </div>

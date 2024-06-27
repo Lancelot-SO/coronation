@@ -1,68 +1,38 @@
-import React, { useEffect, useState } from 'react'
-
-import CoreCareer from './CoreCareer'
-
-import { careerNav } from '../data'
-import { careerData } from "../data"
+import React, { useEffect, useState } from 'react';
+import CoreCareer from './CoreCareer';
+import { careerNav, careerData } from '../data';
 
 const CoreCareers = () => {
-
-    const [item, setItem] = useState({ name: 'LIFE AT CORONATION' })
-    const [projects, setProjects] = useState([])
-    const [active, setActive] = useState(0);
-
+    const [selectedCategory, setSelectedCategory] = useState(careerNav[0].name);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        //get the projects based on the clicked item in projectNav
-
-        if (item.name === 'LIFE AT CORONATION') {
-            setProjects(careerData);
-        } else {
-            const newCareers = careerData.filter(
-                (project) => {
-                    return project.category === item.name
-                }
-            );
-            setProjects(newCareers)
-        }
-
-    }, [item])
-
-    const handleClick = (e, index) => {
-        setItem({
-            name: e.target.textContent
-        })
-        setActive(index)
-    }
+        const newCareers = careerData.filter(project => project.category === selectedCategory);
+        setProjects(newCareers);
+    }, [selectedCategory]);
 
     return (
-        <div>
+        <div className="container mx-auto p-4 pt-8">
+            <nav className="flex space-x-4 mb-8 pl-[200px]">
+                {careerNav.map((navItem, index) => (
+                    <button
+                        key={index}
+                        className={`px-4 py-2 rounded ${selectedCategory === navItem.name ? 'bg-customPurple text-white' : 'bg-gray-200 text-black'}`}
+                        onClick={() => setSelectedCategory(navItem.name)}
+                    >
+                        {navItem.name}
+                    </button>
+                ))}
+            </nav>
             <div className='flex items-center justify-center'>
-                <div className='flex flex-col w-[1120px] h-[756px]'>
-                    <ul className='flex w-[969.5px] h-[52px] border items-center mt-[60px] ml-8 gap-4'>
-                        {careerNav.map((item, index) => {
-
-                            return <li
-                                onClick={(e) => {
-                                    handleClick(e, index);
-                                }}
-                                key={index} className={`${active === index ? 'bg-customPurple text-white' : ''} cursor-pointer border-r-2 p-2 flex items-center justify-center text-[16px]`}>{item.name}</li>
-                        })}
-                    </ul>
-
-                    {/* display all the projects here */}
-                    <div className=''>
-                        {
-                            projects.map((item) => {
-                                return <CoreCareer item={item} key={item.id} />
-                            })
-                        }
-
-                    </div>
+                <div>
+                    {projects.map((item) => (
+                        <CoreCareer item={item} key={item.id} />
+                    ))}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CoreCareers
+export default CoreCareers;

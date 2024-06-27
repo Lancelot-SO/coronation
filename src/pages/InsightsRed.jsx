@@ -10,13 +10,13 @@ const InsightsRed = () => {
     return (
         <div>
             <div className='relative w-full h-[629px] bg-black'>
-                <div className='absolute top-[243px] left-[160px] w-[560px] h-[263px]'>
+                <div className='absolute top-[343px] left-[160px] w-[560px] h-[263px]'>
                     <h2 className='mb-4 text-[35px] leading-[42px] text-white font-normal w-[452px] h-[84px]'>We guarantee the future of the things you care about!</h2>
                     <p className='w-[390px] h-[57px] text-[16px] leading-[19px] text-white font-normal'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <div className='flex mt-8 gap-4'>
+                    {/* <div className='flex mt-8 gap-4'>
                         <Link>
                             <p className='flex items-center justify-center w-[170px] h-[52px] rounded-[34px] bg-transparent border border-white text-white'>Motor</p>
                         </Link>
@@ -26,19 +26,18 @@ const InsightsRed = () => {
                         <Link>
                             <p className='flex items-center justify-center w-[170px] h-[52px] rounded-[34px] bg-white'>Home</p>
                         </Link>
-
-
-                    </div>
+                    </div>*/}
                 </div>
                 <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={insightPay} alt='print' className='relative w-[300px] h-[400px]' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-white ml-[20px] justify-center text-black rounded-[30px]'>Contact Us</button>
-                        </Link>
+                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services?<br /> Let's talk</p>
                     </div>
+                    <Link to="/" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-white ml-[20px] justify-center text-black rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'></div>
             </div>

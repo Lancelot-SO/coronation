@@ -20,34 +20,35 @@ const Career = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={careerPay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/contact">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                        </Link>
                     </div>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
                 </div>
             </div>
 
             <section>
-                <div className='h-[801px] w-full flex items-center'>
+                <div className='h-[900px] w-full flex items-center'>
                     <div className='w-[615px] h-[648px]'>
                         <div className='mt-[60px] flex flex-col ml-[80px]'>
-                            <h2 className='h-[156px] w-[394px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
+                            <h2 className='h-[156px] w-[394px] text-[40px] mb-2 leading-[52px] font-light tracking-[-1px] mt-4'>
                                 INVESTING IN YOU
                                 (WE ARE INTERESTED
                                 IN YOU)
                             </h2>
-                            <p className='h-[32px] w-[338px] text-[24px] leading-[32px] font-light'>CORONATION ACCADAMICS</p>
-                            <p className='w-[415px] h-[448px] leading-[32px] text-[24px] font-light'>
-                                Coronation Academies seeks to enhance careers, attract top talent, and support key tenets of the firm’s mission and culture by delivering cutting-edge learning resources. Our vision is that the Coronation Academies will be a competitive differentiator to attract and retain the best talent. Whether your desire is in technology, management or strategy, wherever you are; your strengths and interests will influence your career and you have plenty of choice with us. Five Academies, one successful career!
+                            <p className='h-[32px] w-[338px] text-[24px] leading-[32px] mb-4 font-light'>CORONATION ACADAMICS</p>
+                            <p className='w-[415px] leading-[32px] text-[24px] font-light'>
+                                Coronation Insurance Ghana Ltd Academies seeks to enhance careers, attract top talent, and support key tenets of the firm’s mission and culture by delivering cutting-edge learning resources. Our vision is that the Coronation Academies will be a competitive differentiator to attract and retain the best talent. Whether your desire is in technology, management or strategy, wherever you are; your strengths and interests will influence your career and you have plenty of choice with us. Five Academies, one successful career!
                             </p>
                         </div>
                     </div>
-                    <div className='bg-green-600 relative'>
+                    <div className='bg-green-600 mt-[100px] relative'>
                         <div className='bg-black w-[940px] h-[286px] '></div>
                         <img src={psInsurance} alt='history' className='absolute w-[560px] h-[552px] object-cover top-[-130px] right-[24%]' />
                     </div>
@@ -64,7 +65,8 @@ const Career = () => {
                         <div className='mt-[120px] flex flex-col'>
                             <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-end justify-end mb-4'>CULTURE</h2>
                             <p className='w-[430px] h-[256px] leading-[32px] text-[24px] ml-1 font-light'>
-                                Our culture is what brings us together and enables our people and organization to thrive. We seek to hire people who believe in the pursuit of our standards, known as the Coronation Values & Attributes.                            </p>
+                                Our culture is what brings us together and enables our people and organization to thrive. We seek to hire people who believe in the pursuit of our standards, known as the Coronation Values & Attributes.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -20,9 +20,9 @@ const FirstInsightDetail = () => {
                 <div className='flex items-center justify-center'>
                     <div className=' w-[1123px] h-[1377px] mt-[30px] flex gap-4'>
                         <div>
-                            <div className=' w-[664px] h-[303px]'>
-                                <h2 className='w-[496px] h-[36px] font-light text-[30px] leading-[36px] text-[#1C1F35]'>STAYING AHEAD OF THE STORM</h2>
-                                <p className='w-[664px]  font-normal h-[170px] leading-[24px] text-[16px] text-[#666C89]'>
+                            <div className=' w-[664px]'>
+                                <h2 className='w-[496px] h-[36px] font-light text-[30px] leading-[36px] text-[#1C1F35] mb-4'>STAYING AHEAD OF THE STORM</h2>
+                                <p className='w-[664px] font-light leading-[32px] text-[20px] text-[#666C89]'>
                                     In today's age of global warming, characterised by a rise in the
                                     frequency and severity of floods and fires, the significance of taking
                                     preventive measures cannot be overstated. Ghana, in particular,
@@ -32,7 +32,7 @@ const FirstInsightDetail = () => {
                                     country are particularly susceptible to frequent flooding during
                                     moderate to heavy rainfalls.
                                 </p>
-                                <p className='w-[664px]  font-normal leading-[24px] h-[120px] text-[16px] text-[#666C89]'>
+                                <p className='w-[664px] font-light leading-[32px] text-[20px] text-[#666C89]'>
                                     The consequences of flooding can be severe, including loss of lives,
                                     displacement of people, property damage, and more. Therefore, it is
                                     crucial to identify strategies that can mitigate these impacts. As we
@@ -48,13 +48,13 @@ const FirstInsightDetail = () => {
                             </div>
 
                             <div className='w-[664px] mt-4'>
-                                <p className='h-[95px] text-[16px] leading-[24px] font-normal text-[#666C89]'>
+                                <p className=' text-[20px] leading-[24px] mb-4 font-light text-[#666C89]'>
                                     We have partnered with highly regarded global institutions to build Nigeria's first fully integrated technology-enabled investment platform, thus allowing us to become one of the region's fastest-growing fund managers.
 
                                 </p>
 
                                 <a href={brochureUrl} download className='text-[#08ABDE]'>
-                                    Click here to download Brochure
+                                    Click here to download Article
                                 </a>
                             </div>
 
@@ -63,7 +63,7 @@ const FirstInsightDetail = () => {
                                 <p className='text-center text-[#666C89] mt-2'>coronation</p>
                             </div>
 
-                            <p className='w-[664px] h-[168px] font-normal text-[16px] leading-[24px] mt-8'>
+                            <p className='w-[664px] font-light text-[20px] leading-[32px] mt-10'>
                                 Although developing a strategy for flood or fire may seem complex,
                                 an insurance product will simplify the process significantly. It is
                                 advisable to consult with risk experts to tailor insurance coverage to
@@ -78,22 +78,22 @@ const FirstInsightDetail = () => {
                                 <div>
                                     <ul className="flex gap-4 text-black items-center">
                                         <li>
-                                            <Link to="https://instagram.com" className="">
+                                            <Link to="https://www.instagram.com/coronationgh/" className="">
                                                 <FaInstagram />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://facebook.com">
+                                            <Link to="https://www.facebook.com/coronationghana/">
                                                 <FaFacebookF />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://twitter.com">
+                                            <Link to="https://x.com/coronationghana">
                                                 <FaTwitter />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://linkedIn.com">
+                                            <Link to="https://www.linkedin.com/company/coronation-insurance-ghana/">
                                                 <FaLinkedinIn />
                                             </Link>
                                         </li>
@@ -103,8 +103,8 @@ const FirstInsightDetail = () => {
                             </div>
                         </div>
                         <div>
-                            <div className='min-w-[440px] min-h-[304px] bg-[#F5F5F5]'>
-                                <h3 className=''>Here are some key aspects of home insurance:</h3>
+                            <div className='min-w-[440px] min-h-[304px] p-8 bg-[#F5F5F5]'>
+                                <h3 className='text-xl font-medium'>Here are some key aspects of home insurance:</h3>
                                 <p className='mt-2 leading-10'>
                                     1. Protects the structure of your home, including its foundation,
                                     walls, roof, and attached structures like garages or decks<br />
@@ -118,8 +118,8 @@ const FirstInsightDetail = () => {
                                     5. Provides personal accident cover
                                 </p>
                             </div>
-                            <div className='min-w-[440px] min-h-[304px] mt-10 bg-[#F5F5F5]'>
-                                <h3 className=''>Regarding fire risks, it is crucial to adhere to some of the tips below:</h3>
+                            <div className='min-w-[440px] min-h-[304px] mt-10 p-8 bg-[#F5F5F5]'>
+                                <h3 className='text-xl font-medium'>Regarding fire risks, it is crucial to adhere to some of the tips below:</h3>
                                 <p className='mt-2 leading-10'>
                                     1. Address faulty electrical wiring, which remains a significant cause of
                                     fires in Ghana.<br />

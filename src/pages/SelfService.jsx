@@ -7,9 +7,9 @@ import servicePay from "../assets/service/servicePay.png"
 // import icon3 from "../assets/service/serviceIcon3.png"
 import icon4 from "../assets/service/serviceIcon4.png"
 import icon5 from "../assets/service/serviceIcon5.png"
-import icon6 from "../assets/service/serviceIcon6.png"
-import serviceImage1 from "../assets/service/serviceImage1.png"
-import serviceImage2 from "../assets/service/serviceImage2.png"
+// import icon6 from "../assets/service/serviceIcon6.png"
+// import serviceImage1 from "../assets/service/serviceImage1.png"
+// import serviceImage2 from "../assets/service/serviceImage2.png"
 import bg from "../assets/bg.png"
 
 import Banner from '../components/Banner'
@@ -17,7 +17,7 @@ import Footer from '../components/Footer'
 
 
 import { Link } from 'react-router-dom'
-import { FaLongArrowAltRight } from 'react-icons/fa'
+// import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const SelfService = () => {
     return (
@@ -33,13 +33,14 @@ const SelfService = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px]'>
                     <img src={servicePay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/contact">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                        </Link>
                     </div>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px]'>
                 </div>
@@ -107,11 +108,11 @@ const SelfService = () => {
             </section>*/}
 
             <section>
-                <div className='flex w-full h-[759px] items-center justify-center'>
+                <div className='flex w-full h-[659px] items-center justify-center'>
                     <div className='h-[699px] w-[1000px] flex flex-col items-center'>
-                        <h2 className='w-[1110px] h-[44px] text-[40px] leading-[44px] font-light text-center mt-[60px]'>Coronation Insurance</h2>
+                        <h2 className='w-[1110px] h-[44px] text-[40px] leading-[44px] font-light text-center mt-[60px]'>Coronation Insurance Ghana Ltd</h2>
 
-                        <div className='w-[934px] h-[415px] mt-[50px] flex gap-2'>
+                        <div className='w-[934px] h-[415px] mt-[50px] flex items-center justify-center gap-6'>
                             <div className='flex flex-col items-center justify-center w-[305px] h-[415px] bg-iconBg rounded p-2 cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
                                 <img src={icon4} alt='icon' className='w-[80px] h-[80px]' />
                                 <h4 className='flex items-center justify-center w-[306px] h-[48px] font-normal text-[24px] leading-[24px] mt-8'>
@@ -124,29 +125,19 @@ const SelfService = () => {
                             <div className='flex flex-col items-center justify-center w-[305px] h-[415px] bg-iconBg rounded p-2 cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
                                 <img src={icon5} alt='icon' className='w-[80px] h-[80px]' />
                                 <h4 className='flex items-center justify-center w-[231px] h-[48px] font-normal text-[24px] leading-[24px] mt-8'>
-                                    Coronation Insurance
-                                    Mobile App (Android)
+                                    Buy Insurance
                                 </h4>
                                 <Link to="https://play.google.com/store/apps/details?id=com.coronation.android.customer&hl=en&gl=US" target='_blank' rel="noopener noreferrer">
-                                    <button className='w-[154px] h-[20px] mt-10 text-customPurple'>Get it on Playstore</button>
+                                    <button className='w-[154px] h-[20px] mt-10 text-customPurple'>Buy Insurance</button>
                                 </Link>
                             </div>
-                            <div className='flex flex-col items-center justify-center w-[305px] h-[415px] bg-iconBg rounded p-2 cursor-pointer transform transition-transform duration-300 hover:scale-105 shadow-card'>
-                                <img src={icon6} alt='icon' className='w-[80px] h-[80px]' />
-                                <h4 className='flex items-center justify-center w-[231px] h-[48px] font-normal text-[24px] leading-[24px] mt-8'>
-                                    Coronation Insurance
-                                    Mobile App (iOS)
-                                </h4>
-                                <Link to="https://apps.apple.com/ng/app/wapic-mobile/id1499828228" target='_blank' rel="noopener noreferrer">
-                                    <button className='w-[184px] h-[20px] mt-10 text-customPurple'>Download on App Store</button>
-                                </Link>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            {/* <section>
                 <div class="relative max-w-4xl mx-auto my-8">
                     <img src={serviceImage1} alt="Business meeting" class="w-[592px] h-[359px] object-cover" />
                     <div class="absolute top-1/2 left-[600px] transform -translate-x-1/4 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg w-1/2">
@@ -157,9 +148,9 @@ const SelfService = () => {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
-            <section>
+            {/*<section>
                 <div class="flex flex-col items-center justify-center md:flex-row mt-[130px]">
                     <div class="p-10 h-[227px] w-[492px] rounded shadow-lastCard">
                         <h2 class="text-[#475569] font-bold text-xl mb-2">CORONATION ASSET MANAGEMENT</h2>
@@ -173,10 +164,10 @@ const SelfService = () => {
                         <img src={serviceImage2} alt="Investment Management" class="w-[592px] h-[359px] object-cover" />
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
 
-            <section className='my-[120px]'>
+            <section className='mb-[120px]'>
                 <div className='relative'>
                     <img src={bg} alt='bg' className='absolute w-[1120px] h-[177px]  top-0 left-[190px] object-cover' />
                     <div className='relative z-10 flex flex-row ml-[300px]'>

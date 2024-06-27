@@ -42,6 +42,7 @@ const Home = () => {
 
   return (
     <div className="relative flex h-screen bg-[#C4C4C4] lg:bg-none">
+      {/*mobile start */}
       <div className="flex lg:hidden object-cover">
         <img
           src={landInd}
@@ -54,6 +55,8 @@ const Home = () => {
           className=" w-1/2 h-full object-cover"
         />
       </div>
+      {/*mobile end */}
+
       <div
         className="relative w-1/2 h-full hidden lg:flex"
         onMouseEnter={handleLeftMouseEnter}
@@ -65,13 +68,13 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div
-          className={`absolute w-[335px] h-[316px] flex flex-col justify-start items-start top-[240px] 3xl:top-[450px] left-[50px] text-white z-40 transition-opacity duration-300 ${isLeftHovered ? "opacity-100" : "opacity-0"
+          className={`absolute w-[400px] h-[316px] flex flex-col justify-start items-start top-[240px] 3xl:top-[450px] left-[50px] text-white z-40 transition-opacity duration-300 ${isLeftHovered ? "opacity-100" : "opacity-100"
             }`}
         >
           <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INDIVIDUAL</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-left">
             Invest and manage your money on your own terms. It's easier than
-            ever before with Coronation Insurance.
+            ever before with Coronation Insurance Ghana LTD.
           </p>
           <Link to='/hero' onClick={handleLeftClick}>
             <button className="bg-customPurple text-white font-bold py-2 px-4 rounded w-[212px]">
@@ -79,7 +82,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-10"></div>
+        <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-50 transition-opacity duration-300 z-10"></div>
       </div>
 
       <div
@@ -93,13 +96,12 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div
-          className={`absolute w-[335px] h-[316px] flex flex-col justify-end items-end top-[200px] 3xl:top-[400px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-0"
+          className={`absolute w-[400px] h-[316px] flex flex-col justify-end items-end top-[170px] 3xl:top-[400px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-100"
             }`}
         >
-          <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">CORPORATE</h1>
+          <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INSTITUTIONAL</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-right">
-            Invest and manage your money on your own terms. It's easier than
-            ever before with Coronation Insurance.
+            Representing organizations or beneficiaries? Great! We offer tailored corporate solutions..
           </p>
           <Link to='/herored' onClick={handleRightClick}>
             <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
@@ -107,10 +109,10 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-0 transition-opacity duration-300 z-10"></div>
+        <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-50 transition-opacity duration-300 z-10"></div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+      <div className="absolute top-1/2 mt-[54px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
         <img
           src={landingImg}
           alt="landing"

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import travelBg from "../assets/travel/travelBg.png"
 import travelPay from "../assets/travel/travelPay.png"
-import travelComp from "../assets/travel/travelComp.png"
+// import travelComp from "../assets/travel/travelComp.png"
 import travelComp1 from "../assets/travel/travelComp1.png"
 import travelComp2 from "../assets/travel/travelComp2.png"
 import motorComp3 from "../assets/motor/motorComp3.png"
@@ -11,7 +11,7 @@ import motorComp3 from "../assets/motor/motorComp3.png"
 
 
 import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
-import PilgrimageModal from '../components/PilgrimageModal'
+// import PilgrimageModal from '../components/PilgrimageModal'
 import StudentModal from '../components/StudentModal'
 import IndividualModal from '../components/IndividualModal'
 import Banner from '../components/Banner'
@@ -19,7 +19,7 @@ import Footer from '../components/Footer'
 
 const TravelInsurance = () => {
 
-    const [showPilgrimageModal, setShowPilgrimageModal] = useState(false);
+    // const [showPilgrimageModal, setShowPilgrimageModal] = useState(false);
     const [showStudentModal, setshowStudentModal] = useState(false);
     const [showIndividualModal, setshowIndividualModal] = useState(false);
 
@@ -31,21 +31,22 @@ const TravelInsurance = () => {
             <div className='relative'>
                 <img src={travelBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
-                <div className='absolute top-[303px] left-[160px] w-[745px] h-[163px] bg-[rgba(0,0,0,0.7)] p-6'>
+                <div className='absolute top-[303px] left-[160px] w-[745px] h-[220px] bg-[rgba(0,0,0,0.7)] p-6'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance.</h2>
                     <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
-                        Travel insurance covers risks associated with travelling out of your country of residence on a temporary basis.
+                        Travel insurance provides cover for risks associated with travelling out of your country of residence on a temporary basis. This cover includes  medical expenses as a result of accident or illness, cost of repatriation and financial compensation to your beneficiaries in the event of unfortunate case of death while under cover and many more.
                     </p>
                 </div>
                 <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={travelPay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
-                            Want to know more about our services? Let's talk
+                            Want to know more about our services? <br />Let's talk
                         </p>
                         <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
+                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
                         </Link>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ const TravelInsurance = () => {
                 <div className='w-full flex items-center justify-center mb-10'>
                     <div className='w-[1120px] h-[168px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4 tracking-[-1px]'>
-                            WHY CHOOSE CORONATION?
+                            WHY CHOOSE CORONATION INSURANCE GHANA LTD?
                         </h2>
                         <div className='w-[1111px] h-[63px]'>
                             <p className='font-light text-[24px] leading-[32px]'>
@@ -67,7 +68,7 @@ const TravelInsurance = () => {
                 </div>
             </section>
 
-            <section>
+            {/*<section>
                 <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
                     <div className=' flex items-end justify-end'>
                         <div className='w-[1350px] h-[552px] mt-[80px] flex relative'>
@@ -98,7 +99,7 @@ const TravelInsurance = () => {
                         Request & Pay
                     </Link>
                 </div>
-            </section>
+            </section>*/}
 
             <section>
                 <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
@@ -112,7 +113,7 @@ const TravelInsurance = () => {
                                 STUDENT
                             </h2>
                             <p className='w-[430px] h-[100px] leading-[32px] text-[24px] ml-1 font-light'>
-                                Travelling to study abroad or for school excursion? Our student policy is all you need. Sign up today.
+                                Protection for students that study outside their country or travel for school excursion.
                             </p>
                             <div className=''>
                                 <button type='button' onClick={() => setshowStudentModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
@@ -139,8 +140,7 @@ const TravelInsurance = () => {
                                     INDIVIDUALS
                                 </h2>
                                 <p className='w-[430px] h-[120px] leading-[32px] text-[20px] font-light'>
-                                    Traveling abroad? Solo or with people? Business or leisure, we’ve got something to make the journey better.
-                                </p>
+                                    Traveling abroad? Solo or with people? Business or leisure, we’ve got something to make the journey better..                                </p>
 
                                 <div className=''>
                                     <button type='button' onClick={() => setshowIndividualModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
@@ -159,7 +159,7 @@ const TravelInsurance = () => {
                         </div>
                     </div>
                     <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
-                        Request & Pay
+                        GET A QUOTE
                     </Link>
                 </div>
             </section>
@@ -176,7 +176,7 @@ const TravelInsurance = () => {
                             </p>
 
                             <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
-                                REQUEST & BUY
+                                GET A QUOTE
                             </Link>
                         </div>
                         <div className='relative ml-[150px]'>
@@ -193,8 +193,6 @@ const TravelInsurance = () => {
                                         <li class="w-full font-normal text-[10px] leading-[14px] text-white ">Emergency return home following the death of a close family member</li>
                                     </ul>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

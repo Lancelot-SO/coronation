@@ -25,6 +25,8 @@ import MarineInsurance from './pages/MarineInsurance';
 import EngineerInsurance from './pages/EngineerInsurance';
 import SecondInsightDetail from './insightDetails/SecondInsightDetail';
 import ThirdInsightDetail from './insightDetails/ThirdInsightDetail';
+import Privacy from './pages/Privacy';
+import PrivacyRed from './pages/PrivacyRed';
 
 
 function App() {
@@ -58,6 +60,10 @@ function App() {
           <Route path='/first_insight' element={<FirstInsightDetail />} />
           <Route path='/second_insight' element={<SecondInsightDetail />} />
           <Route path='/third_insight' element={<ThirdInsightDetail />} />
+          <Route path='/privacy' element={<Privacy />} />
+          <Route path='/privacyred' element={<PrivacyRed />} />
+
+
 
         </Routes>
       </BrowserRouter>

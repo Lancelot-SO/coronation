@@ -50,8 +50,8 @@ const Navbar = () => {
                 <CiClock2 className={`${isHovered === "left" ? "text-customPurple" : "text-secondary"}`} />
               </div>
               <div className="flex flex-col text-white">
-                <small>Mon - Fri 8:00 - 5:00</small>
-                <small>Saturday-Sunday Closed</small>
+                <small>Working Hours</small>
+                <small>Mon - Fri 8:00am - 5:00pm</small>
               </div>
             </div>
             <div className="flex items-center gap-6">
@@ -64,6 +64,8 @@ const Navbar = () => {
               <div className="flex flex-col text-white">
                 <small>Email</small>
                 <small>infoghana@coronationinsurance.com.ng</small>
+                <small>contactcentregh@coronationinsurance.com.ng</small>
+
               </div>
             </div>
             <div className="flex items-center gap-6">
@@ -89,40 +91,40 @@ const Navbar = () => {
           <div className="w-full h-full flex items-center justify-between px-[200px]">
             <ul className={`flex justify-evenly text-white w-[700px]`}>
               <li className="p-1 flex">
-                <NavLink to={fromRight ? "/aboutred" : "/about"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>ABOUT</NavLink>
+                <NavLink to={fromRight ? "/aboutred" : "/about"} className={`${isLandingPage ? "opacity-100 text-[18px] font-bold" : ""} text-[18px] font-bold`}>ABOUT</NavLink>
               </li>
               <li className="p-1 flex">
-                <NavLink to={fromRight ? "/productred" : "/products"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>PRODUCTS & SOLUTIONS</NavLink>
+                <NavLink to={fromRight ? "/productred" : "/products"} className={`${isLandingPage ? "opacity-100 text-[18px] font-bold" : ""} text-[18px] font-bold`}>PRODUCTS & SOLUTIONS</NavLink>
               </li>
               <li className="p-1 flex">
-                <NavLink to={fromRight ? "/insightsred" : "/insights"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>INSIGHTS</NavLink>
+                <NavLink to={fromRight ? "/insightsred" : "/insights"} className={`${isLandingPage ? "opacity-100 text-[18px] font-bold" : ""} text-[18px] font-bold`}>INSIGHTS</NavLink>
               </li>
               <li className="p-1 flex">
-                <NavLink to={fromRight ? "/careerred" : "/career"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>CAREERS</NavLink>
+                <NavLink to={fromRight ? "/careerred" : "/career"} className={`${isLandingPage ? "opacity-100 text-[18px] font-bold" : ""} text-[18px] font-bold`}>CAREERS</NavLink>
               </li>
               <li className="p-1 flex">
-                <NavLink to={fromRight ? "/contactred" : "/contact"} className={`${isLandingPage ? "pointer-events-none opacity-100" : ""}`}>CONTACT US</NavLink>
+                <NavLink to={fromRight ? "/contactred" : "/contact"} className={`${isLandingPage ? "opacity-100 text-[18px] font-bold" : ""} text-[18px] font-bold`}>CONTACT US</NavLink>
               </li>
             </ul>
 
             <ul className="flex gap-4 text-white items-center">
               <li>
-                <a href="https://www.instagram.com/coronationng/" target="_blank" rel="noopener noreferrer" className="opacity-100">
+                <a href="https://www.instagram.com/coronationgh/" target="_blank" rel="noopener noreferrer" className="opacity-100">
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/coronationng/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/coronationghana/" target="_blank" rel="noopener noreferrer">
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="https://x.com/coronation_ng" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/coronationghana" target="_blank" rel="noopener noreferrer">
                   <FaTwitter />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/coronationgrp/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/coronation-insurance-ghana/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedinIn />
                 </a>
               </li>

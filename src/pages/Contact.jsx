@@ -1,25 +1,22 @@
-import React, { useRef, useState } from 'react'
-import 'react-phone-number-input/style.css'
+import React, { useRef, useState } from 'react';
+import 'react-phone-number-input/style.css';
 import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
+import PhoneInput, { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input';
 
-
-import flag1 from "../assets/contact/flag1.jpg"
-import flag2 from "../assets/contact/flag2.jpg"
-
-
-import contactBg from "../assets/contact/contactBG.png"
-import contactPay from "../assets/contact/contactPay.png"
-import formImage from "../assets/contact/formImage.png"
-import { Link } from 'react-router-dom'
-import PhoneInput, { formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
-import Banner from '../components/Banner'
-import Footer from '../components/Footer'
-
+import flag1 from "../assets/contact/flag1.jpg";
+import flag2 from "../assets/contact/flag2.jpg";
+import contactBg from "../assets/contact/ContactBg.png";
+import contactPay from "../assets/contact/contactPay.png";
+import formImage from "../assets/contact/formImage.png";
+import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 
 import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
-
 
 const Contact = () => {
     const form = useRef();
@@ -31,13 +28,14 @@ const Contact = () => {
         emailjs
             .sendForm('service_lw4pyej', 'template_0vf2k2b', form.current, {
                 publicKey: 'BwhLD7vMqhEFp57Ji',
+                from_name: 'Coronation Insurance',
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success('Message sent successfully!');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    toast.error('Failed to send message. Please try again.');
                 },
             );
         e.target.reset();
@@ -46,24 +44,25 @@ const Contact = () => {
 
     return (
         <div>
+            <ToastContainer />
             <div>
                 <img src={contactBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>CONTACT US</h2>
                     <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         We would love to hear from you. Let’s know more about you by filling in your details below to help match you with the right member of our team
-
                     </p>
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={contactPay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/contact">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                        </Link>
                     </div>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
                 </div>
@@ -71,21 +70,21 @@ const Contact = () => {
 
             <section>
                 <div className="flex flex-col md:flex-row items-center justify-center p-6 min-h-screen ml-[70px]">
-                    <div className="w-full md:w-1/2 p-6 bg-white text-black  rounded-lg shadow-card">
+                    <div className="w-full md:w-1/2 p-6 bg-white text-black rounded-lg shadow-card">
                         <form ref={form} onSubmit={sendEmail} className="space-y-4">
                             <div className="flex space-x-4">
                                 <div className="w-1/2">
                                     <label className="block text-sm font-medium text-black">First name</label>
-                                    <input type="text" name='first_name' placeholder="First name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                    <input type="text" name='first_name' placeholder="First name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" />
                                 </div>
                                 <div className="w-1/2">
                                     <label className="block text-sm font-medium text-black">Last name</label>
-                                    <input type="text" name='last_name' placeholder="Last name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                    <input type="text" name='last_name' placeholder="Last name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Email</label>
-                                <input type="email" name='user_email' placeholder="you@company.com" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm  text-black" />
+                                <input type="email" name='user_email' placeholder="you@company.com" required className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-black">Phone number</label>
@@ -99,9 +98,6 @@ const Contact = () => {
                         ${phoneNumber && isPossiblePhoneNumber(phoneNumber) ? 'border-customPurple' : 'border-gray-300 dark:border-gray-700'}
                         ${phoneNumber && isValidPhoneNumber(phoneNumber) ? 'text-customPurple' : ''}`}
                                 />
-                                {phoneNumber && (
-                                    <div className="text-customPurple">International number: {formatPhoneNumberIntl(phoneNumber)}</div>
-                                )}
                                 {/* Hidden input field for phone number */}
                                 <input type="hidden" name="user_phone" value={phoneNumber} />
                             </div>
@@ -154,7 +150,7 @@ const Contact = () => {
                                     <option>FNOL enquiry</option>
                                     <option>Other Enquiry</option>
                                     <option>Policy Renewal on Coronation Insurance Mobile App</option>
-                                    <option>Policy Renewal on Online  Portal</option>
+                                    <option>Policy Renewal on Online Portal</option>
                                     <option>Online Portal Enquiries</option>
                                     <option>Travel Insurance Procedure</option>
                                     <option>Coronation payment platform</option>
@@ -195,7 +191,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-start">
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                                <label for="privacy" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">You agree to our friendly <Link to="https://www.coronation.ng/privacy-and-cookie-policy/" target='_blank' rel='noopener noreferrer' className="text-indigo-600 hover:underline">privacy policy</Link>.</label>
+                                <label for="privacy" className="ml-2 block text-sm text-gray-500 0">You agree to our friendly <Link to="/privacy" className="text-indigo-600 hover:underline">privacy policy</Link>.</label>
                             </div>
                             <button type="submit" className="w-full py-2 px-4 bg-customPurple text-white font-semibold rounded-md shadow-card hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">SEND MESSAGE</button>
                         </form>
@@ -250,7 +246,7 @@ const Contact = () => {
             <Banner />
             <Footer />
         </div >
-    )
+    );
 }
 
-export default Contact
+export default Contact;

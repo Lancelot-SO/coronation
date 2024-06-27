@@ -5,7 +5,7 @@ import homeBg from "../assets/home/homeBg.png"
 import homePay from "../assets/home/homePay.png"
 import homeOwner from "../assets/home/homeOwner.png"
 import householder from "../assets/home/householder.png"
-import motorComp3 from "../assets/motor/motorComp3.png"
+import motorComp3 from "../assets/home/homeBenefit.jpeg"
 
 
 
@@ -36,15 +36,16 @@ const HomeInsurance = () => {
                 </div>
                 <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={homePay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
-                            Want to know more about our services? Let's talk
+                            Want to know more about our services? <br />Let's talk
                         </p>
-                        <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
-                        </Link>
                     </div>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
                 </div>
@@ -74,7 +75,7 @@ const HomeInsurance = () => {
                                     HOMEOWNERS
                                 </h2>
                                 <p className='w-[430px] h-[240px] leading-[32px] text-[20px] font-light'>
-                                    Home Owners is a comprehensive insurance that covers damage to a building occasioned by flood, fire and fallen trees as well as injury to visitors to the property. The product also covers the contents of a home such as furniture & fittings, jewelleries, refrigerator and so on.
+                                    Home Owners is a comprehensive insurance that covers damage to a building occasioned by flood, fire and fallen trees as well as injury to visitors to the property. The product also covers the contents of a home such as furniture & fittings, jewelries, refrigerator and so on.
                                 </p>
                                 <div className=''>
                                     <button type='button' onClick={() => setShowHouseOwnerModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
@@ -93,7 +94,7 @@ const HomeInsurance = () => {
                         </div>
                     </div>
                     <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
-                        Request & Pay
+                        GET A QUOTE
                     </Link>
                 </div>
             </section>
@@ -110,7 +111,8 @@ const HomeInsurance = () => {
                                 HOUSEHOLDERS
                             </h2>
                             <p className='w-[430px] h-[184px] leading-[32px] text-[24px] ml-1 font-light'>
-                                This policy is designed to meet the needs of the insured who do not own their home (and therefore do not require building insurance) but still desire protection for their belongings.                            </p>
+                                This policy is designed to meet the needs of the insured who do not own their home (and therefore do not require building insurance) but still desire protection for their belongings.
+                            </p>
                             <div className=''>
                                 <button type='button' onClick={() => setshowHouseHolderModal(true)} className='flex items-center gap-2 w-[222px] h-[44px] hover:text-customPurple'>
                                     <span>Insurance Features</span>
@@ -122,7 +124,7 @@ const HomeInsurance = () => {
                     </div>
 
                     <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
-                        Request & Pay
+                        GET A QUOTE
                     </Link>
                 </div>
             </section>
@@ -140,21 +142,18 @@ const HomeInsurance = () => {
                             </p>
 
                             <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
-                                REQUEST & BUY
+                                GET A QUOTE
                             </Link>
                         </div>
                         <div className='relative ml-[150px]'>
                             <img src={motorComp3} alt='ban' className='w-full h-auto' />
-                            <div className='absolute top-[100px] left-[-40px] w-full h-full flex gap-4 justify-center items-center p-4'>
-                                <div className='w-[597px] h-[221px] bg-black text-white p-4 rounded'>
-                                    <ul className='h-[221px]'>
-                                        <li class="w-full font-normal text-[10px] leading-[18px] text-white  mb-4">Payment of medical assistance for illness or accident sustained while travelling</li>
-                                        <li class="w-full font-normal text-[10px] leading-[14px] text-white mb-4">Provides transport or repatriation for medical reasons for the insured and/or family members travelling with the insured</li>
-                                        <li class="w-full font-normal text-[10px] leading-[20px] text-white mb-3">Provides transport or repatriation of mortal remains of insured</li>
-                                        <li class="w-full font-normal text-[10px] leading-[20px] text-white  mb-4">Communication of urgent messages related to any event covered in the policy</li>
-                                        <li class="w-full font-normal text-[10px] leading-[14px] text-white  mb-2">Payment of compensation for in-flight loss of checked-in luggage</li>
-                                        <li class="w-full font-normal text-[10px] leading-[18px] text-white  mb-2">Payment of compensation for delay of flight and delay of luggage.</li>
-                                        <li class="w-full font-normal text-[10px] leading-[14px] text-white ">Emergency return home following the death of a close family member</li>
+                            <div className='absolute top-[180px] left-[-40px] w-full h-full flex gap-4 justify-center items-center p-4'>
+                                <div className='w-[597px] bg-black text-white p-4 rounded'>
+                                    <ul className=''>
+                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-4">Indemnifies in the event of damage to the structures of the house.</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white mb-4">Indemnifies in the event of loss due to burglary (theft) or fire</li>
+                                        <li class="w-full font-normal text-[10px] leading-[20px] text-white mb-3">The policy will also cover you against liability for accidental injury to third parties or damage to their property that occurs on your premises</li>
+                                        <li class="w-full font-normal text-[14px] leading-[20px] text-white  mb-4">Can be extended to cover larceny (Theft not involving violence or forcible entry/exit is covered</li>
                                     </ul>
                                 </div>
                             </div>

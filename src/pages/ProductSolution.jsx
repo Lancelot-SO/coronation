@@ -21,19 +21,20 @@ const ProductSolution = () => {
         <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
         <div className='absolute top-[303px] left-[160px] w-[745px] h-[165px] bg-[rgba(0,0,0,0.8)] p-10'>
           <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Individual Insurance</h2>
-          <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>Coronation Insurance offers comprehensive insurance for your car, home,
+          <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>Coronation Insurance Ghana Ltd offers comprehensive insurance for your car, home,
             business and life - with only one telephone call. Find out more & get a quote..
           </p>
         </div>
         <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
           <img src={psInAcc} alt='print' className='relative' />
+          <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
           <div className='absolute top-[180px] items-center justify-center'>
             <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-            <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-            <Link to="https://ecoronation.com/index" target='_blank' rel='noopener noreferrer'>
-              <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Individual Account <FaFingerprint /></button>
-            </Link>
+            <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
           </div>
+          <Link to="https://ecoronation.com/index" target='_blank' rel='noopener noreferrer' className='absolute top-[300px] items-center justify-center'>
+            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
+          </Link>
         </div>
         <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
         </div>
@@ -46,7 +47,7 @@ const ProductSolution = () => {
             </h2>
             <div className='w-[1111px] h-[63px]'>
               <p className='font-light text-[24px] leading-[32px]'>
-                Life doesn't wait, neither should your insurance coverage. Coronation offers comprehensive plans for car, home, business, and life. One call. Total protection. Get a quote now!
+                Life doesn't wait, neither should your insurance coverage. Coronation Insurance Ghana Ltd offers comprehensive plans for car, home, business, and life. One call, and Total protection. Get a quote now!
               </p>
             </div>
           </div>

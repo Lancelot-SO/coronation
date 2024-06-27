@@ -16,7 +16,7 @@ import board6 from "../assets/director7.png"
 
 
 
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 
@@ -24,30 +24,29 @@ import 'react-multi-carousel/lib/styles.css';
 // import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
-import client1 from "../assets/client1.png"
 import Banner from '../components/Banner'
 import FooterRed from '../components/FooterRed'
-import { slider } from '../data'
-import Slider from '../components/Slider'
+// import { slider } from '../data'
+// import Slider from '../components/Slider'
 
 const AboutRed = () => {
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        }
-    }
+    // const responsive = {
+    //     desktop: {
+    //         breakpoint: { max: 3000, min: 1024 },
+    //         items: 1,
+    //         slidesToSlide: 1 // optional, default to 1.
+    //     },
+    //     tablet: {
+    //         breakpoint: { max: 1024, min: 464 },
+    //         items: 1,
+    //         slidesToSlide: 1 // optional, default to 1.
+    //     },
+    //     mobile: {
+    //         breakpoint: { max: 464, min: 0 },
+    //         items: 1,
+    //         slidesToSlide: 1 // optional, default to 1.
+    //     }
+    // }
     return (
         <div>
             <div>
@@ -59,13 +58,14 @@ const AboutRed = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={aboutPrint} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/contact">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                        </Link>
+                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
                     </div>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
                 </div>
@@ -87,20 +87,21 @@ const AboutRed = () => {
             <section>
                 <div className='w-full flex items-center justify-center'>
                     <div className='w-[1120px] h-[792px] flex flex-col'>
-                        <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE</h2>
+                        <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] h-[426px]'>
-                            <p className='font-light text-[16px] leading-[32px]'>
+                            <p className='font-light text-[22px] leading-[32px]'>
                                 Coronation Insurance Ghana LTD is a leading insurance company licensed by the National Insurance Commission (NIC) in 2008 to underwrite general insurance businesses in Ghana. The Company commenced business in 2009 and is positioned to play a central role in the economic transformation of the country and serve as a catalyst for rapid economic development of the country.
                             </p>
-                            <p className='font-light text-[16px] leading-[32px]'>
-                                Coronation’s mission is to transform into a diversified financial services institution, delivering value in a sustainable manner to her customers and stakeholders while playing a lead role in the transformation of the industry. The Company is a wholly-owned subsidiary of Coronation Insurance Plc which operates in Nigeria.Through a diverse portfolio of products and a commitment to providing the best customer experience possible, Coronation Insurance Ghana Ltd has significantly enhanced its underwriting capacity placing it among the top insurance companies in Ghana by solvency and capital
+                            <p className='font-light text-[22px] leading-[32px]'>
+                                Coronation Insurance Ghana LTD's mission is to transform into a diversified financial services institution, delivering value in a sustainable manner to her customers and stakeholders while playing a lead role in the transformation of the industry. The Company is a wholly-owned subsidiary of Coronation Insurance Plc which operates in Nigeria.Through a diverse portfolio of products and a commitment to providing the best customer experience possible,
+                                Coronation Insurance Ghana Ltd has significantly enhanced its underwriting capacity placing it among the top insurance companies in Ghana by solvency and capital.
                             </p>
-                            <p className='font-light text-[16px] leading-[32px]'>
+                            <p className='font-light text-[22px] leading-[32px]'>
                                 The Company is well placed as one of the top companies in the insurance industry with the best claims reserves and is committed to providing a one-stop shop solution for all insurance needs.
                             </p>
                         </div>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
-                        <p className='w-[1111px] h-[32px] text-[24px] leading-[32px] font-light'>
+                        <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
                             Our time tested expertise in risk management and actuarial services has positioned us as one of Ghana's fastest growing insurance companies. We provide products and services that are designed to offer value beyond the ambit of traditional insurance services. Our commitment to service is based on a firm belief that total customer satisfaction and excellent customer experience are the hallmarks of real value. Get insured today with our array of products.
                         </p>
                     </div>
@@ -114,11 +115,10 @@ const AboutRed = () => {
                             <div className='bg-black w-[840px] h-[286px]'></div>
                             <img src={history} alt='history' className='absolute w-[560px] h-[552px] object-cover top-0 left-[24%]' />
                         </div>
-                        <div className='mt-[120px] flex flex-col'>
-                            <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-end justify-end mb-4'>History</h2>
-                            <p className='w-[430px] h-[256px] leading-[32px] text-[24px] ml-1 font-light'>
-                                Having established a 30-year track record of achievements in banking across Africa and beyond, our founders created the business to help build a better financial future for Africa. Today, we are entrusted with over $1billion of clients assets and are recognized as Nigeria’s fastest growing investment manager.
-                            </p>
+                        <div className='flex flex-col'>
+                            <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-start justify-start mb-4'>History</h2>
+                            <p className='w-[500px] h-[480px] leading-[32px] text-[24px] ml-1 font-light'>
+                                Having established a 30-year record of achievements in financial services across Africa and beyond, our founders established a Pan-African platform focused on building a better financial future for Africa. We understand the need to protect the interests of individuals and businesses, therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer solutions for all. In Ghana, we are a leading insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance,etc.We provide INSURANCE FOR EVERYTHING!                            </p>
                         </div>
                     </div>
                 </div>
@@ -211,12 +211,12 @@ const AboutRed = () => {
                                 </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
-                                        <p className='text-[17px] leading-[22px] font-normal pr-4'>Miss. Peggy Onwu</p>
+                                        <p className='text-[17px] leading-[22px] font-normal pr-4'>Mrs. Peggy Onwu</p>
                                         <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non-Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
+                                            Mrs. Peggy Onwu has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -264,7 +264,8 @@ const AboutRed = () => {
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Mrs. Vesta Nunoo has over eighteen years’ experience as a Chartered Accountant. She is a Fellow of the Chartered Certified Accountants (FCCA), England for over fifteen years and a member of the institute of Chartered Accountants Ghana (ICAG).                                        </p>
+                                            Dr. Yaw Adom-Boateng is a Fellow of the Chartered Insurance Institute of Ghana (FCIIG) and the Chartered Insurance Institute of UK (FCII-UK). He is a seasoned insurance professional with over 22 years of experience in the insurance industry.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -325,7 +326,7 @@ const AboutRed = () => {
                 </div>
             </section>
 
-            <section>
+            {/*<section>
                 <div className='flex items-center justify-center'>
                     <div className='w-[1123px] h-[480px] mt-[100px] mb-[50px]'>
                         <Carousel
@@ -345,7 +346,7 @@ const AboutRed = () => {
                         </Carousel>
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
             <Banner />
             <FooterRed />

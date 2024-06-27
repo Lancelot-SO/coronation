@@ -1,70 +1,93 @@
 import React from 'react'
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import logo from "../assets/corologo.png"
 
 const Footer = () => {
     return (
-        <div class="bg-black text-white h-[423px]">
-            <div>
+        <div class="bg-black text-white">
+            <div className='flex flex-col'>
                 <div className='flex items-center justify-between'>
-                    <h1 className='ml-[250px] text-2xl font-bold'>CORONATION</h1>
+                    <img src={logo} alt='logo' className='ml-[250px]' />
                     <ul className='bg-customPurple flex w-[885px] h-[89px] items-center text-[16px] pl-20 font-semibold gap-[50px]'>
-                        <li>MAIN SERVICE</li>
-                        <li className='ml-10 mr-4'>SELF SERVICE</li>
-                        <li>INVESTOR
-                            RELATIONS</li>
+                        <li className='border-r-2 border-r-white pr-8 h-[40px] flex items-center'>MAIN SERVICE</li>
+                        <li className=' border-r-2 border-r-white pr-8 h-[40px] flex items-center'>SELF SERVICE</li>
+                        <li className='border-r-2 border-r-white pr-8 h-[40px] flex items-center'>AFFILIATION</li>
+                        <li>WHISTLE BLOWING</li>
                     </ul>
                 </div>
-                <div className='flex items-center justify-between mt-8'>
-                    <div className='ml-[250px] mb-8'>
-                        <p className='w-[240px] h-[72px] leading-[18px] text-[12px] font-medium'>
-                            We are a leading financial service partner that helps build enduring legacies that lead to sustainable wealth creation in Africa.
-                        </p>
-                        <ul className='flex gap-4'>
-                            <li>
-                                <Link to="https://www.instagram.com/coronationgh/" target="_blank" rel="noopener noreferrer" className="opacity-100">
-                                    <FaInstagram />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="https://www.facebook.com/coronationng/" target="_blank" rel="noopener noreferrer">
-                                    <FaFacebook />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="https://x.com/coronationghana" target="_blank" rel="noopener noreferrer">
-                                    <FaTwitter />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="https://www.linkedin.com/company/coronationgrp/" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedin />
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='flex w-[885px] items-center text-[16px] pl-20 font-semibold gap-[50px]'>
-                        <ul className=''>
-                            <Link><li className='mb-[10px]'>Insurance</li></Link>
-                            <Link><li className='mb-[10px]'>Private Banking</li></Link>
-                            <Link><li className='mb-[10px]'>Wealth Mangement</li></Link>
-                            <Link><li className=''>
-                                Securities Trading and<br />
-                                Brokerage
-                            </li></Link>
-                        </ul>
-                        <ul className='mb-[100px] flex flex-col gap-4 mr-12'>
-                            <Link><li className=''>Login</li></Link>
-                            <Link to="https://ecoronation.com/" target='_blank' rel='noopener noreferrer'><li>Claims</li></Link>
 
-                        </ul>
-                        <Link className='mb-[100px] mr-4'>Investor Information</Link>
-                        <Link className='mb-[100px]'>Coronation Nigeria</Link>
+                <div className='w-full h-[300px]'>
+                    <div className='flex'>
+                        <div className='w-[calc(100%-885px)] h-[300px] flex flex-col pt-20 pl-[250px]'>
+                            <p className='w-[240px] h-[108px] font-medium text-[12px] leading-[18px]'>
+                                At Coronation, we seek to be the most enjoyable company to do business with. Our experienced underwriting and strong risk management expertise developed over the last 16 years has prepared us to serve as your lead underwriter.
+                            </p>
+                            <div className='mt-5'>
+                                <ul className='flex gap-4'>
+                                    <li>
+                                        <Link to="https://www.instagram.com/coronationgh/" target="_blank" rel="noopener noreferrer" className="opacity-100">
+                                            <FaInstagram />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.facebook.com/coronationng/" target="_blank" rel="noopener noreferrer">
+                                            <FaFacebook />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://x.com/coronationghana" target="_blank" rel="noopener noreferrer">
+                                            <FaTwitter />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="https://www.linkedin.com/company/coronation-insurance-ghana/" target="_blank" rel="noopener noreferrer">
+                                            <FaLinkedin />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='w-[885px] h-[300px] flex'>
+                            <div className='w-[221px] h-full pt-4'>
+                                <ul className='flex flex-col pl-[70px] gap-4'>
+                                    <Link><li className=''>Motor Insurance</li></Link>
+                                    <Link><li className=''>Marine Insurance</li></Link>
+                                    <Link><li className=''>Fire Insurance</li></Link>
+                                    <Link><li className=''>
+                                        Personal Accident
+                                    </li></Link>
+                                    <Link><li className=''>
+                                        Engineering
+                                    </li></Link>
+                                </ul>
+                            </div>
+                            <ul className='w-[180px] h-full pl-[60px] pt-4 flex flex-col gap-4'>
+                                <Link><li className=''>Login</li></Link>
+                                <Link to="https://claims-gh.coronation.ng/" target='_blank' rel='noopener noreferrer'><li className='underline'>Claims</li></Link>
+                            </ul>
+                            <div className='w-[221px] h-full'>
+                                <ul className='flex flex-col pl-[20px] pt-4 gap-2'>
+                                    <Link><li className=''>Coronation Assest Management</li></Link>
+                                    <Link><li className=''>Coronation Insurance PLC</li></Link>
+                                    <Link><li className=''>Coronation Life Assurance</li></Link>
+                                    <Link><li className=''>Coronation Securities</li></Link>
+                                    <Link><li className=''>Coronation Capital</li></Link>
+                                    <Link><li className=''>Coronation Registrars</li></Link>
+                                    <Link><li className=''>Coronation Trustees</li></Link>
+                                    <Link><li className=''>Truim</li></Link>
+                                </ul>
+                            </div>
+                            <ul className=' w-[261px] pl-8 h-full pt-4'>
+                                <Link><li className=''>Whistle Blowing: Coronation
+                                    Insurance Ghana</li></Link>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            <hr className='w-full h-[1px] bg-slate-300 mt-[80px]' />
+            <hr className='w-full h-[1px] bg-slate-300 mt-[20px]' />
             <p className='ml-[250px] mt-4 flex items-center text-[12px] leading-[30px] font-medium '>© 2024 Coronation. All right reserved. Privacy Policy</p>
         </div>
     )

@@ -3,6 +3,21 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(pdf|jpg|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
+  },
   theme: {
     extend: {
       boxShadow: {

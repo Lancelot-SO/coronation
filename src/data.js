@@ -7,6 +7,8 @@ import Slider6 from "./assets/slider6.png"
 import Slider5 from "./assets/Slider5.png"
 import Slider4 from "./assets/Slider4.png"
 
+// import pdf1 from "./assets/insight/Staying_Ahead_of_The_Storm.pdf"
+// import pdf2 from "./assets/insight/Coronation_Wealth_Management_Brochure.pdf"
 
 
 import CoreLifeImage from "./assets/career/coreCareerlife.png"
@@ -85,8 +87,37 @@ export const careerData = [
         heading: "LIFE AT CORONATION",
         details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
         category: 'LIFE AT CORONATION',
-        link: "https://www.instagram.com/coronationgh/"
-    }
+        link: "https://www.instagram.com/coronationgh/",
+        context: "LEARN MORE"
+    },
+    {
+        id: '2',
+        image: CoreLifeImage,
+        heading: "SATISFY YOUR CUROSITY",
+        details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
+        category: 'SATISFY CUROSITY',
+    },
+    {
+        id: '3',
+        image: CoreLifeImage,
+        heading: "COME AS YOU ARE",
+        details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
+        category: 'COME AS YOU ARE',
+    },
+    {
+        id: '4',
+        image: CoreLifeImage,
+        heading: "FIND YOUR CROWN",
+        details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
+        category: 'FIND YOUR CROWN',
+    },
+    {
+        id: '5',
+        image: CoreLifeImage,
+        heading: "OUR VALUE STAYS WITH YOU",
+        details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
+        category: 'OUR VALUE STAYS WITH YOU',
+    },
 ]
 
 

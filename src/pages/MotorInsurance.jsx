@@ -25,7 +25,7 @@ const MotorInsurance = () => {
 
 
     return (
-        <div>
+        <div className='overflow-hidden'>
             <div className='relative'>
                 <img src={motorBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
@@ -37,15 +37,16 @@ const MotorInsurance = () => {
                 </div>
                 <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={motorPay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
-                            Want to know more about our services? Let's talk
+                            Want to know more about our services? <br />Let's talk
                         </p>
-                        <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
-                        </Link>
                     </div>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
                 </div>
@@ -74,7 +75,7 @@ const MotorInsurance = () => {
                                 <h2 className='h-[104px] w-[318px] text-[40px] leading-[52px] font-light tracking-[-1px] mt-4'>
                                     COMPREHENSIVE INSURANCE</h2>
                                 <p className='w-[450px] h-[224px] leading-[32px] text-[20px] font-light'>
-                                    This is an insurance product that pays for damages to your vehicle as a result of theft, accident or fire. It also covers legal liability to third-parties in the event of death, bodily injury, legal cost and property damage. With this policy, the cost of replacing or repairing your vehicle is covered no matter who is at fault.
+                                    This is an insurance product that pays for damages to your vehicle as a result of theft, accident or fire. It also covers legal liability to third-parties in the event of death, bodily injury, legal cost and property damage. With this policy, the cost of replacing or repairing your vehicle is covered.
                                 </p>
 
                                 <div className=''>
@@ -185,30 +186,20 @@ const MotorInsurance = () => {
                                 <div className='w-[350px] h-[350px] bg-black text-white p-4 rounded'>
                                     <h4 className='w-[233px] h-[17px] font-bold text-[12px] leading-[17px] mb-6'>COMPREHENSIVE INSURANCE</h4>
                                     <ul className='w-[287px] h-[216px]'>
-                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-4">Free tracker for vehicles with  value GHS100,000</li>
-                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white mb-4">No-Claim discount at renewal</li>
-                                        <li class="w-full font-normal text-[14px] leading-[20px] text-white mb-3">Reimbursement of legal fees if policy holder is
-                                            prosecuted in court over an accident resulting in a valid claim
+                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-4">• Free tracker for vehicles with value - GHS100,000</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white mb-4">• No-Claim discount at renewal</li>
+                                        <li class="w-full font-normal text-[14px] leading-[20px] text-white mb-3">• Reimbursement of legal fees if policy holder is prosecuted in court over an accident resulting in a valid claim
                                         </li>
-                                        <li class="w-full font-normal text-[14px] leading-[20px] text-white  mb-4">Nil depreciation on total write off for a brand new vehicle of
-                                            less than twelve months
-                                        </li>
-                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white  mb-2">Waives your windscreen excess</li>
-                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-2">Foreign Use (Ecowas Countries) for additional premium</li>
-                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white ">Multi-car Discount</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white  mb-2">• Waives your windscreen excess</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white ">• Multi-car Discount</li>
                                     </ul>
                                 </div>
 
                                 <div className='w-[350px] h-[350px] bg-black text-white p-4 rounded'>
                                     <h4 className='w-[233px] h-[17px] font-bold text-[12px] leading-[17px] mb-6'>THIRD PARTY FIRE & THEFT</h4>
                                     <ul className='w-[287px] h-[216px]'>
-                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-6">Free tracker for vehicles with  value GHS100,000</li>
-                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white mb-6">No-Claim discount at renewal</li>
-                                        <li class="w-full font-normal text-[14px] leading-[20px] text-white mb-6">Reimbursement of legal fees if policy holder is
-                                            prosecuted in court over an accident resulting in a valid claim
-                                        </li>
-                                        <li class="w-full font-normal text-[14px] leading-[18px] text-white  mb-6">Foreign Use (Ecowas Countries) for additional premium</li>
-                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white ">Multi-car Discount</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white mb-4">• No-Claim discount at renewal</li>
+                                        <li class="w-full font-normal text-[14px] leading-[14px] text-white ">• Multi-car Discount</li>
                                     </ul>
                                 </div>
                             </div>

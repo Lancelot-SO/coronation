@@ -6,11 +6,11 @@ import flag1 from "../assets/contact/flag1.jpg"
 import flag2 from "../assets/contact/flag2.jpg"
 
 
-import contactBg from "../assets/contact/contactBG.png"
+import contactBg from "../assets/contact/ContactBg.png"
 import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
-import PhoneInput, { formatPhoneNumberIntl, isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import PhoneInput, { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
 import FooterRed from '../components/FooterRed'
 import Banner from '../components/Banner'
 
@@ -53,13 +53,14 @@ const ContactRed = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={contactPay} alt='print' className='relative' />
+                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                        <Link to="/contact">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                        </Link>
                     </div>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                    </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
                 </div>
@@ -95,9 +96,7 @@ const ContactRed = () => {
                     ${phoneNumber && isPossiblePhoneNumber(phoneNumber) ? 'border-red-500' : 'border-gray-300 dark:border-gray-700'}
                     ${phoneNumber && isValidPhoneNumber(phoneNumber) ? 'text-red-500' : ''}`}
                                 />
-                                {phoneNumber && (
-                                    <div className="text-secondary">International number: {formatPhoneNumberIntl(phoneNumber)}</div>
-                                )}
+
                                 {/* Hidden input field for phone number */}
                                 <input type="hidden" name="user_phone" value={phoneNumber} />
 
@@ -193,7 +192,7 @@ const ContactRed = () => {
                             </div>
                             <div className="flex items-start">
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-secondary border-gray-300 rounded" />
-                                <label for="privacy" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">You agree to our friendly <Link to="https://www.coronation.ng/privacy-and-cookie-policy/" target='_blank' rel='noopener noreferrer' className="text-secondary hover:underline">privacy policy</Link>.</label>
+                                <label for="privacy" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">You agree to our friendly <Link to="/privacyred" className="text-secondary hover:underline">privacy policy</Link>.</label>
                             </div>
                             <button type="submit" className="w-full py-2 px-4 bg-gradient-to-r from-red-600 to-orange-500 text-white font-semibold rounded-md shadow-card hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:secondary">SEND MESSAGE</button>
                         </form>
