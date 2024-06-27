@@ -33,7 +33,7 @@ const HeroRed = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={corporatePay} alt='print' className='relative' />
-                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
+                    <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -69,7 +69,7 @@ const HeroRed = () => {
                             <Link to='/aboutred'>
                                 <button className='w-[167px] h-[50px] items-center flex justify-center text-white bg-secondary'>LEARN MORE</button>
                             </Link>
-                            <Link to="https://www.coronation.ng/self-service/" target='_blank' rel='noopener noreferrer'>
+                            <Link to="https://claims-gh.coronation.ng/" target='_blank' rel='noopener noreferrer'>
                                 <button className='w-[164px] h-[50px] items-center flex justify-center border-2 border-secondary text-secondary'>MAKE A CLAIM</button>
                             </Link>
                         </div>

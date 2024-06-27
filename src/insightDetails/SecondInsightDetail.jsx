@@ -91,22 +91,22 @@ const SecondInsightDetail = () => {
                                 <div>
                                     <ul className="flex gap-4 text-black items-center">
                                         <li>
-                                            <Link to="https://www.instagram.com/coronationgh/" className="">
+                                            <Link to="https://www.instagram.com/coronationgh/" target='_blank' rel='noopener noreferrer' className="">
                                                 <FaInstagram />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://www.facebook.com/coronationghana/">
+                                            <Link to="https://www.facebook.com/coronationghana/" target='_blank' rel='noopener noreferrer'>
                                                 <FaFacebookF />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://x.com/coronationghana">
+                                            <Link to="https://x.com/coronationghana" target='_blank' rel='noopener noreferrer'>
                                                 <FaTwitter />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="https://www.linkedin.com/company/coronation-insurance-ghana/">
+                                            <Link to="https://www.linkedin.com/company/coronation-insurance-ghana/" target='_blank' rel='noopener noreferrer'>
                                                 <FaLinkedinIn />
                                             </Link>
                                         </li>

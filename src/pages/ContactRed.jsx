@@ -45,23 +45,23 @@ const ContactRed = () => {
             <div>
                 <img src={contactBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
-                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>CONTACT US</h2>
+                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>HOW MAY WE BE OF SERVICE?</h2>
                     <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
-                        We would love to hear from you. Let’s know more about you by filling in your details below to help match you with the right member of our team
+                        We would love to get to know you better! Please fill in your details below so we can connect you with the right member of our team.
 
                     </p>
                 </div>
-                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
+                {/* <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={contactPay} alt='print' className='relative' />
-                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
+                    <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
                     </div>
                     <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
-                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
                     </Link>
-                </div>
+                </div>*/}
                 <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
                 </div>
             </div>

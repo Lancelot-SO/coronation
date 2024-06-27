@@ -27,7 +27,7 @@ const ProductSolutionRed = () => {
                 </div>
                 <div className='absolute top-[181px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={psInAcc} alt='print' className='relative' />
-                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
+                    <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
@@ -105,7 +105,7 @@ const ProductSolutionRed = () => {
                                 No one should have to wait more than 48 hours for their claims to be paid. That’s why we do it in less.
                             </p>
 
-                            <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-secondary text-white mt-4 flex items-center justify-center'>
+                            <Link to="https://claims-gh.coronation.ng/" target='_blank' rel='noopener noreferrer' className='w-[179px] h-[50px] bg-secondary text-white mt-4 flex items-center justify-center'>
                                 MAKE A CLAIM
                             </Link>
                         </div>

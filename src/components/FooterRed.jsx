@@ -20,8 +20,8 @@ const FooterRed = () => {
                 <div className='w-full h-[300px]'>
                     <div className='flex'>
                         <div className='w-[calc(100%-885px)] h-[300px] flex flex-col pt-20 pl-[250px]'>
-                            <p className='w-[240px] h-[108px] font-medium text-[12px] leading-[18px]'>
-                                At Coronation, we seek to be the most enjoyable company to do business with. Our experienced underwriting and strong risk management expertise developed over the last 16 years has prepared us to serve as your lead underwriter.
+                            <p className='w-[240px] h-[108px] font-medium text-[12px] leading-[18px] mb-2'>
+                                At Coronation, we seek to be the most enjoyable company to do business with. Our experienced underwriting and strong risk management expertise developed over the last 16 years has prepared us to serve as your lead underwriter. With us, it's not just insurance; it's insurance For EVERYTHING
                             </p>
                             <div className='mt-5'>
                                 <ul className='flex gap-4'>
@@ -55,20 +55,23 @@ const FooterRed = () => {
                                     <Link><li className=''>Marine Insurance</li></Link>
                                     <Link><li className=''>Fire Insurance</li></Link>
                                     <Link><li className=''>
-                                        Personal Accident
+                                        Accident Insurance
                                     </li></Link>
                                     <Link><li className=''>
                                         Engineering
+                                    </li></Link>
+                                    <Link><li className=''>
+                                        Travel Insurance
                                     </li></Link>
                                 </ul>
                             </div>
                             <ul className='w-[180px] h-full pl-[60px] pt-4 flex flex-col gap-4'>
                                 <Link><li className=''>Login</li></Link>
-                                <Link to="https://claims-gh.coronation.ng/" target='_blank' rel='noopener noreferrer'><li className='underline'>Claims</li></Link>
+                                <Link to="https://claims-gh.coronation.ng/" target='_blank' rel='noopener noreferrer'><li className=''>Claims</li></Link>
                             </ul>
                             <div className='w-[221px] h-full'>
                                 <ul className='flex flex-col pl-[20px] pt-4 gap-2'>
-                                    <Link><li className=''>Coronation Assest Management</li></Link>
+                                    <Link><li className=''>Coronation Asset Management</li></Link>
                                     <Link><li className=''>Coronation Insurance PLC</li></Link>
                                     <Link><li className=''>Coronation Life Assurance</li></Link>
                                     <Link><li className=''>Coronation Securities</li></Link>
@@ -79,7 +82,7 @@ const FooterRed = () => {
                                 </ul>
                             </div>
                             <ul className=' w-[261px] pl-8 h-full pt-4'>
-                                <Link><li className=''>Whistle Blowing: Coronation
+                                <Link to="https://coronation.ng/whistle-blowing-coronation-insurance-ghana/" target='_blank' rel='noopener noreferrer'><li className=''>Whistle Blowing: Coronation
                                     Insurance Ghana</li></Link>
                             </ul>
                         </div>

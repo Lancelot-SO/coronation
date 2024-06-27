@@ -73,8 +73,7 @@ const Home = () => {
         >
           <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INDIVIDUAL</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-left">
-            Invest and manage your money on your own terms. It's easier than
-            ever before with Coronation Insurance Ghana LTD.
+            We provide a wide  range of personal insurance solutions to individuals of all classes. No matter your need, we have the right insurance for you.
           </p>
           <Link to='/hero' onClick={handleLeftClick}>
             <button className="bg-customPurple text-white font-bold py-2 px-4 rounded w-[212px]">
@@ -99,10 +98,9 @@ const Home = () => {
           className={`absolute w-[400px] h-[316px] flex flex-col justify-end items-end top-[170px] 3xl:top-[400px] right-[50px] text-white z-40 transition-opacity duration-300 ${isRightHovered ? "opacity-100" : "opacity-100"
             }`}
         >
-          <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INSTITUTIONAL</h1>
+          <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INSTITUTION</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-right">
-            Representing organizations or beneficiaries? Great! We offer tailored corporate solutions..
-          </p>
+            Representing organizations or beneficiaries? Great! We offer tailored corporate solutions..          </p>
           <Link to='/herored' onClick={handleRightClick}>
             <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
               Enter

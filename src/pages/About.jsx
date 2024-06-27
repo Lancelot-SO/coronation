@@ -5,7 +5,7 @@ import aboutbg from "../assets/aboutheadbg.png"
 import aboutPrint from "../assets/aboutus.png"
 import history from "../assets/history.png"
 import bg from "../assets/bg.png"
-import board from "../assets/director1.png"
+import board from "../assets/board1.png"
 import board1 from "../assets/board2.png"
 import board2 from "../assets/board3.png"
 import board3 from "../assets/board4.png"
@@ -59,7 +59,7 @@ const About = () => {
                 </div>
                 <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={aboutPrint} alt='print' className='relative' />
-                    <div className='absolute inset-0 bg-black opacity-50 rounded-[30px]'></div>
+                    <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
@@ -98,7 +98,7 @@ const About = () => {
                         </div>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
                         <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                            Our time tested expertise in risk management and actuarial services has positioned us as one of Ghana's fastest growing insurance companies. We provide products and services that are designed to offer value beyond the ambit of traditional insurance services. Our commitment to service is based on a firm belief that total customer satisfaction and excellent customer experience are the hallmarks of real value. Get insured today with our array of products.
+                            We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
                         </p>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const About = () => {
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Frank Beecham</p>
-                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>CEO & Founder</small>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Board Chairman</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
@@ -242,10 +242,9 @@ const About = () => {
                             </div>
                         </div>
 
-
                         <div className='group'>
-                            <div className='w-[338px] h-[500px] relative overflow-hidden mt-[20px]'>
-                                <img src={board4} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
+                            <div className='w-[338px] h-[500px] mt-4 relative overflow-hidden'>
+                                <img src={board6} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
                                 {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
@@ -254,19 +253,21 @@ const About = () => {
                                     <FaInstagram size={24} />
                                 </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
-                                    <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
-                                        <p className='text-[17px] leading-[22px] font-normal'>Dr. Yaw Adom - Boateng</p>
-                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Managing Director</small>
+                                    <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
+                                        <p className='text-[18px] leading-[22px] font-normal'>Mr. Olamide Olajolo</p>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non -  Executive Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Dr. Yaw Adom-Boateng is a Fellow of the Chartered Insurance Institute of Ghana (FCIIG) and the Chartered Insurance Institute of UK (FCII-UK). He is a seasoned insurance professional with over 22 years of experience in the insurance industry.
+                                            Mr. Olamide Olajolo has about twenty-two (22) years’ experience in the Insurance industry cutting across insurance underwriting and sales. Mr. Olamide Olajolo was formerly the Managing Director/Chief Executive Officer of the Nigeria Liability Insurance Pool and the Vice President Business Development at Heirs Insurance Limited/Heirs Assurance Limited.
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div className='group'>
                             <div className='w-[338px] h-[500px] relative overflow-hidden'>
                                 <img src={board5} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
@@ -292,8 +293,8 @@ const About = () => {
                         </div>
 
                         <div className='group'>
-                            <div className='w-[338px] h-[500px] mt-4 relative overflow-hidden'>
-                                <img src={board6} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
+                            <div className='w-[338px] h-[500px] relative overflow-hidden mt-[20px]'>
+                                <img src={board4} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
                                 <div className='absolute bg-customPurple w-[250px] h-1 bottom-[103px] left-0 z-10 opacity-0 group-hover:opacity-100 group-hover:bottom-[80%] duration-500'>
                                 </div>
                                 {/*<div className='socials bg-customPurple text-white w-[150px] h-[60px] absolute bottom-[70px] right-0 z-10 flex items-center justify-evenly transition-opacity duration-500 group-hover:opacity-0'>
@@ -302,18 +303,21 @@ const About = () => {
                                     <FaInstagram size={24} />
                                 </div>*/}
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
-                                    <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
-                                        <p className='text-[18px] leading-[22px] font-normal'>Mr. Olamide Olajolo</p>
-                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Non -  Executive Director</small>
+                                    <div className='w-[275px] h-[67px] mt-8 mb-4 flex flex-col pr-2 items-end justify-end'>
+                                        <p className='text-[17px] leading-[22px] font-normal'>Dr. Yaw Adom - Boateng</p>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Managing Director</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Mr. Olamide Olajolo has about twenty-two (22) years’ experience in the Insurance industry cutting across insurance underwriting and sales. Mr. Olamide Olajolo was formerly the Managing Director/Chief Executive Officer of the Nigeria Liability Insurance Pool and the Vice President Business Development at Heirs Insurance Limited/Heirs Assurance Limited.
+                                            Dr. Yaw Adom-Boateng is a Fellow of the Chartered Insurance Institute of Ghana (FCIIG) and the Chartered Insurance Institute of UK (FCII-UK). He is a seasoned insurance professional with over 22 years of experience in the insurance industry.
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
 

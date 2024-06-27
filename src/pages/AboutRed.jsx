@@ -5,7 +5,7 @@ import aboutbg from "../assets/aboutheadbg.png"
 import aboutPrint from "../assets/aboutus.png"
 import history from "../assets/history.png"
 import bg from "../assets/bg.png"
-import board from "../assets/director1.png"
+import board from "../assets/board1.png"
 import board1 from "../assets/board2.png"
 import board2 from "../assets/board3.png"
 import board3 from "../assets/board4.png"
@@ -102,7 +102,7 @@ const AboutRed = () => {
                         </div>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
                         <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                            Our time tested expertise in risk management and actuarial services has positioned us as one of Ghana's fastest growing insurance companies. We provide products and services that are designed to offer value beyond the ambit of traditional insurance services. Our commitment to service is based on a firm belief that total customer satisfaction and excellent customer experience are the hallmarks of real value. Get insured today with our array of products.
+                            We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
                         </p>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ const AboutRed = () => {
                                 <div className='w-full h-[104px] text-white bg-black absolute bottom-0 left-0 z-0 flex flex-col transition-all duration-500 group-hover:h-[80%]'>
                                     <div className='w-[275px] h-[67px] mt-8 flex flex-col items-center justify-center'>
                                         <p className='text-[18px] leading-[22px] font-normal'>Mr. Frank Beecham</p>
-                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>CEO & Founder</small>
+                                        <small className='text-[16px] leading-[19px] font-normal opacity-50'>Board Chairman</small>
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
