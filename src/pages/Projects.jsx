@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import Project from './Project'
+import ProjectRed from './ProjectRed'
 
 import { projectsNav } from '../data'
 import { projectsData } from "../data"
@@ -45,7 +45,7 @@ const Projects = () => {
                                 onClick={(e) => {
                                     handleClick(e, index);
                                 }}
-                                key={index} className={`${active === index ? 'bg-customPurple text-white' : ''} cursor-pointer p-2 rounded-[34px] border border-black text-black flex items-center justify-center text-[16px]`}>{item.name}</li>
+                                key={index} className={`${active === index ? 'bg-secondary text-white' : ''} cursor-pointer p-2 rounded-[34px] border border-black text-black flex items-center justify-center text-[16px]`}>{item.name}</li>
                         })}
                     </ul>
 
@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className='grid grid-cols-3'>
                         {
                             projects.map((item) => {
-                                return <Project item={item} key={item.id} />
+                                return <ProjectRed item={item} key={item.id} />
                             })
                         }
 

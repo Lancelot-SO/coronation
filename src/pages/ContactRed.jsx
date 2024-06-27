@@ -7,7 +7,7 @@ import flag2 from "../assets/contact/flag2.jpg"
 
 
 import contactBg from "../assets/contact/ContactBg.png"
-import contactPay from "../assets/contact/contactPay.png"
+// import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
 import PhoneInput, { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
