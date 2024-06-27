@@ -6,12 +6,12 @@ import aboutPrint from "../assets/aboutus.png"
 import history from "../assets/history.png"
 import bg from "../assets/bg.png"
 import board from "../assets/director1.png"
-import board1 from "../assets/director2.png"
-import board2 from "../assets/director3.png"
-import board3 from "../assets/director4.png"
-import board4 from "../assets/director5.png"
-import board5 from "../assets/director6.png"
-import board6 from "../assets/director7.png"
+import board1 from "../assets/board2.png"
+import board2 from "../assets/board3.png"
+import board3 from "../assets/board4.png"
+import board4 from "../assets/board5.png"
+import board5 from "../assets/board6.png"
+import board6 from "../assets/board7.png"
 
 
 
