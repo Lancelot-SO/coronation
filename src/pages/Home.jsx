@@ -110,13 +110,14 @@ const Home = () => {
         <div className="absolute inset-0 w-full h-full bg-black hover:opacity-90 opacity-50 transition-opacity duration-300 z-10"></div>
       </div>
 
-      <div className="absolute top-1/2 mt-[54px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+      {/* Avatar */}
+      {/*<div className="absolute top-1/2 mt-[54px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
         <img
           src={landingImg}
           alt="landing"
           className="h-[600px] lg:h-[622px] 3xl:h-[960px]"
         />
-      </div>
+      </div>*/}
 
       {/* Visible only on smaller screens */}
       <div className="absolute bottom-0 w-full lg:hidden h-[400px] bg-black z-40 flex">

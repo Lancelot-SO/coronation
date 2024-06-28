@@ -231,7 +231,7 @@ const Contact = () => {
                             </div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <MdOutlineMarkEmailUnread />
-                                <p className='text-[12px]'>infoghana@coronationinsurance.com.ng</p>
+                                <p className='text-[12px]'>info@coronationinsurance.com.ng </p>
                             </div>
                             <div className='flex items-center gap-2'>
                                 <MdOutlineLocationOn />

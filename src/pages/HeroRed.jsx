@@ -49,10 +49,11 @@ const HeroRed = () => {
                 <div className='relative'>
                     <img src={hero2} alt='hero2' className='w-[666px] h-[531px] mt-[100px] ml-[280px] 3xl:ml-[370px]' />
                     <div className='w-[420px] h-[420px] bg-black absolute top-[55px] px-[40px] right-[300px] 3xl:right-[350px] text-white flex flex-col items-center justify-center'>
-                        <h1 className="w-[329px] h-[90px] text-[37px] leading-[45px] font-light mb-[20px]">Products & Services
+                        <h1 className="w-[329px] h-[90px] text-[37px] leading-[45px] font-light mb-[20px]">Products & Solutions
                             for corporate</h1>
-                        <p className='w-[328px] h-[120px] text-[16px] leading-[25px] font-normal mb-6 p-[10px]'>Our products and services provide self-sufficiency, financial independence,
-                            creation and preservation of wealth for the future.</p>
+                        <p className='w-[328px] h-[120px] text-[16px] leading-[25px] font-normal mb-8 p-[10px]'>
+                            Get a wide range of financial solutions with Coronation. We offer superior customer service, innovative product solutions, excellent financial advice and more. Let’s be your prosperity partner today.
+                        </p>
                         <Link to="/productred"><button className='w-[300px] h-[42px] bg-white text-secondary'>VIEW MORE</button></Link>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import modalbg from "../assets/motor/modalBg.png";
 
+import logo from "../assets/corologo.png"
+
 const MotorModal = ({ onClose }) => {
     return (
         <div className="call-modal">
@@ -25,8 +27,8 @@ const MotorModal = ({ onClose }) => {
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Authorized repair limit: as stated in our policy document</li>
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Passenger liability: as stated in our policy document</li>
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Third-party liabilities Within (ECOWAS) Countries</li>
-                        <div className="text-right text-gray-800 dark:text-black font-bold mt-4 z-10">
-                            CORONATION
+                        <div className="mt-4 z-10">
+                            <img src={logo} alt='logo' />
                         </div>
                     </ul>
                 </div>

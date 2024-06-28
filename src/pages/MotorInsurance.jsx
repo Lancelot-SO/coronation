@@ -30,7 +30,7 @@ const MotorInsurance = () => {
                 <img src={motorBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[202px] bg-[rgba(0,0,0,0.7)] p-6'>
-                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Motor Insurance.</h2>
+                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Motor Insurance</h2>
                     <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         This is an insurance product that pays for damages to your vehicle (private or commercial) as a result of theft, accident or fire. It also covers third-party injury and death, property damage and legal cost. It comes in 3 variants namely Third Party, Third Party, Fire and theft & Comprehensive.
                     </p>
@@ -94,7 +94,7 @@ const MotorInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         GET A QUOTE
                     </Link>
                 </div>
@@ -125,7 +125,7 @@ const MotorInsurance = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         GET A QUOTE
                     </Link>
                 </div>
@@ -159,8 +159,8 @@ const MotorInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
-                        Request & Pay
+                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                        GET A QUOTE
                     </Link>
                 </div>
             </section>
@@ -176,7 +176,7 @@ const MotorInsurance = () => {
                                 The product has been designed with a combination of Enhanced term life which gives you an additional benefit.
                             </p>
 
-                            <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+                            <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
                                 GET A QUOTE
                             </Link>
                         </div>
