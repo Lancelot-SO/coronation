@@ -28,8 +28,8 @@ const Navbar = () => {
   }, [isLandingPage, setFromRight]);
 
   return (
-    <div>
-      <nav className="w-full">
+    <div className="overflow">
+      <nav className="w-full overflow">
         {/* top */}
         <div
           className={`lg:flex hidden justify-between w-full h-[100px] text-white items-center ${isHovered === "left" ? "text-primary bg-black" : "text-secondary bg-black"
@@ -137,7 +137,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <div onClick={() => setNav(!nav)} className='lg:hidden flex z-[1000] fixed text-black m-4'>
-          {nav ? <FaTimes size={30} /> : <RiMenu4Fill size={30} />}
+          {nav ? <FaTimes size={30} className="text-white" /> : <RiMenu4Fill size={30} />}
         </div>
 
         {/* Mobile menu */}

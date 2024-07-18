@@ -24,8 +24,8 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div>
-            <div>
+        <div className='overflow-hidden'>
+            <div className=''>
                 <img src={herobg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] lg:left-[160px] left-0 lg:w-[745px] w-[270px] lg:h-[164px] h-[160px] bg-[rgba(0,0,0,0.8)] lg:p-10 p-2'>
                     <h2 className='lg:mb-4 mb-2 lg:text-[31px] text-[16px] leading-[37px] text-white font-medium'>Coronation</h2>
@@ -46,6 +46,7 @@ const Hero = () => {
                 <div className='lg:w-[660px] h-[7px] bg-[#B580D1] absolute top-[622px] w-[300px] 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
+
             <section>
                 <div className='relative h-[750px] lg:h-full'>
                     <img src={hero2} alt='hero2' className='lg:w-[666px] w-full lg:h-[531px] lg:mt-[100px] mt-[50px] lg:ml-[280px] 3xl:ml-[370px] object-cover' />
@@ -63,7 +64,7 @@ const Hero = () => {
             <section>
                 <div className="lg:mt-[60px] mt-0 lg:flex lg:flex-row flex flex-col lg:h-[637px] bg-[#F4F5F7]">
                     <img src={hero3} alt='hero3' className='lg:w-[734px] lg:h-[509px] mt-[50px]' />
-                    <div className='w-[508px] h-[178px] lg:mt-[230px] mt-10 lg:ml-[50px] ml-[30px] flex flex-col'>
+                    <div className='w-[508px] h-[178px] lg:mt-[230px] mt-10 lg:ml-[50px] ml-[5px] flex flex-col'>
                         <h2 className='lg:text-[40px] text-[30px] mb-2 font-light leading-[48px]'>Our Company Overview</h2>
                         <strong className='text-customPurple lg:text-[16px] text-[14px] mb-2 font-normal leading-[24px]'>LIVE YOUR BEST LIFE WITH CORONATION INSURANCE</strong>
                         <span className='text-[13px] text-[#666C89] mb-2 font-medium leading-[20px]'>Make a decision to protect those that matter to you.</span>
@@ -143,7 +144,7 @@ const Hero = () => {
             </section>
 
 
-            <section className='mb-[120px] 3xl:ml-[120px]'>
+            <section className='lg:mb-[120px] mb-10 3xl:ml-[120px]'>
                 <div className='relative'>
                     <img src={bg} alt='bg' className='absolute lg:w-[1120px] w-full lg:h-[177px] h-[250px] lg:rounded-[50px] top-0 lg:left-[190px] object-cover' />
                     <div className='relative z-10 flex lg:flex-row flex-col lg:ml-[300px] ml-0'>
@@ -154,7 +155,6 @@ const Hero = () => {
                         <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] lg:ml-[60px] ml-10 rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
                     </div>
                 </div>
-
             </section>
 
             <Banner />

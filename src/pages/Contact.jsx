@@ -189,6 +189,12 @@ const Contact = () => {
                                 <label className="block text-sm font-medium text-black">Message</label>
                                 <textarea name='message' rows="4" placeholder="Enter your Message" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black " required></textarea>
                             </div>
+
+                            <div className="w-2/2">
+                                <label htmlFor="time" className='block text-sm font-medium text-black'>Preferred Time to be contacted</label>
+                                <input type="time" id="hour" name="time" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" required />
+                            </div>
+
                             <div className="flex items-start">
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-indigo-600 border-gray-300 rounded" />
                                 <label for="privacy" className="ml-2 block text-sm text-gray-500 0">You agree to our friendly <Link to="/privacy" className="text-indigo-600 hover:underline">privacy policy</Link>.</label>
