@@ -178,7 +178,7 @@ const Footer = () => {
 
             </div>
             <hr className='w-full h-[1px] bg-slate-300 mt-[20px]' />
-            <p className='flex items-center text-[12px] leading-[30px] font-medium '>
+            <p className='lg:hidden flex items-center text-[12px] leading-[30px] font-medium '>
                 © 2024 Coronation. All right reserved. Privacy Policy
             </p>
         </div>

@@ -27,9 +27,25 @@ import SecondInsightDetail from './insightDetails/SecondInsightDetail';
 import ThirdInsightDetail from './insightDetails/ThirdInsightDetail';
 import Privacy from './pages/Privacy';
 import PrivacyRed from './pages/PrivacyRed';
+import { useEffect, useState } from 'react';
+import FeedbackModal from './components/FeedbackModal';
 
 
 function App() {
+
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
+
+  useEffect(() => {
+    const isModalShown = localStorage.getItem('isFeedbackModalShown');
+    if (!isModalShown) {
+      const timer = setTimeout(() => {
+        setShowFeedbackModal(true);
+        localStorage.setItem('isFeedbackModalShown', 'true');
+      }, 30000); // 30 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   return (
     <div>
@@ -62,11 +78,9 @@ function App() {
           <Route path='/third_insight' element={<ThirdInsightDetail />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/privacyred' element={<PrivacyRed />} />
-
-
-
         </Routes>
       </BrowserRouter>
+      <FeedbackModal showModal={showFeedbackModal} setShowModal={setShowFeedbackModal} />
     </div>
   );
 }

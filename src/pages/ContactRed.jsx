@@ -48,7 +48,6 @@ const ContactRed = () => {
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>HOW MAY WE BE OF SERVICE?</h2>
                     <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         We would love to get to know you better! Please fill in your details below so we can connect you with the right member of our team.
-
                     </p>
                 </div>
                 {/* <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
