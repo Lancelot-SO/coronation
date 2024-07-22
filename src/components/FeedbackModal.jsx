@@ -76,7 +76,7 @@ const FeedbackModal = ({ showModal, setShowModal }) => {
                         placeholder="leave us a feedback"
                     ></textarea>
                 </div>
-                <button className="bg-secondary text-white px-4 py-2 rounded">SUBMIT</button>
+                <button type='submit' className="bg-secondary text-white px-4 py-2 rounded">SUBMIT</button>
             </div>
         </div>
     );
