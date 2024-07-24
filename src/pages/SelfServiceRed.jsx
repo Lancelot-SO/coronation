@@ -128,7 +128,7 @@ const SelfServiceRed = () => {
                                 <h4 className='flex items-center justify-center w-[231px] h-[48px] font-normal text-[24px] leading-[24px] mt-8'>
                                     Buy Insurance
                                 </h4>
-                                <Link to="https://play.google.com/store/apps/details?id=com.coronation.android.customer&hl=en&gl=US" target='_blank' rel="noopener noreferrer">
+                                <Link to="https://ecoronation.com/index" target='_blank' rel="noopener noreferrer">
                                     <button className='w-[154px] h-[20px] mt-10 text-secondary'>Buy Insurance</button>
                                 </Link>
                             </div>

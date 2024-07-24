@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FeedbackModal = ({ showModal, setShowModal }) => {
     const [rangeValue, setRangeValue] = useState(0);
     const [starRating, setStarRating] = useState(0);
+    const [feedback, setFeedback] = useState('');
 
     useEffect(() => {
         if (showModal) {
             setRangeValue(0); // Reset range value to 0 when modal is shown
             setStarRating(0); // Reset star rating to 0 when modal is shown
+            setFeedback(''); // Reset feedback to empty when modal is shown
         }
     }, [showModal]);
 
@@ -15,10 +19,29 @@ const FeedbackModal = ({ showModal, setShowModal }) => {
         setStarRating(index + 1); // Stars are 0-indexed, so add 1 to the clicked index
     };
 
+    const handleSubmit = () => {
+        if (starRating === 0 || rangeValue === 0) {
+            toast.error('Please provide a star rating and a recommendation score.');
+            return;
+        }
+
+        // Save the user's feedback to local storage
+        localStorage.setItem('starRating', starRating);
+        localStorage.setItem('rangeValue', rangeValue);
+        localStorage.setItem('feedback', feedback);
+
+        // Show success toast message
+        toast.success('Submitted successfully');
+
+        // Close the modal
+        setShowModal(false);
+    };
+
     if (!showModal) return null;
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <ToastContainer />
             <div className="relative bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
                 <button
                     className="absolute top-0 right-0 m-4 text-xl w-2 h-2 rounded-full text-gray-400"
@@ -74,9 +97,17 @@ const FeedbackModal = ({ showModal, setShowModal }) => {
                     <textarea
                         className="w-full p-2 border border-gray-300 rounded-md"
                         placeholder="leave us a feedback"
+                        value={feedback}
+                        onChange={(e) => setFeedback(e.target.value)}
                     ></textarea>
                 </div>
-                <button type='submit' className="bg-secondary text-white px-4 py-2 rounded">SUBMIT</button>
+                <button
+                    type="button"
+                    className="bg-secondary text-white px-4 py-2 rounded"
+                    onClick={handleSubmit}
+                >
+                    SUBMIT
+                </button>
             </div>
         </div>
     );
