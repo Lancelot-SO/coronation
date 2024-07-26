@@ -65,7 +65,7 @@ const FeedbackModal = ({ showModal, setShowModal }) => {
                     <p>Star Rating: {starRating}</p> {/* Display the star rating value */}
                 </div>
                 <div className="mb-4">
-                    <label className="block mb-2">
+                    <label className="block mb-6">
                         On a scale of 1 - 10, How likely are you to recommend Coronation to a friend or colleague?
                     </label>
                     <div className="relative">

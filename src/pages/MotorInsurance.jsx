@@ -41,7 +41,7 @@ const MotorInsurance = () => {
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
-                            Want to know more about our services? <br />Let's talk
+                            Want to purchase any of our products? <br />Get a quote below.
                         </p>
                     </div>
                     <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
@@ -60,8 +60,8 @@ const MotorInsurance = () => {
                         </h2>
                         <div className='w-[1111px] h-[63px]'>
                             <p className='font-light text-[24px] leading-[32px]'>
-                                Your car, your rules. We offer flexible plans that fit your unique needs and budget. No matter your ride, get the perfect coverage.
-                            </p>
+                                Your car is as unique as you. This is why our plans are flexible and designed to fit your
+                                specific needs. No matter the size of your car (or pocket), we’ve got something for you.                            </p>
                         </div>
                     </div>
                 </div>

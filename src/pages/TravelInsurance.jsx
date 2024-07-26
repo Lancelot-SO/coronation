@@ -10,7 +10,9 @@ import motorComp3 from "../assets/motor/motorComp3.png"
 
 
 
-import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
+import { FaLongArrowAltRight } from 'react-icons/fa'
+import { MdWifiCalling3 } from "react-icons/md";
+
 // import PilgrimageModal from '../components/PilgrimageModal'
 import StudentModal from '../components/StudentModal'
 import IndividualModal from '../components/IndividualModal'
@@ -45,8 +47,8 @@ const TravelInsurance = () => {
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
                             Want to know more about our services? <br />Let's talk
                         </p>
-                        <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer">
-                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
+                        <Link to="/contact">
+                            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us <MdWifiCalling3 /></button>
                         </Link>
                     </div>
                 </div>
@@ -102,7 +104,7 @@ const TravelInsurance = () => {
             </section>*/}
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[694px] flex flex-col'>
+                <div className='bg-[#F1F5F9] w-full h-[650px] flex flex-col'>
                     <div className='w-[1300px] h-[552px] flex relative'>
                         <div className='relative flex items-center'>
                             <div className='bg-black w-[840px] h-[286px]'></div>
@@ -125,9 +127,9 @@ const TravelInsurance = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    {/*<Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         Request & Pay
-                    </Link>
+                    </Link>*/}
                 </div>
             </section>
 
@@ -158,9 +160,9 @@ const TravelInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    {/*<Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         GET A QUOTE
-                    </Link>
+                    </Link>*/}
                 </div>
             </section>
 
@@ -175,9 +177,9 @@ const TravelInsurance = () => {
                                 The product has been designed with a combination of Enhanced term life which gives you an additional benefit.
                             </p>
 
-                            <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+                            {/*<Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
                                 GET A QUOTE
-                            </Link>
+                            </Link>*/}
                         </div>
                         <div className='relative ml-[150px]'>
                             <img src={motorComp3} alt='ban' className='w-full h-auto' />

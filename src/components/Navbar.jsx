@@ -51,7 +51,8 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col text-white">
                 <small>Working Hours</small>
-                <small>Mon - Fri 8:00am - 5:00pm</small>
+                <small>Mon - Fri</small>
+                <small>8:00am - 5:00pm</small>
               </div>
             </div>
             <div className="flex items-center gap-6">

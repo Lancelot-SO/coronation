@@ -9,7 +9,7 @@ import psInsurance from "../assets/psAssets/psRed.png"
 
 
 import { Link } from 'react-router-dom'
-import { FaFingerprint } from 'react-icons/fa'
+import { MdWifiCalling3 } from "react-icons/md";
 import Banner from '../components/Banner'
 import FooterRed from '../components/FooterRed'
 
@@ -30,10 +30,10 @@ const ProductSolutionRed = () => {
                     <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
+                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our products? <br />Let's talk</p>
                     </div>
                     <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
-                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Corporate Account <FaFingerprint /></button>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Corporate Account <MdWifiCalling3 /></button>
                     </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-gradient-to-r from-red-600 to-orange-500 absolute bottom-0'>

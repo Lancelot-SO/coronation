@@ -11,11 +11,9 @@ const InsightsRed = () => {
         <div>
             <div className='relative w-full h-[629px] bg-black'>
                 <div className='absolute top-[343px] left-[160px] w-[560px] h-[263px]'>
-                    <h2 className='mb-4 text-[35px] leading-[42px] text-white font-normal w-[452px] h-[84px]'>We guarantee the future of the things you care about!</h2>
-                    <p className='w-[390px] h-[57px] text-[16px] leading-[19px] text-white font-normal'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-
+                    <h2 className='mb-4 text-[35px] leading-[42px] text-white font-normal w-[452px] h-[84px]'>Our content provides research and
+                        insights that enables you navigate
+                        Africa&#39;s unique challenges.</h2>
                     {/* <div className='flex mt-8 gap-4'>
                         <Link>
                             <p className='flex items-center justify-center w-[170px] h-[52px] rounded-[34px] bg-transparent border border-white text-white'>Motor</p>

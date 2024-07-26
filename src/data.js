@@ -12,6 +12,12 @@ import Slider4 from "./assets/Slider4.png"
 
 
 import CoreLifeImage from "./assets/career/coreCareerlife.png"
+import CoreLifeImage1 from "./assets/career/careerImg2.png"
+import CoreLifeImage2 from "./assets/career/careerImg3.png"
+import CoreLifeImage4 from "./assets/career/careerImg5.png"
+
+
+
 
 export const projectsNav = [
     {
@@ -34,7 +40,7 @@ export const projectsData = [
         details: `In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking
                   preventive measures cannot be overstated.`,
         category: 'Thought leadership articles',
-        link: "/first_insight"
+        link: "https://drive.google.com/file/d/1Ixr5kf35gYGpk7MUNXVcU5UfvQOsHfc1/view?usp=sharing"
 
     },
     {
@@ -45,7 +51,7 @@ export const projectsData = [
                today are seeking to digitalise their operations to improve
                customer experience.`,
         category: 'Thought leadership articles',
-        link: "/second_insight"
+        link: "https://drive.google.com/file/d/11j5Z3wSzOd6ODPCa5sSQ5BO_jma2ZTli/view?usp=sharing"
 
     },
     {
@@ -54,8 +60,7 @@ export const projectsData = [
         heading: "A STRATEGY FOR RESILIENCE",
         details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
         category: 'Thought leadership articles',
-        link: "/third_insight"
-
+        link: "https://drive.google.com/file/d/1xGnA0fqYDsL2gnZ9pr_DXIK2vfQtrDQG/view?usp=sharing"
 
     }
 
@@ -92,14 +97,14 @@ export const careerData = [
     },
     {
         id: '2',
-        image: CoreLifeImage,
+        image: CoreLifeImage1,
         heading: "SATISFY YOUR CUROSITY",
         details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
         category: 'SATISFY CUROSITY',
     },
     {
         id: '3',
-        image: CoreLifeImage,
+        image: CoreLifeImage2,
         heading: "COME AS YOU ARE",
         details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
         category: 'COME AS YOU ARE',
@@ -113,7 +118,7 @@ export const careerData = [
     },
     {
         id: '5',
-        image: CoreLifeImage,
+        image: CoreLifeImage4,
         heading: "OUR VALUE STAYS WITH YOU",
         details: 'Being a part of Coronation means being a part of a community of smart and ambitious people from diverse backgrounds that makes the One Coronation. Explore Life at Coronation… ',
         category: 'OUR VALUE STAYS WITH YOU',

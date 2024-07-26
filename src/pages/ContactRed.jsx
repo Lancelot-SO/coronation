@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 import flag1 from "../assets/contact/flag1.jpg"
 import flag2 from "../assets/contact/flag2.jpg"
 
+import { format } from 'date-fns';
+
 
 import contactBg from "../assets/contact/ContactBg.png"
 // import contactPay from "../assets/contact/contactPay.png"
@@ -18,30 +20,46 @@ import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 const ContactRed = () => {
     const form = useRef();
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [selectedDate, setSelectedDate] = useState(null); // State for DatePicker
+
+
 
     const sendEmail = (e) => {
         e.preventDefault();
 
+        const formattedDate = selectedDate ? format(selectedDate, 'MM/dd/yyyy, HH:mm') : '';
+
         emailjs
             .sendForm('service_lw4pyej', 'template_0vf2k2b', form.current, {
                 publicKey: 'BwhLD7vMqhEFp57Ji',
+                from_name: 'Coronation Insurance',
+                time: formattedDate, // Pass the formatted date/time
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success('Message sent successfully!');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    toast.error('Failed to send message. Please try again.');
                 },
             );
         e.target.reset();
         setPhoneNumber(''); // Reset phone number
+        setSelectedDate(null); // Reset DatePicker
     };
+
     return (
         <div>
+            <ToastContainer />
             <div>
                 <img src={contactBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className='absolute top-[403px] left-[160px] w-[745px] h-[164px] bg-[rgba(0,0,0,0.8)] p-10'>
@@ -190,9 +208,18 @@ const ContactRed = () => {
                                 <textarea name='message' rows="4" placeholder="Enter your Message" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-secondary focus:border-secondary sm:text-sm text-black"></textarea>
                             </div>
 
-                            <div className="w-2/2">
-                                <label htmlFor="time" className='block text-sm font-medium text-black'>Preferred Time to be contacted</label>
-                                <input type="time" id="hour" name="time" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" required />
+                            <div>
+                                <label className="block text-sm font-medium text-black">Preferred Date and Time</label>
+                                <DatePicker
+                                    selected={selectedDate}
+                                    onChange={date => setSelectedDate(date)}
+                                    showTimeSelect
+                                    timeIntervals={15}
+                                    dateFormat="Pp"
+                                    placeholderText="MM/DD/YYYY, HH:MM"
+                                    className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-secondary focus:border-secondary sm:text-sm text-black"
+                                />
+                                <input type="hidden" name="time" value={selectedDate ? format(selectedDate, 'MM/dd/yyyy, HH:mm') : ''} />
                             </div>
 
                             <div className="flex items-start">

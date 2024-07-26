@@ -87,18 +87,29 @@ const About = () => {
 
             <section>
                 <div className='w-full flex items-center justify-center'>
-                    <div className='w-[1120px] h-[792px] flex flex-col'>
+                    <div className='w-[1120px] h-[800px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] text-[22px] font-light mb-10'>
-                            Coronation Insurance Group stands as a pinnacle in West Africa, a dynamic multi-line insurance company committed to securing the life, general, and special risks of our valued partners.
-                            Since our establishing in Ghana in 2008 as a general insurer, our journey has been fueled by a mission to evolve into a versatile financial services institution, ensuring sustainable value for our customers and stakeholders while spearheading industry transformation.
-                            In the realm of rapid growth, we distinguish ourselves by consistently delivering excellence to our customers.
-                            At Coronation, we seek to be the most enjoyable company to do business with. Our experienced underwriting and strong risk management expertise developed over the last 16 years has prepared us to serve as your lead underwriter.
-                            Coronation is not just an insurance provider; we are architects of a unique value proposition. Built upon the pillars of robust corporate governance, a formidable capital base, exceptional customer service, and a winning suite of product solutions, we envision a future where your risks are not just managed but transformed into opportunities for growth and success.
+                            Having established a 30-year record of achievements in financial services across Africa and
+                            beyond, our founders established a Pan-African platform focused on building a better financial
+                            future for Africa. We understand the need to protect the interests of individuals and businesses,
+                            therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
+                            solutions for all.
                         </div>
-                        <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
+                        <div className='mb-28'>
+                            <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
+                            <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
+                                We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
+                            </p>
+                        </div>
+
+                        <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
                         <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                            We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
+                            We offer a range of financial solutions to professionals, institutions, and individuals in Ghana. We
+                            design our policies to be affordable and comprehensive, protecting your assets and providing
+                            peace of mind. Our local expertise and use of technology make it convenient to get the insurance
+                            you need and manage your policies easily. Our aim is to help more and more people attain financial
+                            well- being and prosperity.
                         </p>
                     </div>
                 </div>
@@ -114,7 +125,11 @@ const About = () => {
                         <div className='flex flex-col'>
                             <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-start justify-start mb-4'>History</h2>
                             <p className='w-[500px] h-[480px] leading-[32px] text-[24px] ml-1 font-light'>
-                                Having established a 30-year record of achievements in financial services across Africa and beyond, our founders established a Pan-African platform focused on building a better financial future for Africa. We understand the need to protect the interests of individuals and businesses, therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer solutions for all. In Ghana, we are a leading insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance,etc.We provide INSURANCE FOR EVERYTHING!                            </p>
+                                Having established a 30-year record of achievements in financial services across Africa and
+                                beyond, our founders established a Pan-African platform focused on building a better financial
+                                future for Africa. We understand the need to protect the interests of individuals and businesses,
+                                therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
+                                solutions for all.</p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +155,7 @@ const About = () => {
                         <h2 className='w-[409px] h-[52px] leading-[52px] text-[40px] font-light mb-4'>Board of Directors</h2>
                         <p className='w-[1123px] h-[64px] leading-[32px] text-[24px] font-light'>
                             Our board consists of highly accomplished financial services experts with a combined wealth of experience
-                            spanning more than two centuries.
+                            spanning over a century.
                         </p>
                     </div>
                     <div className='grid grid-cols-3 place-items-center px-[150px] py-[40px]'>
@@ -161,7 +176,7 @@ const About = () => {
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Born in March 1952, Mr.
+                                            Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Mr.
                                             Beecham is a lawyer by profession and a past National President of the Ghana Bar Association. He has spent the greater part of his working life in banking, having joined Merchant Bank Ghana Ltd as a Banking Officer in 1977.
                                         </p>
                                     </div>

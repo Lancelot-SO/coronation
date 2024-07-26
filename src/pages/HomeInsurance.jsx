@@ -40,7 +40,7 @@ const HomeInsurance = () => {
                     <div className='absolute top-[180px] items-center justify-center'>
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>
-                            Want to know more about our services? <br />Let's talk
+                            Want to know more about our products? <br />Get a quote below.
                         </p>
                     </div>
                     <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
@@ -93,9 +93,9 @@ const HomeInsurance = () => {
 
                         </div>
                     </div>
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    {/*<Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         GET A QUOTE
-                    </Link>
+                    </Link>*/}
                 </div>
             </section>
 
@@ -123,9 +123,9 @@ const HomeInsurance = () => {
                         </div>
                     </div>
 
-                    <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
+                    {/*<Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='flex ml-[650px] mt-[100px] items-center justify-center bg-customPurple text-white w-[222px] h-[44px]'>
                         GET A QUOTE
-                    </Link>
+                    </Link>*/}
                 </div>
             </section>
 
@@ -141,9 +141,9 @@ const HomeInsurance = () => {
                                 The product has been designed with a combination of Enhanced term life which gives you an additional benefit.
                             </p>
 
-                            <Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
+                            {/*<Link to="/" className='w-[179px] h-[50px] bg-customPurple text-white mt-4 flex items-center justify-center'>
                                 GET A QUOTE
-                            </Link>
+                            </Link>*/}
                         </div>
                         <div className='relative ml-[150px]'>
                             <img src={motorComp3} alt='ban' className='w-full h-auto' />

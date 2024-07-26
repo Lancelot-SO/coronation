@@ -9,7 +9,8 @@ import psInsurance from "../assets/psAssets/p&sInsurance.png"
 
 
 import { Link } from 'react-router-dom'
-import { FaFingerprint } from 'react-icons/fa'
+import { MdWifiCalling3 } from "react-icons/md";
+
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
@@ -30,10 +31,10 @@ const ProductSolution = () => {
           <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
           <div className='absolute top-[180px] items-center justify-center'>
             <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-            <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? <br />Let's talk</p>
+            <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our products? <br />Let's talk</p>
           </div>
           <Link to="https://ecoronation.com/index" target='_blank' rel='noopener noreferrer' className='absolute top-[300px] items-center justify-center'>
-            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
+            <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us <MdWifiCalling3 /></button>
           </Link>
         </div>
         <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>
@@ -63,7 +64,9 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Motor Insurance</h3>
-                  <p className='w-[169px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Our car insurance plans are designed</p>
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Our car insurance plans are designed to help protect you, your vehicle and the ones you
+                    love. We also settle claims within 48 hours leaving you free to cruise on with absolute
+                    peace of mind.</p>
                 </div>
               </div>
             </Link>
@@ -74,7 +77,7 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Travel Insurance</h3>
-                  <p className='w-[169px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Our car insurance plans are designed</p>
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Travelling should be an enjoyable experience, our plans are designed to keep it that way.</p>
                 </div>
               </div>
             </Link>
@@ -86,7 +89,8 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Home Insurance</h3>
-                  <p className='w-[169px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Our car insurance plans are designed</p>
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Coronation Home Insurance protects your home inside and out, covering your building and
+                    belongings.</p>
                 </div>
               </div>
             </Link>

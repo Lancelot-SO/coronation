@@ -86,7 +86,7 @@ const AboutRed = () => {
 
             <section>
                 <div className='w-full flex items-center justify-center'>
-                    <div className='w-[1120px] h-[792px] flex flex-col'>
+                    <div className='w-[1120px] h-[970px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] h-[426px]'>
                             <p className='font-light text-[22px] leading-[32px]'>
@@ -100,9 +100,20 @@ const AboutRed = () => {
                                 The Company is well placed as one of the top companies in the insurance industry with the best claims reserves and is committed to providing a one-stop shop solution for all insurance needs.
                             </p>
                         </div>
-                        <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
+                        <div className='mb-28'>
+                            <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
+                            <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
+                                We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
+                            </p>
+                        </div>
+
+                        <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
                         <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                            We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
+                            We offer a range of financial solutions to professionals, institutions, and individuals in Ghana. We
+                            design our policies to be affordable and comprehensive, protecting your assets and providing
+                            peace of mind. Our local expertise and use of technology make it convenient to get the insurance
+                            you need and manage your policies easily. Our aim is to help more and more people attain financial
+                            well- being and prosperity.
                         </p>
                     </div>
                 </div>
@@ -118,7 +129,11 @@ const AboutRed = () => {
                         <div className='flex flex-col'>
                             <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-start justify-start mb-4'>History</h2>
                             <p className='w-[500px] h-[480px] leading-[32px] text-[24px] ml-1 font-light'>
-                                Having established a 30-year record of achievements in financial services across Africa and beyond, our founders established a Pan-African platform focused on building a better financial future for Africa. We understand the need to protect the interests of individuals and businesses, therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer solutions for all. In Ghana, we are a leading insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance,etc.We provide INSURANCE FOR EVERYTHING!                            </p>
+                                Having established a 30-year record of achievements in financial services across Africa and
+                                beyond, our founders established a Pan-African platform focused on building a better financial
+                                future for Africa. We understand the need to protect the interests of individuals and businesses,
+                                therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
+                                solutions for all.</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +159,7 @@ const AboutRed = () => {
                         <h2 className='w-[409px] h-[52px] leading-[52px] text-[40px] font-light mb-4'>Board of Directors</h2>
                         <p className='w-[1123px] h-[64px] leading-[32px] text-[24px] font-light'>
                             Our board consists of highly accomplished financial services experts with a combined wealth of experience
-                            spanning more than two centuries.
+                            spanning over a century.
                         </p>
                     </div>
                     <div className='grid grid-cols-3 place-items-center px-[150px] py-[40px]'>
@@ -165,7 +180,7 @@ const AboutRed = () => {
                                     </div>
                                     <div className='opacity-0 group-hover:opacity-100 flex items-center justify-center'>
                                         <p className='w-[268px] h-[233px] text-[18px] leading-[24px] font-normal'>
-                                            Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Born in March 1952, Mr.
+                                            Mr. Frank Beecham is the Chairman of the Board of Coronation Insurance Ghana LTD. Mr.
                                             Beecham is a lawyer by profession and a past National President of the Ghana Bar Association. He has spent the greater part of his working life in banking, having joined Merchant Bank Ghana Ltd as a Banking Officer in 1977.
                                         </p>
                                     </div>

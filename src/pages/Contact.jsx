@@ -9,26 +9,34 @@ import PhoneInput, { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-pho
 import flag1 from "../assets/contact/flag1.jpg";
 import flag2 from "../assets/contact/flag2.jpg";
 import contactBg from "../assets/contact/ContactBg.png";
-// import contactPay from "../assets/contact/contactPay.png";
 import formImage from "../assets/contact/formImage.png";
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
+import { format } from 'date-fns';
+
+
 import { BiPhoneCall } from "react-icons/bi";
-import { MdOutlineMarkEmailUnread } from "react-icons/md";
-import { MdOutlineLocationOn } from "react-icons/md";
+import { MdOutlineMarkEmailUnread, MdOutlineLocationOn } from "react-icons/md";
+
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css'; // Import DatePicker CSS
 
 const Contact = () => {
     const form = useRef();
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [selectedDate, setSelectedDate] = useState(null); // State for DatePicker
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const formattedDate = selectedDate ? format(selectedDate, 'MM/dd/yyyy, HH:mm') : '';
 
         emailjs
             .sendForm('service_lw4pyej', 'template_0vf2k2b', form.current, {
                 publicKey: 'BwhLD7vMqhEFp57Ji',
                 from_name: 'Coronation Insurance',
+                time: formattedDate, // Pass the formatted date/time
             })
             .then(
                 () => {
@@ -40,6 +48,7 @@ const Contact = () => {
             );
         e.target.reset();
         setPhoneNumber(''); // Reset phone number
+        setSelectedDate(null); // Reset DatePicker
     };
 
     return (
@@ -53,19 +62,7 @@ const Contact = () => {
                         We would love to get to know you better! Please fill in your details below so we can connect you with the right member of our team.
                     </p>
                 </div>
-                {/* <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
-                    <img src={contactPay} alt='print' className='relative' />
-                    <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
-                    <div className='absolute top-[180px] items-center justify-center'>
-                        <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
-                        <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
-                    </div>
-                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
-                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
-                    </Link>
-                </div>*/}
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'>
-                </div>
+                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] 2xl:top-[722px]'></div>
             </div>
 
             <section>
@@ -150,7 +147,7 @@ const Contact = () => {
                                     <option>FNOL enquiry</option>
                                     <option>Other Enquiry</option>
                                     <option>Policy Renewal on Coronation Insurance Mobile App</option>
-                                    <option>Policy Renewal on Online Portal</option>
+                                    <option>Policy Renewal on Online  Portal</option>
                                     <option>Online Portal Enquiries</option>
                                     <option>Travel Insurance Procedure</option>
                                     <option>Coronation payment platform</option>
@@ -190,19 +187,28 @@ const Contact = () => {
                                 <textarea name='message' rows="4" placeholder="Enter your Message" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black " required></textarea>
                             </div>
 
-                            <div className="w-2/2">
-                                <label htmlFor="time" className='block text-sm font-medium text-black'>Preferred Time to be contacted</label>
-                                <input type="time" id="hour" name="time" className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black" required />
+                            <div>
+                                <label className="block text-sm font-medium text-black">Preferred Date and Time</label>
+                                <DatePicker
+                                    selected={selectedDate}
+                                    onChange={date => setSelectedDate(date)}
+                                    showTimeSelect
+                                    timeIntervals={15}
+                                    dateFormat="Pp"
+                                    placeholderText="MM/DD/YYYY, HH:MM"
+                                    className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-secondary focus:border-secondary sm:text-sm text-black"
+                                />
+                                <input type="hidden" name="time" value={selectedDate ? format(selectedDate, 'MM/dd/yyyy, HH:mm') : ''} />
                             </div>
 
                             <div className="flex items-start">
                                 <input type="checkbox" id="privacy" className="h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                                <label for="privacy" className="ml-2 block text-sm text-gray-500 0">You agree to our friendly <Link to="/privacy" className="text-indigo-600 hover:underline">privacy policy</Link>.</label>
+                                <label htmlFor="privacy" className="ml-2 block text-sm text-gray-500">You agree to our friendly <Link to="/privacy" className="text-indigo-600 hover:underline">privacy policy</Link>.</label>
                             </div>
                             <button type="submit" className="w-full py-2 px-4 bg-customPurple text-white font-semibold rounded-md shadow-card hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">SEND MESSAGE</button>
                         </form>
                     </div>
-                    <div class="w-full rounded-lg md:w-1/2 p-6">
+                    <div className="w-full rounded-lg md:w-1/2 p-6">
                         <img src={formImage} alt="Person on phone" className="w-[576px] h-[570px]" />
                     </div>
                 </div>
@@ -219,12 +225,12 @@ const Contact = () => {
                             </div>
                             <div className='flex items-center gap-2 mb-4'>
                                 <MdOutlineMarkEmailUnread />
-                                <p className='text-[12px]'>infoghana@coronationinsurance.com.ng</p>                            </div>
+                                <p className='text-[12px]'>infoghana@coronationinsurance.com.ng</p>
+                            </div>
                             <div className='flex items-center gap-2'>
                                 <MdOutlineLocationOn />
                                 <p className='text-[12px]'>35, Aviation Road, Airport Residential Area</p>
                             </div>
-
                         </div>
                     </div>
 
@@ -243,15 +249,14 @@ const Contact = () => {
                                 <MdOutlineLocationOn />
                                 <p className='text-[12px]'>No. 119, Awolowo Road, LAGOS, Lagos</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             <Banner />
             <Footer />
-        </div >
+        </div>
     );
 }
 

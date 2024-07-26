@@ -9,7 +9,9 @@ import MotorInsurance from './pages/MotorInsurance';
 import TravelInsurance from './pages/TravelInsurance';
 import Insights from './pages/Insights';
 import HomeInsurance from './pages/HomeInsurance';
-import FirstInsightDetail from './insightDetails/FirstInsightDetail';
+// import FirstInsightDetail from './insightDetails/FirstInsightDetail';
+// import SecondInsightDetail from './insightDetails/SecondInsightDetail';
+// import ThirdInsightDetail from './insightDetails/ThirdInsightDetail';
 import Career from './pages/Career';
 import SelfService from './pages/SelfService';
 import Contact from './pages/Contact';
@@ -23,8 +25,6 @@ import SelfServiceRed from './pages/SelfServiceRed';
 import MotorInsuranceRed from './pages/MotorInsuranceRed';
 import MarineInsurance from './pages/MarineInsurance';
 import EngineerInsurance from './pages/EngineerInsurance';
-import SecondInsightDetail from './insightDetails/SecondInsightDetail';
-import ThirdInsightDetail from './insightDetails/ThirdInsightDetail';
 import Privacy from './pages/Privacy';
 import PrivacyRed from './pages/PrivacyRed';
 import { useEffect, useState } from 'react';
@@ -73,9 +73,9 @@ function App() {
           <Route path='/selfservice' element={<SelfService />} />
           <Route path='/selfservicered' element={<SelfServiceRed />} />
           <Route path='/home_insurance' element={<HomeInsurance />} />
-          <Route path='/first_insight' element={<FirstInsightDetail />} />
+          {/* <Route path='/first_insight' element={<FirstInsightDetail />} />
           <Route path='/second_insight' element={<SecondInsightDetail />} />
-          <Route path='/third_insight' element={<ThirdInsightDetail />} />
+          <Route path='/third_insight' element={<ThirdInsightDetail />} />*/}
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/privacyred' element={<PrivacyRed />} />
         </Routes>

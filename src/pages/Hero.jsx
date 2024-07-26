@@ -1,6 +1,6 @@
 import React from 'react'
 import herobg from "../assets/heroBg.png"
-import heroPrint from "../assets/heroPrint.png"
+// import heroPrint from "../assets/heroPrint.png"
 import hero2 from "../assets/hero2.png"
 import hero3 from "../assets/hero3.png"
 
@@ -32,7 +32,7 @@ const Hero = () => {
                     <p className='lg:w-[685px] w-[260px] h-[45px] lg:text-[19px] text-[14px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
                         independence and enduring legacies that lead to sustainable wealth creation in Africa.</p>
                 </div>
-                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px] hidden lg:flex'>
+                {/* <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px] hidden lg:flex'>
                     <img src={heroPrint} alt='print' className='relative' />
                     <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
@@ -42,7 +42,7 @@ const Hero = () => {
                     <Link to="https://ecoronation.com/" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
                         <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Request & Pay <FaFingerprint /></button>
                     </Link>
-                </div>
+                </div>*/}
                 <div className='lg:w-[660px] h-[7px] bg-[#B580D1] absolute top-[622px] w-[300px] 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
@@ -98,7 +98,7 @@ const Hero = () => {
                                     <p className='w-[222px] h-[127px] text-[16px] leading-[19px] font-normal'>
                                         In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking preventive measures cannot be overstated.
                                     </p>
-                                    <Link to="/first_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <Link to="https://drive.google.com/file/d/1Ixr5kf35gYGpk7MUNXVcU5UfvQOsHfc1/view?usp=sharing" target='_blank' rel='noopener noreferrer' className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
@@ -113,7 +113,7 @@ const Hero = () => {
                                     <p className='w-[222px] h-[90px] text-[16px] leading-[19px] font-normal'>
                                         Regardless of industry or sector, almost all businesses today are seeking to digitalise their operations to improve customer experience.
                                     </p>
-                                    <Link to="/second_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <Link to="https://drive.google.com/file/d/11j5Z3wSzOd6ODPCa5sSQ5BO_jma2ZTli/view?usp=sharing" target='_blank' rel='noopener noreferrer' className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
@@ -128,7 +128,7 @@ const Hero = () => {
                                     <p className='w-[222px] h-[57px] text-[16px] leading-[19px] font-normal'>
                                         The Role of Insurance in Your Retail Business's Long-Term Plan
                                     </p>
-                                    <Link to="/third_insight" className='flex items-center w-[111px] justify-center h-[20px]'>
+                                    <Link to="https://drive.google.com/file/d/1xGnA0fqYDsL2gnZ9pr_DXIK2vfQtrDQG/view?usp=sharing" target='_blank' rel='noopener noreferrer' className='flex items-center w-[111px] justify-center h-[20px]'>
                                         <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                                         <FaLongArrowAltRight />
                                     </Link>
