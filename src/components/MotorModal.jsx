@@ -27,9 +27,9 @@ const MotorModal = ({ onClose }) => {
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Authorized repair limit: as stated in our policy document</li>
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Passenger liability: as stated in our policy document</li>
                         <li className="w-full font-normal text-[14px] leading-[32px]">• Third-party liabilities Within (ECOWAS) Countries</li>
-                        <div className="mt-4 z-10">
+                        {/*<div className="mt-4 z-10">
                             <img src={logo} alt='logo' />
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

@@ -25,9 +25,9 @@ const HouseOwnerModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px]">• Towing charges: not exceed 20% of total repairs bill</li>
                         <li class="w-full font-normal text-[14px] leading-[32px]">• Authorized repair limit: as stated in our policy document</li>
                         <li class="w-full font-normal text-[14px] leading-[32px]">• Passenger liability: as stated in our policy document</li>
-                        <div class="text-right text-gray-800 font-bold mt-4 z-10">
+                        {/*<div class="text-right text-gray-800 font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

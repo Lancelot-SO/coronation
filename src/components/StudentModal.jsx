@@ -22,9 +22,9 @@ const StudentModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Covers persons aged up to 80 years</li>
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Payment of compensation for delay of flight and delay of luggage</li>
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Emergency return home following the death of a close family member</li>
-                        <div class="text-right text-gray-800 dark:text-black font-bold mt-4 z-10">
+                        {/*<div class="text-right text-gray-800 dark:text-black font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

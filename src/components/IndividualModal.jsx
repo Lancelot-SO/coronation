@@ -23,9 +23,9 @@ const IndividualModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px]">Personal Accident for Insured / Driver: GHS7,000</li>
                         <li class="w-full font-normal text-[14px] leading-[32px]">Deductible/excess</li>
 
-                        <div class="text-right text-black font-bold mt-4 z-10">
+                        {/*<div class="text-right text-black font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

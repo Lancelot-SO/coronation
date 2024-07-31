@@ -18,7 +18,7 @@ import Banner from '../components/Banner'
 
 
 
-import { FaFingerprint, FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 

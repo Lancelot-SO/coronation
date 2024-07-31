@@ -8,6 +8,8 @@ import CoreCareers from './CoreCareers'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 
+
+
 const Career = () => {
     return (
         <div>

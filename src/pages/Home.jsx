@@ -73,7 +73,7 @@ const Home = () => {
         >
           <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INDIVIDUAL</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-left">
-            We provide a wide  range of personal insurance solutions to individuals of all classes. No matter your need, we have the right insurance for you.
+            I want to see products and services for myself and family.
           </p>
           <Link to='/hero' onClick={handleLeftClick}>
             <button className="bg-customPurple text-white font-bold py-2 px-4 rounded w-[212px]">
@@ -100,7 +100,8 @@ const Home = () => {
         >
           <h1 className="text-4xl font-semibold mb-4 tracking-[5px]">INSTITUTION</h1>
           <p className="mb-6 text-[24px] leading-[35px] text-right">
-            Representing organizations or beneficiaries? Great! We offer tailored corporate solutions..          </p>
+            I want to see products for organizations, beneficiaries or institutions that I represent.
+          </p>
           <Link to='/herored' onClick={handleRightClick}>
             <button className="bg-secondary text-white font-bold py-2 px-4 rounded w-[212px]">
               Enter

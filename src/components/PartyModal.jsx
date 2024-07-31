@@ -29,9 +29,9 @@ const PartyModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Passenger liability: as stated in our policy document</li>
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Third-party liabilities Within (ECOWAS) Countries</li>
 
-                        <div class="text-right text-gray-800 dark:text-black font-bold mt-4 z-10">
+                        {/* <div class="text-right text-gray-800 dark:text-black font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

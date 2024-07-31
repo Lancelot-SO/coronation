@@ -28,9 +28,9 @@ const PilgrimageModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Loss of personal effect: as stated in the policy schedule</li>
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Authorized repair limit: as stated in our policy document</li>
                         <li class="w-full font-normal text-[14px] leading-[32px] text-black">• Passenger liability: as stated in our policy document</li>
-                        <div class="text-right text-black font-bold mt-4 z-10">
+                        {/*<div class="text-right text-black font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

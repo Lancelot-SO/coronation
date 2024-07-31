@@ -7,9 +7,10 @@ import homeOwner from "../assets/home/homeOwner.png"
 import householder from "../assets/home/householder.png"
 import motorComp3 from "../assets/home/homeBenefit.jpeg"
 
+import { MdWifiCalling3 } from "react-icons/md";
 
 
-import { FaFingerprint, FaLongArrowAltRight } from 'react-icons/fa'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 import HouseOwnerModal from '../components/HouseOwnerModal'
 import HouseHolderModal from '../components/HouseHolderModal'
 import Banner from '../components/Banner'
@@ -43,8 +44,8 @@ const HomeInsurance = () => {
                             Want to know more about our products? <br />Get a quote below.
                         </p>
                     </div>
-                    <Link to="https://ecoronation.com/motor" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
-                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>GET A QUOTE <FaFingerprint /></button>
+                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                        <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us <MdWifiCalling3 /></button>
                     </Link>
                 </div>
                 <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0'>

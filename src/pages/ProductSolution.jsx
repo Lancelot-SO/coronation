@@ -64,7 +64,7 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Motor Insurance</h3>
-                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Our car insurance plans are designed to help protect you, your vehicle and the ones you
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[14px] leading-[19px] text-center'>Our car insurance plans are designed to help protect you, your vehicle and the ones you
                     love. We also settle claims within 48 hours leaving you free to cruise on with absolute
                     peace of mind.</p>
                 </div>
@@ -77,7 +77,7 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Travel Insurance</h3>
-                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Travelling should be an enjoyable experience, our plans are designed to keep it that way.</p>
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[14px] leading-[19px] text-center'>Travelling should be an enjoyable experience, our plans are designed to keep it that way.</p>
                 </div>
               </div>
             </Link>
@@ -89,7 +89,7 @@ const ProductSolution = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer rounded-[25px] opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
                 <div className='absolute top-[40%] left-0 w-full h-full flex flex-col items-center text-white'>
                   <h3 className='w-[259px] h-[29px] font-normal text-[24px] leading-[29px] text-center'>Home Insurance</h3>
-                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[12px] leading-[19px] text-center'>Coronation Home Insurance protects your home inside and out, covering your building and
+                  <p className='w-[169px] lg:w-[300px] h-[39px] font-normal text-[14px] leading-[19px] text-center'>Coronation Home Insurance protects your home inside and out, covering your building and
                     belongings.</p>
                 </div>
               </div>

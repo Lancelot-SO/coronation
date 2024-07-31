@@ -18,9 +18,9 @@ const ThirdModal = ({ onClose }) => {
                         <li className="w-full font-normal text-[14px] leading-[32px] text-black">• 7. Reimbursement of legal fees if policy holder is<br /> prosecuted in court over an accident resulting in a valid<br /> claim</li>
                         <li className="w-full font-normal text-[14px] leading-[32px] text-black">• Personal Accident for Insured / Driver: GHS7,000</li>
                         <li className="w-full font-normal text-[14px] leading-[32px] text-black">• Passenger liability: as stated in our policy document</li>
-                        <div className="text-right text-gray-800 font-bold mt-4 z-10">
+                        {/*<div className="text-right text-gray-800 font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>

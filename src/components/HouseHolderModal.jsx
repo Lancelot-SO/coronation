@@ -22,9 +22,9 @@ const HouseHolderModal = ({ onClose }) => {
                         <li class="w-full font-normal text-[14px] leading-[32px]">• Covers public liability up to GHS20,000</li>
                         <li class="w-full font-normal text-[14px] leading-[32px]">• Covers personal accident uo to GHS20,000 for   the houshold, maximum 5 occupants</li>
                         <li class="w-full font-normal text-[14px] leading-[32px]">•  All risk coverage is for laptops, jewelry, and   other moveable items. Customer cannot take insurance <br />cover for all risk items   alone. It must be taken along side Home owners cover.</li>
-                        <div class="text-right text-gray-800 dark:text-white font-bold mt-4 z-10">
+                        {/*<div class="text-right text-gray-800 dark:text-white font-bold mt-4 z-10">
                             CORONATION
-                        </div>
+                        </div>*/}
                     </ul>
                 </div>
             </div>
