@@ -27,7 +27,7 @@ export const projectsNav = [
         name: 'Brochures',
     },
     {
-        name: 'Thought leadership articles',
+        name: 'Thought Leadership Articles',
     },
 ];
 
@@ -39,7 +39,7 @@ export const projectsData = [
         heading: "STAYING AHEAD OF THE STORM",
         details: `In today's age of global warming, characterised by a rise in the frequency and severity of floods and fires, the significance of taking
                   preventive measures cannot be overstated.`,
-        category: 'Thought leadership articles',
+        category: 'Thought Leadership Articles',
         link: "https://drive.google.com/file/d/1Ixr5kf35gYGpk7MUNXVcU5UfvQOsHfc1/view?usp=sharing"
 
     },
@@ -50,7 +50,7 @@ export const projectsData = [
         details: `Regardless of industry or sector, almost all businesses
                today are seeking to digitalise their operations to improve
                customer experience.`,
-        category: 'Thought leadership articles',
+        category: 'Thought Leadership Articles',
         link: "https://drive.google.com/file/d/11j5Z3wSzOd6ODPCa5sSQ5BO_jma2ZTli/view?usp=sharing"
 
     },
@@ -59,7 +59,7 @@ export const projectsData = [
         image: Insight3,
         heading: "A STRATEGY FOR RESILIENCE",
         details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
-        category: 'Thought leadership articles',
+        category: 'Thought Leadership Articles',
         link: "https://drive.google.com/file/d/1xGnA0fqYDsL2gnZ9pr_DXIK2vfQtrDQG/view?usp=sharing"
 
     }

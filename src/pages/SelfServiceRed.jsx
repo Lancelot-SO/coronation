@@ -119,7 +119,7 @@ const SelfServiceRed = () => {
                                 <h4 className='flex items-center justify-center w-[306px] h-[48px] font-normal text-[24px] leading-[24px] mt-8'>
                                     File a Claim
                                 </h4>
-                                <Link to="https://claims.coronation.ng/" target='_blank' rel="noopener noreferrer">
+                                <Link to="https://claims-gh.coronation.ng/" target='_blank' rel="noopener noreferrer">
                                     <button className='w-[154px] h-[20px] mt-10 text-secondary'>File a Claim</button>
                                 </Link>
                             </div>

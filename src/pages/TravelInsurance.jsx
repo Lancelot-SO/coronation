@@ -34,7 +34,7 @@ const TravelInsurance = () => {
                 <img src={travelBg} alt='hero' className='w-full h-[629px] relative object-cover' />
                 <div className="absolute inset-0 w-full h-full bg-black opacity-30"></div>
                 <div className='absolute top-[303px] left-[160px] w-[745px] h-[220px] bg-[rgba(0,0,0,0.7)] p-6'>
-                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance.</h2>
+                    <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>Travel Insurance</h2>
                     <p className='w-[686px] h-[99px] text-[19px] leading-[25px] text-white font-light'>
                         Travel insurance provides cover for risks associated with travelling out of your country of residence on a temporary basis. This cover includes  medical expenses as a result of accident or illness, cost of repatriation and financial compensation to your beneficiaries in the event of unfortunate case of death while under cover and many more.
                     </p>
