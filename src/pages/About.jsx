@@ -13,6 +13,10 @@ import board4 from "../assets/board5.png"
 import board5 from "../assets/board6.png"
 import board6 from "../assets/board7.png"
 
+import offer from "../assets/about-offer.jpeg"
+import offer1 from "../assets/about-offer1.jpeg"
+
+
 
 
 // import Slider from '../components/Slider'
@@ -87,7 +91,7 @@ const About = () => {
 
             <section>
                 <div className='w-full flex items-center justify-center'>
-                    <div className='w-[1120px] h-[800px] flex flex-col'>
+                    <div className='w-[1120px] h-[1300px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] text-[22px] font-light mb-10'>
                             Having established a 30-year record of achievements in financial services across Africa and
@@ -96,21 +100,34 @@ const About = () => {
                             therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
                             solutions for all.
                         </div>
-                        <div className='mb-28'>
-                            <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
-                            <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                                We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
-                            </p>
+                        <div className="mb-28 flex h-[400px]">
+                            <div className="flex-none w-1/3">
+                                <img src={offer} alt="offer" className="h-full object-cover" />
+                            </div>
+                            <div className="flex-grow flex flex-col justify-center px-8">
+                                <h2 className="text-[40px] leading-[52px] font-light text-center mb-4">What we do</h2>
+                                <p className="text-[22px] leading-[32px] font-light">
+                                    We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
+                                </p>
+                            </div>
                         </div>
 
-                        <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
-                        <p className='w-[1111px] h-[32px] text-[22px] leading-[32px] font-light'>
-                            We offer a range of financial solutions to professionals, institutions, and individuals in Ghana. We
-                            design our policies to be affordable and comprehensive, protecting your assets and providing
-                            peace of mind. Our local expertise and use of technology make it convenient to get the insurance
-                            you need and manage your policies easily. Our aim is to help more and more people attain financial
-                            well- being and prosperity.
-                        </p>
+                        <div className="mb-28 flex h-[400px]">
+                            <div className="flex-1 flex flex-col justify-center px-8">
+                                <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
+                                <p className='text-[22px] leading-[32px] font-light'>
+                                    We offer a range of financial solutions to professionals, institutions, and individuals in Ghana.
+                                    We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind.
+                                    Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily. Our aim is to help more and more people attain financial well-being and prosperity.
+                                </p>
+                            </div>
+                            <div className="flex-none w-1/3">
+                                <img src={offer1} alt="offer" className="h-full object-cover" />
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </section>
