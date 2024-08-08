@@ -90,7 +90,7 @@ const About = () => {
             </section>*/}
 
             <section>
-                <div className='w-full flex items-center justify-center'>
+                <div className='w-full flex items-center justify-center bg-slate-100'>
                     <div className='w-[1120px] h-[1300px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] text-[22px] font-light mb-10'>
@@ -102,10 +102,10 @@ const About = () => {
                         </div>
                         <div className="mb-28 flex h-[400px]">
                             <div className="flex-none w-1/3">
-                                <img src={offer} alt="offer" className="h-full object-cover" />
+                                <img src={offer} alt="offer" className="h-full object-cover shadow-md" />
                             </div>
                             <div className="flex-grow flex flex-col justify-center px-8">
-                                <h2 className="text-[40px] leading-[52px] font-light text-center mb-4">What we do</h2>
+                                <h2 className="text-[40px] leading-[52px] font-light text-start mb-4">What we do</h2>
                                 <p className="text-[22px] leading-[32px] font-light">
                                     We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
                                 </p>
@@ -114,7 +114,7 @@ const About = () => {
 
                         <div className="mb-28 flex h-[400px]">
                             <div className="flex-1 flex flex-col justify-center px-8">
-                                <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
+                                <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>Our Offering</h2>
                                 <p className='text-[22px] leading-[32px] font-light'>
                                     We offer a range of financial solutions to professionals, institutions, and individuals in Ghana.
                                     We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind.

@@ -109,7 +109,7 @@ const AboutRed = () => {
                                 <img src={offer1} alt='offer' className='w-full h-full' />
                             </div>
                             <div className='flex-1 flex flex-col justify-center px-8'>
-                                <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>What we do</h2>
+                                <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>What we do</h2>
                                 <p className='text-[22px] leading-[32px] font-light'>
                                     We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
                                 </p>
@@ -118,7 +118,7 @@ const AboutRed = () => {
 
                         <div className='flex mb-28'>
                             <div className='flex-1 flex flex-col justify-center pr-8'>
-                                <h2 className='text-[40px] leading-[52px] font-light text-center mb-4'>Our Offering</h2>
+                                <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>Our Offering</h2>
                                 <p className='text-[22px] leading-[32px] font-light'>
                                     We offer a range of financial solutions to professionals, institutions, and individuals in Ghana. We
                                     design our policies to be affordable and comprehensive, protecting your assets and providing
