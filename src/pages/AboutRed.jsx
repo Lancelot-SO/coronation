@@ -89,7 +89,7 @@ const AboutRed = () => {
             </section>*/}
 
             <section>
-                <div className='w-full flex items-center justify-center'>
+                <div className='w-full flex items-center justify-center bg-slate-100'>
                     <div className='w-[1120px] h-[1500px] flex flex-col'>
                         <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
                         <div className='w-[1111px] h-[426px]'>
@@ -106,7 +106,7 @@ const AboutRed = () => {
                         </div>
                         <div className='mb-28 flex h-[400px] mt-8'>
                             <div className='flex-none w-1/3'>
-                                <img src={offer1} alt='offer' className='w-full h-full' />
+                                <img src={offer1} alt='offer' className='w-full h-full shadow-md' />
                             </div>
                             <div className='flex-1 flex flex-col justify-center px-8'>
                                 <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>What we do</h2>
@@ -119,7 +119,7 @@ const AboutRed = () => {
                         <div className='flex mb-28'>
                             <div className='flex-1 flex flex-col justify-center pr-8'>
                                 <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>Our Offering</h2>
-                                <p className='text-[22px] leading-[32px] font-light'>
+                                <p className='text-[22px] leading-[32px] font-light w-[700px]'>
                                     We offer a range of financial solutions to professionals, institutions, and individuals in Ghana. We
                                     design our policies to be affordable and comprehensive, protecting your assets and providing
                                     peace of mind. Our local expertise and use of technology make it convenient to get the insurance
@@ -128,7 +128,7 @@ const AboutRed = () => {
                                 </p>
                             </div>
                             <div className='flex-none w-1/3'>
-                                <img src={offer2} alt='offer' className='w-full h-[400px] object-cover' />
+                                <img src={offer2} alt='offer' className='w-full h-[400px] object-cover shadow-md' />
                             </div>
                         </div>
 
