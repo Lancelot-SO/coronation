@@ -8,7 +8,7 @@ import flag2 from "../assets/contact/flag2.jpg"
 import { format } from 'date-fns';
 
 
-import contactBg from "../assets/contact/ContactBg.png"
+import contactBg from "../assets/contact/contactBg.png"
 // import contactPay from "../assets/contact/contactPay.png"
 import formImage from "../assets/contact/formImage.png"
 import { Link } from 'react-router-dom'
@@ -25,6 +25,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+
+//import everything here
 
 const ContactRed = () => {
     const form = useRef();

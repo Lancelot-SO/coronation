@@ -8,7 +8,7 @@ import PhoneInput, { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-pho
 
 import flag1 from "../assets/contact/flag1.jpg";
 import flag2 from "../assets/contact/flag2.jpg";
-import contactBg from "../assets/contact/ContactBg.png";
+import contactBg from "../assets/contact/contactBg.png";
 import formImage from "../assets/contact/formImage.png";
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
