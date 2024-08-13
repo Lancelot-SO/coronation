@@ -27,9 +27,9 @@ const Hero = () => {
         <div className='overflow-hidden'>
             <div className=''>
                 <img src={herobg} alt='hero' className='w-full h-[629px] relative object-cover' />
-                <div className='absolute top-[403px] lg:left-[160px] left-0 lg:w-[745px] w-[270px] lg:h-[164px] h-[160px] bg-[rgba(0,0,0,0.8)] lg:p-10 p-2'>
+                <div className='absolute top-[403px] lg:left-[160px] left-4 lg:w-[745px] w-[360px] lg:h-[164px] h-[160px] bg-[rgba(0,0,0,0.8)] lg:p-10 p-2'>
                     <h2 className='lg:mb-4 mb-2 lg:text-[31px] text-[16px] leading-[37px] text-white font-medium'>Coronation</h2>
-                    <p className='lg:w-[685px] w-[260px] h-[45px] lg:text-[19px] text-[14px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
+                    <p className='lg:w-[685px] w-[340px] h-[42px] lg:text-[19px] text-[14px] leading-[25px] text-white font-light'>We are a leading African financial services partner that helps build financial
                         independence and enduring legacies that lead to sustainable wealth creation in Africa.</p>
                 </div>
                 {/* <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px] hidden lg:flex'>

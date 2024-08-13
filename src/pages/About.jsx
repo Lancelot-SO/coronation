@@ -52,16 +52,16 @@ const About = () => {
     //     }
     // }
     return (
-        <div>
+        <div className='overflow-hidden'>
             <div>
                 <img src={aboutbg} alt='hero' className='w-full h-[629px] relative object-cover' />
-                <div className='absolute top-[403px] left-[160px] w-[745px] h-[236px] bg-[rgba(0,0,0,0.8)] p-10'>
+                <div className='absolute lg:top-[403px] top-[30%] lg:left-[160px] left-4 lg:w-[745px] w-[350px] h-[350px] lg:h-[236px] bg-[rgba(0,0,0,0.8)] p-10'>
                     <h2 className='mb-4 text-[31px] leading-[37px] text-white font-normal'>About Us</h2>
-                    <p className='w-[686px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
+                    <p className='lg:w-[686px] w-[300px] h-[128px] text-[18px] leading-[25px] text-white font-light'>
                         We are a leading Ghanaian insurance company offering a diverse range of products and services covering general and special risk businesses. We are licensed to underwrite all classes of non-life insurance, such as motor insurance, marine insurance, fire and special perils, goods-in-transit, all risks insurance, etc.
                     </p>
                 </div>
-                <div className='absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
+                <div className='hidden lg:flex absolute top-[281px] left-[1000px] 3xl:ml-[230px]'>
                     <img src={aboutPrint} alt='print' className='relative' />
                     <div className='absolute inset-0 bg-black opacity-30 rounded-[30px]'></div>
                     <div className='absolute top-[180px] items-center justify-center'>
@@ -72,7 +72,7 @@ const About = () => {
                         <button className='flex w-[263px] h-[45px] items-center gap-4 bg-[#B580D1] ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
                     </Link>
                 </div>
-                <div className='w-[660px] h-[7px] bg-[#B580D1] absolute bottom-0 3xl:top-[722px] large:top-[722px]'>
+                <div className='lg:w-[660px] w-[300px] h-[7px] bg-[#B580D1] absolute bottom-[18px] 3xl:top-[722px] large:top-[722px]'>
                 </div>
             </div>
 
@@ -91,37 +91,37 @@ const About = () => {
 
             <section>
                 <div className='w-full flex items-center justify-center bg-slate-100'>
-                    <div className='w-[1120px] h-[1300px] flex flex-col'>
-                        <h2 className='text-[40px] leading-[52px] font-light text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
-                        <div className='w-[1111px] text-[22px] font-light mb-10'>
+                    <div className='w-[1120px] lg:h-[1300px] flex flex-col'>
+                        <h2 className='lg:text-[40px] text-[24px] lg:leading-[52px] lg:font-light font-normal text-center mt-10 mb-4'>ABOUT CORONATION INSURANCE GHANA LTD</h2>
+                        <div className='lg:w-[1111px] pb-2 lg:pb-0 px-2 lg:px-0 lg:text-[22px] font-light mb-10'>
                             Having established a 30-year record of achievements in financial services across Africa and
                             beyond, our founders established a Pan-African platform focused on building a better financial
                             future for Africa. We understand the need to protect the interests of individuals and businesses,
                             therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
                             solutions for all.
                         </div>
-                        <div className="mb-28 flex h-[400px]">
-                            <div className="flex-none w-1/3">
+                        <div className="mb-28 flex lg:flex-row flex-col lg:h-[400px]">
+                            <div className="flex-none lg:w-1/3 px-4 lg:px-0">
                                 <img src={offer} alt="offer" className="h-full object-cover shadow-md" />
                             </div>
-                            <div className="flex-grow flex flex-col justify-center px-8">
-                                <h2 className="text-[40px] leading-[52px] font-light text-start mb-4">What we do</h2>
-                                <p className="text-[22px] leading-[32px] font-light">
+                            <div className="flex-grow flex flex-col justify-center lg:px-8 px-4">
+                                <h2 className="text-[40px] leading-[52px] lg:font-light font-normal lg:text-start text-center lg:mb-4 mb-2 mt-4 lg:mt-0">What we do</h2>
+                                <p className="lg:text-[22px] lg:leading-[32px] font-light">
                                     We are an insurance company in Ghana offering a variety of coverage options for individuals and businesses. We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind. Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="mb-28 flex h-[400px]">
-                            <div className="flex-1 flex flex-col justify-center px-8">
-                                <h2 className='text-[40px] leading-[52px] font-light text-start mb-4'>Our Offering</h2>
-                                <p className='text-[22px] leading-[32px] font-light'>
+                        <div className="mb-28 flex lg:flex-row flex-col-reverse lg:h-[400px]">
+                            <div className="flex-1 flex flex-col justify-center lg:px-8 px-4">
+                                <h2 className='text-[40px] leading-[52px] lg:font-light font-normal lg:text-start text-center lg:mb-4 mb-2 mt-4'>Our Offering</h2>
+                                <p className='lg:text-[22px] lg:leading-[32px] font-light'>
                                     We offer a range of financial solutions to professionals, institutions, and individuals in Ghana.
                                     We design our policies to be affordable and comprehensive, protecting your assets and providing peace of mind.
                                     Our local expertise and use of technology make it convenient to get the insurance you need and manage your policies easily. Our aim is to help more and more people attain financial well-being and prosperity.
                                 </p>
                             </div>
-                            <div className="flex-none w-1/3">
+                            <div className="flex-none lg:w-1/3 px-4 lg:px-0">
                                 <img src={offer1} alt="offer" className="h-full object-cover" />
                             </div>
                         </div>
@@ -133,49 +133,50 @@ const About = () => {
             </section>
 
             <section>
-                <div className='bg-[#F1F5F9] w-full h-[794px] flex items-center '>
-                    <div className='w-[1300px] h-[552px] flex relative'>
-                        <div className='relative flex items-center'>
-                            <div className='bg-black w-[840px] h-[286px]'></div>
-                            <img src={history} alt='history' className='absolute w-[560px] h-[552px] object-cover top-0 left-[24%]' />
+                <div className="bg-[#F1F5F9] w-full min-h-screen flex flex-col items-center md:flex-row md:py-0">
+                    <div className="w-full max-w-[1300px] h-auto flex flex-col md:flex-row md:gap-4">
+                        <div className="relative flex items-center justify-center w-full md:w-auto">
+                            <div className="hidden md:block bg-black w-[800px] h-[286px]"></div>
+                            <img src={history} alt="history" className="w-full h-auto md:w-[560px] md:h-[552px] object-cover md:absolute md:top--10 md:left-[24%] px-4 md:px-0" />
                         </div>
-                        <div className='flex flex-col'>
-                            <h2 className='h-[52px] text-[40px] leading-[52px] font-light flex items-start justify-start mb-4'>History</h2>
-                            <p className='w-[500px] h-[480px] leading-[32px] text-[24px] ml-1 font-light'>
+                        <div className="flex flex-col lg:items-start mt-6 md:mt-0 md:ml-4">
+                            <h2 className="text-[32px] text-center md:text-[40px] leading-[40px] md:leading-[52px] lg:font-light font-normal mb-4">History</h2>
+                            <p className="w-full md:w-[500px] flex lg:items-center items-start md:leading-[32px] md:text-[24px] font-light px-4 lg:px-0">
                                 Having established a 30-year record of achievements in financial services across Africa and
                                 beyond, our founders established a Pan-African platform focused on building a better financial
                                 future for Africa. We understand the need to protect the interests of individuals and businesses,
                                 therefore we ventured into insurance, to provide risk advisory, risk management and risk transfer
-                                solutions for all.</p>
+                                solutions for all.
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </section>
 
-            <section className='my-[120px]'>
+            <section className='lg:mb-[120px] mb-10 3xl:ml-[120px]'>
                 <div className='relative'>
-                    <img src={bg} alt='bg' className='absolute w-[1120px] h-[177px]  top-0 left-[190px] object-cover' />
-                    <div className='relative z-10 flex flex-row ml-[300px]'>
-                        <div className='text-left mt-10'>
-                            <h2 className='text-white w-[480px] h-[43px] text-[36px] leading-[43px] font-light mb-4'>We are affiliated to the Group</h2>
+                    <img src={bg} alt='bg' className='absolute lg:w-[1120px] w-full lg:h-[177px] h-[250px] lg:rounded-[50px] top-0 lg:left-[190px] object-cover' />
+                    <div className='relative z-10 flex lg:flex-row flex-col lg:ml-[300px] ml-0'>
+                        <div className='text-left mt-10 pl-10 lg:pl-0'>
+                            <h2 className='text-white lg:w-[480px] w-[300px] h-[43px] lg:text-[36px] text-[20px] leading-[43px] font-light lg:mb-4 mb-2'>We are affiliated to the Group</h2>
                             <p className='text-white opacity-50 w-[332px] h-[28px] text-[16px] leading-[19px] font-light'>We are affiliated to our mother company in Nigeria</p>
                         </div>
-                        <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] ml-[60px] rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
+                        <Link to="https://coronation.ng/contact-us/" target='_blank' rel='noopener noreferrer' className='flex items-center justify-center font-normal text-[13px] text-black mt-[70px] lg:ml-[60px] ml-10 rounded-[30px] w-[263px] h-[45px] bg-white'>Contact us</Link>
                     </div>
                 </div>
-
             </section>
 
             <section>
                 <div>
-                    <div className='flex flex-col items-center justify-center'>
-                        <h2 className='w-[409px] h-[52px] leading-[52px] text-[40px] font-light mb-4'>Board of Directors</h2>
-                        <p className='w-[1123px] h-[64px] leading-[32px] text-[24px] font-light'>
+                    <div className='flex flex-col lg:items-center justify-center'>
+                        <h2 className='md:w-[409px] h-[52px] leading-[52px] text-[40px] md:font-light font-normal mb-4 ml-8 md:ml-0'>Board of Directors</h2>
+                        <p className='lg:w-[1123px] h-[64px] md:leading-[32px] lg:text-[24px] font-light px-4'>
                             Our board consists of highly accomplished financial services experts with a combined wealth of experience
                             spanning over a century.
                         </p>
                     </div>
-                    <div className='grid grid-cols-3 place-items-center px-[150px] py-[40px]'>
+                    <div className='grid lg:grid-cols-3 place-items-center lg:px-[150px] py-[40px] gap-4 lg:gap-0'>
                         <div className='group'>
                             <div className='w-[338px] h-[500px] relative overflow-hidden'>
                                 <img src={board} alt="board" className='w-[338px] h-[396px] object-cover transition-all duration-500 group-hover:w-[100px] group-hover:h-[100px] group-hover:translate-x-[250px] group-hover:-translate-y-[48px] group-hover:mt-12' />
