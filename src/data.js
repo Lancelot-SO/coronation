@@ -1,6 +1,8 @@
 import Insight1 from "./assets/insight/insightmain2.png"
 import Insight2 from "./assets/insight/insightmain44.png"
 import Insight3 from "./assets/insight/insightmain3.png"
+import Insight4 from "./assets/insight/insightImg4.png"
+
 
 import SliderImg from "./assets/slider.png"
 import Slider6 from "./assets/slider6.png"
@@ -61,6 +63,18 @@ export const projectsData = [
         details: `The Role of Insurance in Your Retail Business's Long-Term Plan`,
         category: 'Thought Leadership Articles',
         link: "https://drive.google.com/file/d/1xGnA0fqYDsL2gnZ9pr_DXIK2vfQtrDQG/view?usp=sharing"
+
+    },
+    {
+        id: '4',
+        image: Insight4,
+        heading: `THE ROLE OF ARTIFICIAL INTELLIGENCE
+IN MODERNIZING INSURANCE`,
+        details: `The insurance industry, often seen as traditional
+and slow-moving, is undergoing a significant
+transformation.`,
+        category: 'Thought Leadership Articles',
+        link: "https://drive.google.com/file/d/1BoDF9Y64sXLWz5xzht6Ed_xXeLVRugIY/view?usp=sharing"
 
     }
 

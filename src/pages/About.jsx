@@ -13,8 +13,8 @@ import board4 from "../assets/board5.png"
 import board5 from "../assets/board6.png"
 import board6 from "../assets/board7.png"
 
-import offer from "../assets/about-offer.jpeg"
-import offer1 from "../assets/about-offer1.jpeg"
+import offer from "../assets/aboutnew-offer.png"
+import offer1 from "../assets/aboutnew-offer1.png"
 
 
 
@@ -122,7 +122,7 @@ const About = () => {
                                 </p>
                             </div>
                             <div className="flex-none lg:w-1/3 px-4 lg:px-0">
-                                <img src={offer1} alt="offer" className="h-full object-cover" />
+                                <img src={offer1} alt="offer" className="h-full object-cover shadow-md" />
                             </div>
                         </div>
 

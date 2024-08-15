@@ -37,7 +37,7 @@ const ProjectsRed = () => {
     return (
         <div>
             <div className='flex items-center justify-center'>
-                <div className='flex flex-col w-[1120px] max-h-[550px]'>
+                <div className='flex flex-col w-[1120px]'>
                     <ul className='flex w-[607px] h-[52px] items-center gap-4'>
                         {projectsNav.map((item, index) => {
 

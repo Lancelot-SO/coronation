@@ -38,7 +38,7 @@ const SelfServiceRed = () => {
                         <h3 className='w-[263px] h-[16px] text-[13px] leading-[16px] font-normal mb-4 text-center text-white'>MY INSURANCE ACCOUNT</h3>
                         <p className='w-[263px] h-[54px] text-[13px] leading-[18px] font-normal mb-6 text-center ml-[20px] text-white'>Want to know more about our services? Let's talk</p>
                     </div>
-                    <Link to="/contact" className='absolute top-[300px] items-center justify-center'>
+                    <Link to="https://coronation.ng/contact-us/" target="_blank" rel="noopener noreferrer" className='absolute top-[300px] items-center justify-center'>
                         <button className='flex w-[263px] h-[45px] items-center gap-4 bg-secondary ml-[20px] justify-center text-white rounded-[30px]'>Contact Us</button>
                     </Link>
                 </div>

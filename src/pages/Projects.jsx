@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import ProjectRed from './ProjectRed'
+import Project from './Project'
 
 import { projectsNav } from '../data'
 import { projectsData } from "../data"
@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <div>
             <div className='flex items-center justify-center'>
-                <div className='flex flex-col w-[1120px] max-h-[550px]'>
+                <div className='flex flex-col w-[1120px]'>
                     <ul className='flex w-[607px] h-[52px] items-center gap-4'>
                         {projectsNav.map((item, index) => {
 
@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className='grid grid-cols-3'>
                         {
                             projects.map((item) => {
-                                return <ProjectRed item={item} key={item.id} />
+                                return <Project item={item} key={item.id} />
                             })
                         }
 

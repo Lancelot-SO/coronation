@@ -10,7 +10,7 @@ const ProjectRed = ({ item }) => {
                     <img src={item.image} alt='insight' />
                     <div className='flex flex-col p-[30px] gap-[20px] w-full h-[246px]'>
                         <p className='w-[222px] h-[38px] text-[16px] leading-[19px] font-normal text-secondary'>{item.heading}</p>
-                        <p className='w-[222px] h-[157px] text-[16px] leading-[19px] font-normal'>{item.details}</p>
+                        <p className='w-[222px] h-[157px] text-[16px] leading-[19px] font-normal mt-2'>{item.details}</p>
                         <Link to={item.link} target='_blank' rel='noopener noreferrer' className='flex items-center w-[111px] justify-center h-[20px]'>
                             <p className='text-[16px] leading-[19px] font-normal'>READ MORE</p>
                             <FaLongArrowAltRight />
